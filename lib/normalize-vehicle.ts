@@ -101,7 +101,7 @@ function extractPhotoUrls(node: unknown): string[] {
 function extractOpcionais(node: unknown): string[] {
   if (!node) return [];
   const items: string[] = [];
-  const arr = ensureArray(node as object);
+  const arr = ensureArray(node);
   for (const el of arr) {
     if (typeof el === "string") {
       const t = el.trim();
