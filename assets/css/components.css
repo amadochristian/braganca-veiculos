@@ -321,6 +321,102 @@
     border-bottom: 1px solid var(--border);
 }
 
+.pull-sticker-wrap {
+    margin-bottom: 28px;
+}
+
+.pull-sticker {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    text-align: left;
+}
+
+.pull-sticker:focus-visible {
+    outline: 3px solid rgba(0, 56, 168, 0.3);
+    outline-offset: 4px;
+}
+
+.pull-sticker__inner {
+    position: relative;
+    display: grid;
+    gap: 6px;
+    width: 100%;
+    padding: 20px 26px 20px 20px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, #fff8e6 0%, #fff3d9 100%);
+    border: 1px solid rgba(245, 183, 49, 0.35);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.pull-sticker.revealing .pull-sticker__inner {
+    transform: translateX(-2px);
+}
+
+.pull-sticker__label {
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--secondary);
+    line-height: 1.2;
+}
+
+.pull-sticker__hint {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+.pull-sticker__handle {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent) 0%, #f8d568 100%);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    display: grid;
+    place-items: center;
+    color: var(--secondary);
+    font-size: 1.1rem;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.pull-sticker__fold {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 110px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.35) 100%);
+    box-shadow: inset -2px 0 16px rgba(0, 0, 0, 0.08);
+    transform-origin: right center;
+    transform: perspective(400px) rotateY(0deg);
+    transition: transform 0.25s ease;
+}
+
+.pull-sticker.revealed .pull-sticker__inner {
+    background: linear-gradient(135deg, #effaf1 0%, #f0fdf4 100%);
+    border-color: var(--success);
+}
+
+.pull-sticker.revealed .pull-sticker__label {
+    color: var(--success);
+}
+
+.pull-sticker.revealed .pull-sticker__hint {
+    color: var(--success);
+}
+
 .veiculo-preco {
     margin-bottom: 24px;
     padding: 20px;
@@ -544,7 +640,10 @@
     }
     .veiculo-nome { font-size: 1.375rem; }
     .preco-valor { font-size: 1.625rem; }
-    .specs-grid { grid-template-columns: 1fr; }
+    .specs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .pull-sticker-wrap {
+        margin-top: 16px;
+    }
     .btn-whatsapp-detalhes {
         position: fixed;
         bottom: 0;

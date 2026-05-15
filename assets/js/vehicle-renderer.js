@@ -166,6 +166,18 @@ class VehicleRenderer {
                         </div>
                     </div>
 
+                    <!-- Adesivo interativo: puxe para revelar -->
+                    <div class="pull-sticker-wrap">
+                        <button type="button" class="pull-sticker js-pull-sticker" data-whatsapp-url="${whatsappUrl}" aria-label="Puxe para revelar o preço">
+                            <span class="pull-sticker__inner">
+                                <span class="pull-sticker__label">Puxe para revelar o preço</span>
+                                <span class="pull-sticker__hint">Arraste para ver a condição exclusiva</span>
+                            </span>
+                            <span class="pull-sticker__fold"></span>
+                            <span class="pull-sticker__handle">⇢</span>
+                        </button>
+                    </div>
+
                     <!-- Placa -->
                     <div class="placa-item">
                         <span class="placa-label">Placa do Veículo</span>
