@@ -1,22 +1,7 @@
 // assets/js/utils.js - Funções utilitárias compartilhadas
 
-// Navbar com efeito ao rolar
-function setupNavbarScroll() {
-    const navbar = document.querySelector('.navbar');
-    if (!navbar || navbar.classList.contains('navbar--solid')) return;
-
-    const onScroll = () => {
-        navbar.classList.toggle('scrolled', window.scrollY > 40);
-    };
-
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-}
-
 // Configuração da navbar responsiva
 function setupNavbar() {
-    setupNavbarScroll();
-
     const toggleBtn = document.querySelector('.navbar__toggle');
     const menu = document.querySelector('.navbar__menu');
 

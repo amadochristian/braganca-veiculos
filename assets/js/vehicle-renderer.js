@@ -5,7 +5,6 @@ class VehicleRenderer {
     // Renderizar card do veículo para catálogo
     static renderCard(vehicle, lazyLoad = true) {
         const fotoUrl = vehicle.fotoPrincipal || 'https://placehold.co/600x400/e9ecef/6c757d?text=Sem+Imagem';
-        const price = typeof vehicle.preco === 'string' ? vehicle.preco : formatPrice(vehicle.preco);
         const km = formatKm(vehicle.quilometragem);
         const ano = vehicle.ano || (vehicle.anomodelo ? vehicle.anomodelo.split('/')[0] : '');
         
@@ -23,7 +22,6 @@ class VehicleRenderer {
                 <div class="card__content">
                     <h3 class="card__title">${vehicle.nomeExibicao || vehicle.marca + ' ' + vehicle.modelo}</h3>
                     <div class="card__version">${(vehicle.versao || '').substring(0, 60)}${(vehicle.versao || '').length > 60 ? '...' : ''}</div>
-                    <div class="card__price">${price}</div>
                     <div class="card__specs">
                         <span class="card__spec">📅 ${ano}</span>
                         <span class="card__spec">⚙️ ${vehicle.cambio || 'N/A'}</span>
@@ -45,7 +43,6 @@ class VehicleRenderer {
                     <div class="skeleton__image"></div>
                     <div class="skeleton__title"></div>
                     <div class="skeleton__text"></div>
-                    <div class="skeleton__price"></div>
                 </div>
             `;
         }
@@ -83,7 +80,6 @@ class VehicleRenderer {
     
     // Renderizar página de detalhes do veículo
     static renderDetalhes(vehicle) {
-        const price = typeof vehicle.preco === 'string' ? vehicle.preco : formatPrice(vehicle.preco);
         const km = formatKm(vehicle.quilometragem);
         const ano = vehicle.ano || (vehicle.anomodelo ? vehicle.anomodelo.split('/')[0] : '');
 
@@ -141,12 +137,6 @@ class VehicleRenderer {
                 <div class="veiculo-coluna-info">
                     <h1 class="veiculo-nome">${this.escapeHtml(nomeCompleto)}</h1>
                     <div class="veiculo-versao">${this.escapeHtml(vehicle.versao || 'Sem versão')}</div>
-
-                    <!-- Preço em destaque -->
-                    <div class="veiculo-preco">
-                        <span class="preco-label">Preço</span>
-                        <span class="preco-valor">${price}</span>
-                    </div>
 
                     <!-- Especificações principais -->
                     <div class="specs-grid">

@@ -14,10 +14,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const filterCombustivel = document.getElementById('filter-combustivel');
     const filterAno = document.getElementById('filter-ano');
     const filterCor = document.getElementById('filter-cor');
-    const priceMinSlider = document.getElementById('filter-price-min');
-    const priceMaxSlider = document.getElementById('filter-price-max');
-    const minPriceLabel = document.getElementById('min-price-label');
-    const maxPriceLabel = document.getElementById('max-price-label');
     
     let allVehicles = [];
     let filteredVehicles = [];
@@ -63,14 +59,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     filterCombustivel.addEventListener('change', applyFilters);
     filterAno.addEventListener('change', applyFilters);
     filterCor.addEventListener('change', applyFilters);
-    priceMinSlider.addEventListener('input', (e) => {
-        minPriceLabel.textContent = parseInt(e.target.value).toLocaleString();
-        applyFilters();
-    });
-    priceMaxSlider.addEventListener('input', (e) => {
-        maxPriceLabel.textContent = parseInt(e.target.value).toLocaleString();
-        applyFilters();
-    });
     clearFiltersBtn.addEventListener('click', clearAllFilters);
     if (resetEmptyFilters) resetEmptyFilters.addEventListener('click', clearAllFilters);
     
@@ -81,8 +69,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const selectedCombustivel = filterCombustivel.value;
         const selectedAno = filterAno.value;
         const selectedCor = filterCor.value;
-        const minPrice = parseInt(priceMinSlider.value);
-        const maxPrice = parseInt(priceMaxSlider.value);
         
         filteredVehicles = allVehicles.filter(vehicle => {
             // Busca textual
@@ -105,10 +91,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             
             // Cor
             if (selectedCor && vehicle.cor !== selectedCor) return false;
-            
-            // Preço
-            const price = vehicle.precodecimal ? parseInt(vehicle.precodecimal) : 0;
-            if (price < minPrice || price > maxPrice) return false;
             
             return true;
         });
@@ -154,10 +136,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         filterCombustivel.value = '';
         filterAno.value = '';
         filterCor.value = '';
-        priceMinSlider.value = '0';
-        priceMaxSlider.value = '200000';
-        minPriceLabel.textContent = '0';
-        maxPriceLabel.textContent = (200000).toLocaleString();
         applyFilters();
     }
     
