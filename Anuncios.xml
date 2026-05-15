@@ -1,0 +1,4673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<estoque>
+  <veiculo>
+    <idveiculo>4745425</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 09:55:51</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>TCZ-5B08</placa>
+    <marca>CITROEN</marca>
+    <modelo>C3</modelo>
+    <versao><![CDATA[1.0 FIREFLY FLEX LIVE PACK MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>51400</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Preto</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 74.900,00</preco>
+    <precodecimal>74900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/c3-1.0-firefly-flex-live-pack-manual-flex-2025/4745425/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/18_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/19_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/9_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/20_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/15_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/13_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/14_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/16_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/17_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/3_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/10_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/12_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/8_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/7_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/1_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/4_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/5_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/6_095551.jpg?u=20260415095551</url>
+      </foto>
+      <foto>
+        <ordem>19</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745425/11_095551.jpg?u=20260415095551</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745497</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:05:16</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>TCP-6B91</placa>
+    <marca>FIAT</marca>
+    <modelo>CRONOS</modelo>
+    <versao><![CDATA[1.0 FIREFLY FLEX DRIVE MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>66800</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 79.900,00</preco>
+    <precodecimal>79900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/cronos-1.0-firefly-flex-drive-manual-flex-2025/4745497/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/14_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/2_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/1_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/11_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/12_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/13_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/10_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/8_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/9_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/7_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/5_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/6_100516.jpg?u=20260415100516</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745497/3_100516.jpg?u=20260415100516</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745549</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:13:19</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>QMV-2H69</placa>
+    <marca>RENAULT</marca>
+    <modelo>KWID</modelo>
+    <versao><![CDATA[1.0 12V SCE FLEX ZEN MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>41700</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 60.900,00</preco>
+    <precodecimal>60900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/kwid-1.0-12v-sce-flex-zen-manual-flex-2025/4745549/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/7_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/12_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/5_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/6_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/11_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/10_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/8_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/9_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/3_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/13_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/2_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/1_101319.jpg?u=20260415101319</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745549/4_101319.jpg?u=20260415101319</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745613</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:20:36</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>GJU-0041</placa>
+    <marca>VOLKSWAGEN</marca>
+    <modelo>TIGUAN</modelo>
+    <versao><![CDATA[1.4 250 TSI TOTAL FLEX ALLSPACE COMFORTLINE TIPTRONIC]]></versao>
+    <anomodelo>2018/2018</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>104800</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Gasolina</combustivel>
+    <preco>R$ 112.900,00</preco>
+    <precodecimal>112900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/tiguan-1.4-250-tsi-total-flex-allspace-comfortline-tiptronic-gasolina-2018/4745613/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/12_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/15_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/11_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/10_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/8_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/9_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/5_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/1_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/2_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/3_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/13_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/4_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/6_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/14_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/7_102036.jpg?u=20260415102036</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745613/16_102036.jpg?u=20260415102036</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745668</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:30:14</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SYE-3C03</placa>
+    <marca>FIAT</marca>
+    <modelo>PULSE</modelo>
+    <versao><![CDATA[1.3 FLEX DRIVE CVT]]></versao>
+    <anomodelo>2023/2024</anomodelo>
+    <cambio>CVT</cambio>
+    <quilometragem>59900</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 96.900,00</preco>
+    <precodecimal>96900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/pulse-1.3-flex-drive-cvt-flex-2024/4745668/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/6_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/5_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/4_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/8_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/1_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/9_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/2_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/7_103014.jpg?u=20260415103014</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745668/3_103014.jpg?u=20260415103014</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745723</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:35:34</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>TDF-0H40</placa>
+    <marca>FIAT</marca>
+    <modelo>CRONOS</modelo>
+    <versao><![CDATA[1.0 FIREFLY FLEX DRIVE MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>51800</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 79.900,00</preco>
+    <precodecimal>79900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/cronos-1.0-firefly-flex-drive-manual-flex-2025/4745723/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/7_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/9_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/8_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/4_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/12_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/5_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/6_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/11_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/3_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/2_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/10_103534.jpg?u=20260415103534</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745723/1_103534.jpg?u=20260415103534</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745792</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:42:50</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FMS-1A36</placa>
+    <marca>FORD</marca>
+    <modelo>ECOSPORT</modelo>
+    <versao><![CDATA[1.5 TI-VCT FLEX SE AUTOMÁTICO]]></versao>
+    <anomodelo>2020/2021</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>116500</quilometragem>
+    <numeroportas>5</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 80.900,00</preco>
+    <precodecimal>80900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/ecosport-1.5-ti-vct-flex-se-automatico-flex-2021/4745792/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Sensor de estacionamento</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/1_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/2_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/3_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/4_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/11_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/12_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/15_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/5_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/7_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/10_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/9_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/8_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/14_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/13_104250.jpg?u=20260415104250</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745792/6_104250.jpg?u=20260415104250</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4745954</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 10:56:46</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SYP-6G79</placa>
+    <marca>VOLKSWAGEN</marca>
+    <modelo>SAVEIRO</modelo>
+    <versao><![CDATA[1.6 MSI ROBUST CS 16V FLEX 2P MANUAL]]></versao>
+    <anomodelo>2024/2024</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>25000</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 77.900,00</preco>
+    <precodecimal>77900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/saveiro-1.6-msi-robust-cs-16v-flex-2p-manual-flex-2024/4745954/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Protetor de Caçamba</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/8_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/6_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/7_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/16_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/9_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/18_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/17_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/12_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/19_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/21_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/11_105646.jpg?u=20260415105646</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4745954/10_105646.jpg?u=20260415105646</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4746022</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 11:03:02</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SHT-9J24</placa>
+    <marca>FIAT</marca>
+    <modelo>FIORINO</modelo>
+    <versao><![CDATA[1.4 MPI FURGÃO ENDURANCE 8V FLEX 2P MANUAL]]></versao>
+    <anomodelo>2023/2024</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>16300</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 92.900,00</preco>
+    <precodecimal>92900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/fiorino-1.4-mpi-furgao-endurance-8v-flex-2p-manual-flex-2024/4746022/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>IPVA Pago</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/6_115002.jpg?u=20260415115002</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/4_115020.jpg?u=20260415115020</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/1_115020.jpg?u=20260415115020</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/6_115020.jpg?u=20260415115020</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/8_115002.jpg?u=20260415115002</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/5_115020.jpg?u=20260415115020</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/3_115002.jpg?u=20260415115002</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/3_115020.jpg?u=20260415115020</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746022/9_115020.jpg?u=20260415115020</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4746163</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 11:21:26</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>ESM-2015</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>IX35</modelo>
+    <versao><![CDATA[2.0 MPFI GLS 4X2 16V GASOLINA 4P AUTOMÁTICO]]></versao>
+    <anomodelo>2010/2011</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>132000</quilometragem>
+    <numeroportas>5</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Gasolina</combustivel>
+    <preco>R$ 65.900,00</preco>
+    <precodecimal>65900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/ix35-2.0-mpfi-gls-4x2-16v-gasolina-4p-automatico-gasolina-2011/4746163/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Cd player com MP3</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Sensor de estacionamento</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/1_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/5_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/6_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/7_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/8_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/2_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/10_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/9_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/3_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/13_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/12_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/4_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/14_112126.jpg?u=20260415112126</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746163/11_112126.jpg?u=20260415112126</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4746246</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 11:30:55</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SSZ-6A74</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>CRETA</modelo>
+    <versao><![CDATA[1.6 16V FLEX ACTION AUTOMÁTICO]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>57000</quilometragem>
+    <numeroportas>5</numeroportas>
+    <cor>Preto</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 107.900,00</preco>
+    <precodecimal>107900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/creta-1.6-16v-flex-action-automatico-flex-2025/4746246/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/6_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/5_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/1_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/7_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/8_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/9_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/2_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/12_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/13_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/3_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/14_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/4_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/10_113055.jpg?u=20260415113055</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746246/11_113055.jpg?u=20260415113055</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4746370</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 11:48:29</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SJD-6F33</placa>
+    <marca>JEEP</marca>
+    <modelo>RENEGADE</modelo>
+    <versao><![CDATA[1.3 T270 TURBO FLEX LONGITUDE AT6]]></versao>
+    <anomodelo>2023/2024</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>67000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Azul</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 109.900,00</preco>
+    <precodecimal>109900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/renegade-1.3-t270-turbo-flex-longitude-at6-flex-2024/4746370/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Controle de tração</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Sensor de estacionamento</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/4_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/2_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/3_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/5_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/6_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/8_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/9_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/11_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/7_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/10_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/18_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/14_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/13_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/19_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/17_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/16_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/1_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/15_114830.jpg?u=20260415114830</url>
+      </foto>
+      <foto>
+        <ordem>19</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4746370/12_114830.jpg?u=20260415114830</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750228</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 17:50:27</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SVJ-9J91</placa>
+    <marca>CHEVROLET</marca>
+    <modelo>ONIX</modelo>
+    <versao><![CDATA[1.0 FLEX MANUAL]]></versao>
+    <anomodelo>2024/2024</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>25000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Preto</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 68.900,00</preco>
+    <precodecimal>68900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/onix-1.0-flex-manual-flex-2024/4750228/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:59:29</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/5_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/4_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/7_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/6_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/1_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/8_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/9_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/2_055027.jpg?u=20260415175027</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750228/3_055027.jpg?u=20260415175027</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750253</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 17:53:29</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>GGL-4B21</placa>
+    <marca>VOLKSWAGEN</marca>
+    <modelo>POLO</modelo>
+    <versao><![CDATA[1.0 MPI TRACK MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>76000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 75.900,00</preco>
+    <precodecimal>75900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/polo-1.0-mpi-track-manual-flex-2025/4750253/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/5_055330.jpg?u=20260415175330</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/3_055330.jpg?u=20260415175330</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/4_055330.jpg?u=20260415175330</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/2_055329.jpg?u=20260415175329</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/1_055329.jpg?u=20260415175329</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/8_055330.jpg?u=20260415175330</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/3_055329.jpg?u=20260415175329</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/6_055330.jpg?u=20260415175330</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750253/7_055330.jpg?u=20260415175330</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750317</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:03:06</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FIS-3F62</placa>
+    <marca>RENAULT</marca>
+    <modelo>LOGAN</modelo>
+    <versao><![CDATA[1.0 12V SCE FLEX ZEN MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>51000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 77.900,00</preco>
+    <precodecimal>77900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/logan-1.0-12v-sce-flex-zen-manual-flex-2025/4750317/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/11_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/10_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/12_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/14_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/15_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/13_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/23_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/16_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/17_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/20_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/18_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/22_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/19_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/21_060306.jpg?u=20260415180306</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750317/24_060306.jpg?u=20260415180306</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750417</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:18:31</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>TCU-8H58</placa>
+    <marca>CHEVROLET</marca>
+    <modelo>ONIX</modelo>
+    <versao><![CDATA[1.0 FLEX PLUS LT MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>53000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 79.900,00</preco>
+    <precodecimal>79900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/onix-1.0-flex-plus-lt-manual-flex-2025/4750417/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/2_061831.jpg?u=20260415181831</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/4_061831.jpg?u=20260415181831</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/3_061831.jpg?u=20260415181831</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/5_061831.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/1_061831.jpg?u=20260415181831</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/5_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/10_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/6_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/7_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/8_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/9_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/13_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/11_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/12_061832.jpg?u=20260415181832</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750417/14_061832.jpg?u=20260415181832</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750442</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:23:28</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FLJ-1C46</placa>
+    <marca>FIAT</marca>
+    <modelo>500</modelo>
+    <versao><![CDATA[1.4 SPORT AIR 16V GASOLINA 2P AUTOMÁTICO]]></versao>
+    <anomodelo>2013/2014</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>107000</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 65.900,00</preco>
+    <precodecimal>65900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/500-1.4-sport-air-16v-gasolina-2p-automatico-flex-2014/4750442/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Teto solar</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/2_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/1_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/3_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/4_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/5_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/6_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/7_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/8_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/9_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/10_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/11_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/12_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/13_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/14_062328.jpg?u=20260415182328</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750442/15_062328.jpg?u=20260415182328</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750460</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:27:16</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>RVS-5I24</placa>
+    <marca>FIAT</marca>
+    <modelo>STRADA</modelo>
+    <versao><![CDATA[1.3 FIREFLY FLEX FREEDOM CD MANUAL]]></versao>
+    <anomodelo>2022/2023</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>0</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 98.900,00</preco>
+    <precodecimal>98900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/strada-1.3-firefly-flex-freedom-cd-manual-flex-2023/4750460/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Protetor de Caçamba</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Capota Marítima</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/3_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/1_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/2_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/4_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/5_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/6_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/7_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/8_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/9_062716.jpg?u=20260415182716</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/10_062716.jpg?u=20260415182717</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/10_062717.jpg?u=20260415182717</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/11_062717.jpg?u=20260415182717</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/12_062717.jpg?u=20260415182717</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/13_062717.jpg?u=20260415182717</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750460/14_062717.jpg?u=20260415182717</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750484</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:31:58</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SSW-6G07</placa>
+    <marca>TOYOTA</marca>
+    <modelo>YARIS</modelo>
+    <versao><![CDATA[1.5 16V FLEX XL MULTIDRIVE]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>50000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Preto</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 99.900,00</preco>
+    <precodecimal>99900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/yaris-1.5-16v-flex-xl-multidrive-flex-2025/4750484/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/1_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/2_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/3_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/4_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/5_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/6_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/12_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/9_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/7_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/8_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/10_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/11_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/14_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/13_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/16_063158.jpg?u=20260415183158</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750484/15_063158.jpg?u=20260415183158</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750524</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:40:09</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>STF-3F95</placa>
+    <marca>FIAT</marca>
+    <modelo>TORO</modelo>
+    <versao><![CDATA[2.0 16V TURBO DIESEL VOLCANO 4WD AT9]]></versao>
+    <anomodelo>2023/2024</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>49000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Diesel</combustivel>
+    <preco>R$ 147.900,00</preco>
+    <precodecimal>147900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/toro-2.0-16v-turbo-diesel-volcano-4wd-at9-diesel-2024/4750524/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Protetor de Caçamba</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Capota Marítima</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Controle de tração</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Sensor de estacionamento</opcional>
+      <opcional>Tração 4x4</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/2_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/3_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/5_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/4_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/1_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/6_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/17_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/12_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/8_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/10_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/7_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/9_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/11_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/13_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/14_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/16_064009.jpg?u=20260415184009</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750524/15_064009.jpg?u=20260415184009</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750545</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:44:02</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SYT-4A36</placa>
+    <marca>CITROEN</marca>
+    <modelo>C3 AIRCROSS</modelo>
+    <versao><![CDATA[1.0 TURBO 200 FLEX FEEL PACK CVT]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>CVT</cambio>
+    <quilometragem>32000</quilometragem>
+    <numeroportas>5</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 99.900,00</preco>
+    <precodecimal>99900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/c3-aircross-1.0-turbo-200-flex-feel-pack-cvt-flex-2025/4750545/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/2_064402.jpg?u=20260415184402</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/3_064402.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/3_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/4_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/5_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/6_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/7_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/8_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/9_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/10_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/11_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/12_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/13_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/1_064402.jpg?u=20260415184402</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/14_064403.jpg?u=20260415184403</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750545/15_064403.jpg?u=20260415184403</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750553</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:47:31</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SIU-2F31</placa>
+    <marca>FIAT</marca>
+    <modelo>MOBI</modelo>
+    <versao><![CDATA[1.0 EVO FLEX LIKE. MANUAL]]></versao>
+    <anomodelo>2023/2024</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>68000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 61.900,00</preco>
+    <precodecimal>61900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/mobi-1.0-evo-flex-like.-manual-flex-2024/4750553/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/2_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/1_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/3_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/4_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/5_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/6_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/7_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/8_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/9_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/10_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/11_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/12_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/13_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/14_064731.jpg?u=20260415184731</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750553/15_064731.jpg?u=20260415184731</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750568</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 18:53:28</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>RUW-1G69</placa>
+    <marca>FIAT</marca>
+    <modelo>STRADA</modelo>
+    <versao><![CDATA[1.4 FIRE FLEX ENDURANCE CS MANUAL]]></versao>
+    <anomodelo>2022/2023</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>64300</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 77.900,00</preco>
+    <precodecimal>77900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/strada-1.4-fire-flex-endurance-cs-manual-flex-2023/4750568/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/1_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/2_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/3_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/5_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/4_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/6_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/10_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/8_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/7_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/11_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/9_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/13_065328.jpg?u=20260415185328</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750568/12_065328.jpg?u=20260415185328</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4750605</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>15/04/2026 19:03:18</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>GCC-2I94</placa>
+    <marca>FIAT</marca>
+    <modelo>DUCATO</modelo>
+    <versao><![CDATA[2.3 MULTIJET DIESEL CHASSI MANUAL]]></versao>
+    <anomodelo>2021/2021</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>85000</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Diesel</combustivel>
+    <preco>R$ 199.900,00</preco>
+    <precodecimal>199900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/ducato-2.3-multijet-diesel-chassi-manual-diesel-2021/4750605/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/1_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/2_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/3_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/4_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/5_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/6_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/7_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/8_070318.jpg?u=20260415190318</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/9_070318.jpg?u=20260415190319</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/9_070319.jpg?u=20260415190319</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/10_070319.jpg?u=20260415190319</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4750605/11_070319.jpg?u=20260415190319</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4754013</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>16/04/2026 14:35:43</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>EBT-2C08</placa>
+    <marca>FORD</marca>
+    <modelo>RANGER</modelo>
+    <versao><![CDATA[2.3 XLS SPORT 16V 4X2 CS GASOLINA 2P MANUAL]]></versao>
+    <anomodelo>2007/2008</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>136000</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Gasolina</combustivel>
+    <preco>R$ 69.900,00</preco>
+    <precodecimal>69900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/ranger-2.3-xls-sport-16v-4x2-cs-gasolina-2p-manual-gasolina-2008/4754013/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Protetor de Caçamba</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Capota Marítima</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Blindado</opcional>
+      <opcional>IPVA Pago</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/12_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/5_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/3_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/10_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/4_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/11_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/9_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/8_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/7_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/1_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/6_023543.jpg?u=20260416143543</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4754013/2_023543.jpg?u=20260416143543</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4755116</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>16/04/2026 16:06:22</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SWO-0J68</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>HB20S</modelo>
+    <versao><![CDATA[1.0 12V FLEX COMFORT MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>43000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 82.900,00</preco>
+    <precodecimal>82900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/hb20s-1.0-12v-flex-comfort-manual-flex-2025/4755116/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/3_040622.jpg?u=20260416160622</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/2_040622.jpg?u=20260416160622</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/1_040622.jpg?u=20260416160622</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/4_040622.jpg?u=20260416160622</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/5_040622.jpg?u=20260416160622</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/6_040622.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/11_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/6_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/7_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/8_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/10_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/13_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/9_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/12_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/15_040623.jpg?u=20260416160623</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755116/14_040623.jpg?u=20260416160623</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4755144</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>16/04/2026 16:10:01</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SJH-1C97</placa>
+    <marca>CITROEN</marca>
+    <modelo>C3</modelo>
+    <versao><![CDATA[1.0 16V FLEX LIVE PACK MANUAL]]></versao>
+    <anomodelo>2024/2024</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>51000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 71.900,00</preco>
+    <precodecimal>71900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/c3-1.0-16v-flex-live-pack-manual-flex-2024/4755144/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/3_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/1_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/2_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/4_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/6_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/5_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/9_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/8_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/11_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/7_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/15_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/10_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/12_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/13_041001.jpg?u=20260416161001</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755144/14_041001.jpg?u=20260416161001</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4755183</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>16/04/2026 16:14:02</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>TCQ-8D65</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>HB20</modelo>
+    <versao><![CDATA[ 1.0 12V FLEX SENSE MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>53000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 72.900,00</preco>
+    <precodecimal>72900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/hb20--1.0-12v-flex-sense-manual-flex-2025/4755183/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/2_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/1_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/3_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/4_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/5_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/6_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/8_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/12_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/9_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/7_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/11_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/10_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/14_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/13_041402.jpg?u=20260416161402</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755183/15_041402.jpg?u=20260416161402</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4755223</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>16/04/2026 16:17:24</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SJH-4E86</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>HB20</modelo>
+    <versao><![CDATA[ 1.0 12V FLEX SENSE MANUAL]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>11000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 76.900,00</preco>
+    <precodecimal>76900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/hb20--1.0-12v-flex-sense-manual-flex-2025/4755223/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/2_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/1_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/3_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/4_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/5_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/6_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/7_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/11_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/9_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/8_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/10_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/14_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/12_041724.jpg?u=20260416161724</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4755223/13_041724.jpg?u=20260416161724</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4789897</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>24/04/2026 14:28:15</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>BRQ-5H81</placa>
+    <marca>KIA</marca>
+    <modelo>SPORTAGE</modelo>
+    <versao><![CDATA[2.0 LX 4X2 16V FLEX 4P AUTOMÁTICO]]></versao>
+    <anomodelo>2019/2020</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>119000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Preto</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 102.900,00</preco>
+    <precodecimal>102900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/sportage-2.0-lx-4x2-16v-flex-4p-automatico-flex-2020/4789897/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Controle de tração</opcional>
+      <opcional>Controle de velocidade</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Sensor de estacionamento</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/21_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/22_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/19_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/20_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/3_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/4_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/7_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/18_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/17_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/16_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/15_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/8_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/11_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/1_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/12_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/14_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/13_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/2_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>19</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/9_022815.jpg?u=20260424142815</url>
+      </foto>
+      <foto>
+        <ordem>20</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789897/10_022815.jpg?u=20260424142815</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4789989</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>24/04/2026 14:36:32</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>TCG-1F31</placa>
+    <marca>NISSAN</marca>
+    <modelo>KICKS</modelo>
+    <versao><![CDATA[1.6 16V FLEXSTART SENSE XTRONIC]]></versao>
+    <anomodelo>2024/2024</anomodelo>
+    <cambio>CVT</cambio>
+    <quilometragem>60000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 107.900,00</preco>
+    <precodecimal>107900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/kicks-1.6-16v-flexstart-sense-xtronic-flex-2024/4789989/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Porta copos</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/22_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/19_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/18_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/17_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/20_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/3_023632.jpg?u=20260424143632</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/2_023632.jpg?u=20260424143632</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/4_023632.jpg?u=20260424143632</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/1_023632.jpg?u=20260424143632</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/16_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/15_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/14_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/8_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/7_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/12_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/13_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/11_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/10_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>19</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/9_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>20</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/6_023633.jpg?u=20260424143633</url>
+      </foto>
+      <foto>
+        <ordem>21</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4789989/5_023632.jpg?u=20260424143632</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4797355</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>27/04/2026 09:19:49</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SUG-1G03</placa>
+    <marca>VOLKSWAGEN</marca>
+    <modelo>T-CROSS</modelo>
+    <versao><![CDATA[1.0 200 TSI TOTAL FLEX COMFORTLINE AUTOMÁTICO]]></versao>
+    <anomodelo>2024/2025</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>54000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 132.900,00</preco>
+    <precodecimal>132900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/t-cross-1.0-200-tsi-total-flex-comfortline-automatico-flex-2025/4797355/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/19_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/18_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/22_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/17_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/14_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/16_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/1_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/21_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/11_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/12_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/3_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/10_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/9_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/20_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/8_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/6_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/5_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/2_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>19</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/4_091949.jpg?u=20260427091949</url>
+      </foto>
+      <foto>
+        <ordem>20</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797355/13_091949.jpg?u=20260427091949</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4797485</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>27/04/2026 09:31:41</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>SWW-6H46</placa>
+    <marca>NISSAN</marca>
+    <modelo>KICKS</modelo>
+    <versao><![CDATA[1.6 16V FLEXSTART ADVANCE XTRONIC]]></versao>
+    <anomodelo>2024/2024</anomodelo>
+    <cambio>CVT</cambio>
+    <quilometragem>59000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 109.900,00</preco>
+    <precodecimal>109900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/kicks-1.6-16v-flexstart-advance-xtronic-flex-2024/4797485/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+      <opcional>Manual</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/13_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/12_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/21_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/23_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/15_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/9_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/8_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/2_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/11_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/10_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/6_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/19_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/5_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/4_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/3_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/26_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/18_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/16_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>19</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/17_093142.jpg?u=20260427093142</url>
+      </foto>
+      <foto>
+        <ordem>20</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4797485/24_093142.jpg?u=20260427093142</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4823346</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>30/04/2026 18:15:57</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>ELY-3C41</placa>
+    <marca>VOLKSWAGEN</marca>
+    <modelo>T-CROSS</modelo>
+    <versao><![CDATA[1.0 200 TSI TOTAL FLEX COMFORTLINE AUTOMÁTICO]]></versao>
+    <anomodelo>2020/2020</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>121000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 96.900,00</preco>
+    <precodecimal>96900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/t-cross-1.0-200-tsi-total-flex-comfortline-automatico-flex-2020/4823346/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado Digital</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Teto solar</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/4_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/1_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/5_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/6_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/7_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/8_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/9_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/10_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/11_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/2_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/12_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/13_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/14_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/15_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/16_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/17_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>17</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/18_061557.jpg?u=20260430181557</url>
+      </foto>
+      <foto>
+        <ordem>18</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823346/3_061557.jpg?u=20260430181557</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4823377</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>30/04/2026 18:19:43</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FEL-6A31</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>HB20S</modelo>
+    <versao><![CDATA[1.6 PREMIUM 16V FLEX 4P AUTOMÁTICO]]></versao>
+    <anomodelo>2015/2015</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>18000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Preto</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 58.900,00</preco>
+    <precodecimal>58900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/hb20s-1.6-premium-16v-flex-4p-automatico-flex-2015/4823377/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/5_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/6_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/7_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/8_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/1_061943.jpg?u=20260430181943</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/9_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/10_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/2_061943.jpg?u=20260430181943</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/11_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/3_061943.jpg?u=20260430181943</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/12_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/13_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/4_061943.jpg?u=20260430181943</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/14_061944.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/5_061943.jpg?u=20260430181944</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4823377/15_061944.jpg?u=20260430181944</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4851801</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>08/05/2026 10:43:59</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>GFS-2J69</placa>
+    <marca>HONDA</marca>
+    <modelo>CITY</modelo>
+    <versao><![CDATA[1.5 LX 16V FLEX 4P AUTOMÁTICO]]></versao>
+    <anomodelo>2017/2017</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>90000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Branco</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 75.900,00</preco>
+    <precodecimal>75900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/city-1.5-lx-16v-flex-4p-automatico-flex-2017/4851801/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Insufilm</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/16_104400.jpg?u=20260508104400</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/10_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/9_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/1_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/18_104400.jpg?u=20260508104400</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/15_104400.jpg?u=20260508104400</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/8_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/2_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/7_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/6_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/3_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/14_104400.jpg?u=20260508104400</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/4_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/5_104359.jpg?u=20260508104359</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/17_104400.jpg?u=20260508104400</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851801/11_104359.jpg?u=20260508104359</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4851997</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>08/05/2026 10:58:51</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FIY-4A72</placa>
+    <marca>HYUNDAI</marca>
+    <modelo>CRETA</modelo>
+    <versao><![CDATA[1.0 TGDI FLEX LIMITED AUTOMÁTICO]]></versao>
+    <anomodelo>2023/2023</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>46000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 117.900,00</preco>
+    <precodecimal>117900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/creta-1.0-tgdi-flex-limited-automatico-flex-2023/4851997/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Elétrica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>GPS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/16_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/9_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/8_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/15_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/7_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/14_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/10_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/6_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/5_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/12_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/13_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/11_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/3_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/2_105851.jpg?u=20260508105851</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4851997/1_105851.jpg?u=20260508105851</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4852065</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>08/05/2026 11:03:12</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>PRR-0A34</placa>
+    <marca>MITSUBISHI</marca>
+    <modelo>ASX</modelo>
+    <versao><![CDATA[2.0 4X2 16V FLEX 4P AUTOMÁTICO]]></versao>
+    <anomodelo>2017/2018</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>110000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Azul</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 82.900,00</preco>
+    <precodecimal>82900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/asx-2.0-4x2-16v-flex-4p-automatico-flex-2018/4852065/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Piloto automático</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/17_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/7_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/6_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/8_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/16_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/5_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/15_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/2_112535.jpg?u=20260508112535</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/4_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/13_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/12_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/14_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/3_112535.jpg?u=20260508112535</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/11_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/9_112536.jpg?u=20260508112536</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852065/1_112535.jpg?u=20260508112535</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4852385</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>08/05/2026 11:23:16</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FRV-6449</placa>
+    <marca>RENAULT</marca>
+    <modelo>DUSTER</modelo>
+    <versao><![CDATA[2.0 DYNAMIQUE 4X2 16V FLEX 4P AUTOMÁTICO]]></versao>
+    <anomodelo>2014/2015</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>188000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 54.900,00</preco>
+    <precodecimal>54900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/duster-2.0-dynamique-4x2-16v-flex-4p-automatico-flex-2015/4852385/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Câmera de ré</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/8_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/13_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/16_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/1_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/12_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/7_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/6_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/3_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/15_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/5_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/4_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/11_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/14_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/10_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/2_112316.jpg?u=20260508112316</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852385/9_112316.jpg?u=20260508112316</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4852497</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>08/05/2026 11:35:38</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>RNS-1B99</placa>
+    <marca>FIAT</marca>
+    <modelo>MOBI</modelo>
+    <versao><![CDATA[1.0 EVO FLEX LIKE. MANUAL]]></versao>
+    <anomodelo>2021/2022</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>164000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Cinza</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 54.900,00</preco>
+    <precodecimal>54900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/mobi-1.0-evo-flex-like.-manual-flex-2022/4852497/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-08 11:54:17</DataAtualizacao>
+    <opcionais>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/5_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/14_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/13_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/6_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/12_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/11_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/4_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/10_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/9_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/2_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/3_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/8_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/1_113538.jpg?u=20260508113538</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4852497/7_113538.jpg?u=20260508113538</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4883620</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>14/05/2026 10:58:27</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>HJD-8706</placa>
+    <marca>FIAT</marca>
+    <modelo>STRADA</modelo>
+    <versao><![CDATA[1.4 MPI WORKING CD 8V FLEX 2P MANUAL]]></versao>
+    <anomodelo>2011/2011</anomodelo>
+    <cambio>Manual</cambio>
+    <quilometragem>220000</quilometragem>
+    <numeroportas>2</numeroportas>
+    <cor>Prata</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 55.900,00</preco>
+    <precodecimal>55900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/strada-1.4-mpi-working-cd-8v-flex-2p-manual-flex-2011/4883620/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-14 11:02:52</DataAtualizacao>
+    <opcionais>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/1_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/12_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/11_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/2_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/3_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/4_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/10_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/5_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/6_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/7_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/14_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/8_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/9_105827.jpg?u=20260514105827</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883620/13_105827.jpg?u=20260514105827</url>
+      </foto>
+    </fotos>
+  </veiculo>
+  <veiculo>
+    <idveiculo>4883661</idveiculo>
+    <tipoveiculo>Carro</tipoveiculo>
+    <dataCadastro>14/05/2026 11:01:58</dataCadastro>
+    <zerokm>N</zerokm>
+    <placa>FTW-6F79</placa>
+    <marca>CHEVROLET</marca>
+    <modelo>ONIX</modelo>
+    <versao><![CDATA[1.4 MPFI LTZ 8V FLEX 4P MANUAL]]></versao>
+    <anomodelo>2018/2019</anomodelo>
+    <cambio>Automático</cambio>
+    <quilometragem>85000</quilometragem>
+    <numeroportas>4</numeroportas>
+    <cor>Vermelho</cor>
+    <combustivel>Flex</combustivel>
+    <preco>R$ 64.900,00</preco>
+    <precodecimal>64900</precodecimal>
+    <observacoes><![CDATA[***consulte nossos Vendedores ***
+??ENTRADA EM ATÉ 18X NO CARTÃO DE CRÉDITO
+??FINANCIAMENTO  EM ATÉ 60X
+??CONTATO - 11 2473-0601 / WHATSAPP 11 9 3206-9533
+??LINK DIRETO COM O CONSULTOR WHATSAPP https://wa.me/5511932069533
+??AV. JOSÉ GOMES DA ROCHA LEAL, 1267 - CENTRO - BRAGANÇA PTA ]]></observacoes>
+    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/onix-1.4-mpfi-ltz-8v-flex-4p-manual-flex-2019/4883661/detalhes]]></linkAnuncioSite>
+    <linkVideo />
+    <DataAtualizacao>2026-05-14 11:01:58</DataAtualizacao>
+    <opcionais>
+      <opcional>Alarme</opcional>
+      <opcional>Ar condicionado</opcional>
+      <opcional>Ar quente</opcional>
+      <opcional>Bancos de Couro</opcional>
+      <opcional>Controle de som no volante</opcional>
+      <opcional>Desembaçador traseiro</opcional>
+      <opcional>Direção Hidraulica</opcional>
+      <opcional>Farol de neblina</opcional>
+      <opcional>Freios ABS</opcional>
+      <opcional>Limpador traseiro</opcional>
+      <opcional>Multimídia</opcional>
+      <opcional>Retrovisores elétricos</opcional>
+      <opcional>Rodas de liga leve</opcional>
+      <opcional>Travas elétricas</opcional>
+      <opcional>Vidros elétricos</opcional>
+      <opcional>Vidros elétricos Traseiros</opcional>
+      <opcional>Airbag motorista</opcional>
+      <opcional>Airbag passageiro</opcional>
+      <opcional>Banco do motorista com ajuste de altura</opcional>
+      <opcional>Computador de bordo</opcional>
+      <opcional>Encosto de cabeça traseiro</opcional>
+      <opcional>Entrada USB</opcional>
+      <opcional>Pára-choques na cor do veiculo</opcional>
+      <opcional>Volante com regulagem de altura</opcional>
+      <opcional>Licenciado</opcional>
+    </opcionais>
+    <fotos>
+      <foto>
+        <ordem>1</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/1_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>2</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/4_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>3</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/2_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>4</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/3_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>5</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/14_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>6</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/9_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>7</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/12_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>8</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/13_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>9</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/15_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>10</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/5_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>11</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/6_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>12</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/16_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>13</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/7_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>14</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/8_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>15</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/10_110158.jpg?u=20260514110158</url>
+      </foto>
+      <foto>
+        <ordem>16</ordem>
+        <url>https://www.autocerto.com/fotos/6960/4883661/11_110158.jpg?u=20260514110158</url>
+      </foto>
+    </fotos>
+  </veiculo>
+</estoque>

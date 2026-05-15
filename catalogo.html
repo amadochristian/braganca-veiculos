@@ -1,0 +1,138 @@
+<!-- catalogo.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Bragança Veículos</title>
+    <meta name="description" content="Explore nosso catálogo completo de veículos seminovos e usados. Filtre por marca, preço, ano e mais.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar--solid">
+        
+        <div class="container">
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Bragança Veículos">
+                </a>
+            </div>
+            <button class="navbar__toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            <div class="navbar__menu">
+                <a href="index.html">Home</a>
+                <a href="catalogo.html" class="active">Catálogo</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <a href="catalogo.html" class="btn btn-primary btn-sm">Ver Catálogo</a>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="container">
+            <h1>Nosso Catálogo</h1>
+            <p>Encontre o veículo ideal para você entre dezenas de opções</p>
+        </div>
+    </header>
+
+    <main class="catalogo">
+        <div class="container">
+            
+            <div class="catalogo__filters">
+                <div class="filters__row">
+                    <div class="filter-group filter-group--search">
+                        <input type="text" id="search-input" placeholder="Buscar por marca, modelo..." class="filter-search">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-marca">Marca</label>
+                        <select id="filter-marca" class="filter-select"><option value="">Todas as marcas</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-cambio">Câmbio</label>
+                        <select id="filter-cambio" class="filter-select"><option value="">Todos câmbios</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-combustivel">Combustível</label>
+                        <select id="filter-combustivel" class="filter-select"><option value="">Todos combustíveis</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-ano">Ano</label>
+                        <select id="filter-ano" class="filter-select"><option value="">Todos anos</option></select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-cor">Cor</label>
+                        <select id="filter-cor" class="filter-select"><option value="">Todas cores</option></select>
+                    </div>
+                </div>
+                <div class="filters__row">
+                    <div class="filter-group">
+                        <label>Preço mínimo: <strong>R$ <span id="min-price-label">0</span></strong></label>
+                        <input type="range" id="filter-price-min" min="0" max="200000" step="5000" value="0">
+                    </div>
+                    <div class="filter-group">
+                        <label>Preço máximo: <strong>R$ <span id="max-price-label">200.000</span></strong></label>
+                        <input type="range" id="filter-price-max" min="0" max="200000" step="5000" value="200000">
+                    </div>
+                </div>
+                <div class="filters__actions">
+                    <button id="clear-filters" class="btn btn-outline--dark btn-sm">Limpar filtros</button>
+                    <span id="results-count" class="results-count"></span>
+                </div>
+            </div>
+
+            <div id="catalogo-grid" class="grid grid--4">
+                <div class="card skeleton"><div class="skeleton__image"></div><div class="skeleton__title"></div><div class="skeleton__text"></div><div class="skeleton__price"></div></div>
+                <div class="card skeleton"><div class="skeleton__image"></div><div class="skeleton__title"></div><div class="skeleton__text"></div><div class="skeleton__price"></div></div>
+                <div class="card skeleton"><div class="skeleton__image"></div><div class="skeleton__title"></div><div class="skeleton__text"></div><div class="skeleton__price"></div></div>
+                <div class="card skeleton"><div class="skeleton__image"></div><div class="skeleton__title"></div><div class="skeleton__text"></div><div class="skeleton__price"></div></div>
+            </div>
+
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                <h3>Nenhum veículo encontrado</h3>
+                <p>Tente ajustar os filtros da busca</p>
+                <button id="reset-empty-filters" class="btn btn-primary">Limpar filtros</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <div class="footer__logo-text">Bragança <span>Veículos</span></div>
+                    <p>Sua concessionária de confiança em Bragança Paulista.</p>
+                    <a href="https://www.instagram.com/braganca_veiculos" target="_blank" rel="noopener" class="footer__social">@braganca_veiculos</a>
+                </div>
+                <div class="footer__links">
+                    <h4>Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Contato</h4>
+                    <p>(11) 2473-0601</p>
+                    <p>(11) 93206-9533</p>
+                    <p>Av. José Gomes da Rocha Leal, 1267</p>
+                </div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2026 Bragança Veículos</p></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511932069533" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/xml-parser.js"></script>
+<script src="assets/js/vehicle-cache.js"></script>
+<script src="assets/js/vehicle-renderer.js"></script>
+<script src="assets/js/catalogo.js"></script>
+</body>
+</html>
