@@ -397,7 +397,7 @@
 
       <div class="hero__visual fade-up" style="transition-delay:.2s">
         <div class="hero__image-wrap">
-          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=900&q=80" alt="Showroom Bragança Veículos" loading="eager" />
+          <img src="images/fachada.jpg" alt="Showroom Bragança Veículos" loading="eager" />
           <div class="hero__badge">Estoque disponível</div>
         </div>
         <div class="hero__stats-float">
@@ -475,23 +475,11 @@
         <h2 class="section__title">Veículos que você encontra<br/><span>na Bragança Veículos</span></h2>
         <p class="section__subtitle">Seminovos selecionados, com procedência verificada e prontos para avaliação presencial.</p>
       </div>
-      <div class="vehicles-tabs fade-up">
-        <button class="tab-btn active" onclick="filterVehicles(this,'all')">Todos</button>
-        <button class="tab-btn" onclick="filterVehicles(this,'suv')">SUVs</button>
-        <button class="tab-btn" onclick="filterVehicles(this,'sedan')">Sedans</button>
-        <button class="tab-btn" onclick="filterVehicles(this,'hatch')">Hatchs</button>
-        <button class="tab-btn" onclick="filterVehicles(this,'app')">Para Aplicativo</button>
-        <button class="tab-btn" onclick="filterVehicles(this,'familiar')">Familiares</button>
-        <button class="tab-btn" onclick="filterVehicles(this,'utilitario')">Utilitários</button>
-      </div>
       <div class="vehicles-grid" id="vehicles-grid">
         <!-- cards injetados via JS -->
       </div>
       <div style="text-align:center;margin-top:40px">
-        <a href="https://www.bragancaveiculos.com.br/" target="_blank" class="btn btn-primary btn-lg">
-          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          Ver Todo o Estoque
-        </a>
+
       </div>
     </div>
   </section>
@@ -828,15 +816,10 @@
   <script>
     // =================== VEHICLES DATA ===================
     const vehicles = [
-      {cat:'suv',badge:'SUV',title:'Toyota Corolla Cross',desc:'SUV compacto premium, ideal para famílias que buscam conforto e tecnologia.', img:'https://images.unsplash.com/photo-1630897940949-35c5a24d0a9e?auto=format&fit=crop&w=600&q=75'},
-      {cat:'suv',badge:'SUV',title:'Jeep Compass',desc:'Conforto e desempenho off-road. Um dos SUVs mais requisitados do Brasil.',img:'https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?auto=format&fit=crop&w=600&q=75'},
-      {cat:'sedan',badge:'Sedan',title:'Honda Civic',desc:'Espaçoso, econômico e elegante. Referência em sedans no mercado.',img:'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=75'},
-      {cat:'hatch',badge:'Hatch',title:'Volkswagen Polo',desc:'Hatch moderno com câmbio automático e central multimídia de série.',img:'https://images.unsplash.com/photo-1585503418537-88331351ad99?auto=format&fit=crop&w=600&q=75'},
-      {cat:'app',badge:'Aplicativo',title:'Chevrolet Onix',desc:'O queridinho dos motoristas de aplicativo. Econômico e fácil de manter.',img:'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=600&q=75'},
-      {cat:'familiar',badge:'Familiar',title:'Fiat Argo',desc:'Espaço de sobra, porta-malas generoso e custo-benefício imbatível.',img:'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=600&q=75'},
-      {cat:'utilitario',badge:'Utilitário',title:'Fiat Strada',desc:'Picape leve versátil para trabalho e lazer, com cabine dupla.',img:'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=75'},
-      {cat:'suv',badge:'SUV',title:'Hyundai Creta',desc:'Design moderno, câmbio automático e ótimo acabamento interno.',img:'https://images.unsplash.com/photo-1616789916664-ea6e2e5a8f28?auto=format&fit=crop&w=600&q=75'},
-      {cat:'sedan',badge:'Sedan',title:'Toyota Corolla',desc:'O sedan mais vendido do mundo. Confiabilidade e elegância.',img:'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=600&q=75'},
+      {cat:'suv',badge:'Compacto',title:'HB20',desc:'Econômico e elegante. Referência no mercado.', img:'https://www.autocerto.com/fotos/6960/4755183/2_041402.jpg?u=20260416161402'},
+      {cat:'suv',badge:'SUV',title:'Toyota Corolla Cross',desc:'SUV compacto premium, ideal para famílias que buscam conforto e tecnologia.',img:'https://www.autocerto.com/fotos/6960/4919067/7_055834.jpg?u=20260520175834'},
+      {cat:'sedan',badge:'Sedan',title:'Honda Civic',desc:'Espaçoso, econômico e elegante. Referência em sedans no mercado.',img:'https://www.autocerto.com/fotos/6960/4919087/10_060232.jpg?u=20260520180232'},
+
     ];
 
     function renderVehicles(filter){
