@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bragança Veículos | Troque seu veículo com segurança — Bragança Paulista/SP</title>
+  <meta name="description" content="Mais de 200 veículos em estoque, avaliação do seu usado e análise personalizada com mais de 15 bancos parceiros. Agende sua visita na Bragança Veículos." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bragança Veículos | Troque seu veículo com segurança" />
+  <meta property="og:description" content="Mais de 200 veículos em estoque. Avalie seu usado, analise financiamento e negocie presencialmente." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bragancaveiculos.com.br/landing-page.html" />
+
+  <!-- ================================================
+       PIXEL FACEBOOK — substitua YOUR_PIXEL_ID pelo ID real
+  ================================================ -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); // ← substitua pelo seu Pixel ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+  <!-- ================================================
+       GOOGLE ADS / GA4 — substitua YOUR_GA4_ID e YOUR_AW_ID
+  ================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA4_ID');   // ← GA4 Measurement ID (G-XXXXXXXXXX)
+    gtag('config', 'YOUR_AW_ID');    // ← Google Ads Conversion ID (AW-XXXXXXXXXX)
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================
+       DESIGN SYSTEM — baseado nos CSS fornecidos
+    ============================================ */
+    :root {
+      --primary: #0038a8;
+      --primary-dark: #002570;
+      --primary-light: #1a52c4;
+      --primary-glow: rgba(0,56,168,.25);
+      --accent: #f5b731;
+      --accent-soft: rgba(245,183,49,.15);
+      --secondary: #0c1222;
+      --surface: #ffffff;
+      --surface-muted: #f4f6fb;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --text-inverse: #f8fafc;
+      --success: #16a34a;
+      --whatsapp: #25d366;
+      --whatsapp-dark: #1da851;
+      --shadow-sm: 0 2px 8px rgba(15,23,42,.06);
+      --shadow-md: 0 8px 24px rgba(15,23,42,.08);
+      --shadow-lg: 0 16px 48px rgba(15,23,42,.12);
+      --shadow-card: 0 4px 6px -1px rgba(15,23,42,.05),0 2px 4px -2px rgba(15,23,42,.05);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      --transition: .25s cubic-bezier(.4,0,.2,1);
+      --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font);font-size:16px;line-height:1.6;color:var(--text);background:var(--surface);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+
+    .container{max-width:1240px;margin:0 auto;padding:0 24px;width:100%}
+
+    h1,h2,h3,h4{font-weight:700;line-height:1.2;color:var(--secondary);letter-spacing:-.02em}
+    h1{font-size:clamp(2rem,5vw,3.25rem)}
+    h2{font-size:clamp(1.75rem,3.5vw,2.25rem)}
+    h3{font-size:1.25rem}
+
+    .section{padding:96px 0}
+    .section--muted{background:var(--surface-muted)}
+    @media(max-width:768px){.section{padding:64px 0}}
+
+    .section__header{text-align:center;margin-bottom:56px;max-width:640px;margin-left:auto;margin-right:auto}
+    .section__eyebrow{display:inline-block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--primary);background:var(--accent-soft);padding:6px 14px;border-radius:var(--radius-full);margin-bottom:16px}
+    .section__title{font-size:clamp(1.75rem,3vw,2.25rem);margin-bottom:12px}
+    .section__title span{color:var(--primary)}
+    .section__subtitle{color:var(--text-muted);font-size:1.0625rem}
+
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;font-weight:600;text-decoration:none;border-radius:var(--radius-md);transition:var(--transition);cursor:pointer;border:none;font-size:14px;font-family:inherit;white-space:nowrap}
+    .btn-primary{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);color:#fff;box-shadow:0 4px 14px var(--primary-glow)}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--primary-glow);filter:brightness(1.05)}
+    .btn-whatsapp{background:var(--whatsapp);color:#fff;box-shadow:0 4px 14px rgba(37,211,102,.35)}
+    .btn-whatsapp:hover{background:var(--whatsapp-dark);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4)}
+    .btn-outline{background:transparent;border:2px solid rgba(255,255,255,.5);color:#fff}
+    .btn-outline:hover{background:#fff;color:var(--primary);border-color:#fff}
+    .btn-lg{padding:16px 32px;font-size:16px;border-radius:var(--radius-lg)}
+    .btn-xl{padding:18px 36px;font-size:17px;border-radius:var(--radius-lg)}
+
+    /* HEADER */
+    .lp-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:var(--transition);background:transparent}
+    .lp-header.scrolled{background:var(--secondary);box-shadow:0 4px 24px rgba(12,18,34,.3)}
+    .lp-header .container{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .lp-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .lp-logo__text{font-size:1.25rem;font-weight:800;color:#fff;letter-spacing:-.02em;line-height:1}
+    .lp-logo__text span{color:var(--accent)}
+    .lp-logo__sub{font-size:10px;font-weight:600;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.1em}
+    .lp-header__cta{display:flex;align-items:center;gap:12px}
+    @media(max-width:600px){.lp-header__cta .btn-primary{display:none}}
+
+    /* HERO */
+    .hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
+    .hero__bg{position:absolute;inset:0;background:linear-gradient(160deg,var(--secondary) 0%,#0a1f4d 55%,var(--primary-dark) 100%)}
+    .hero__grid-pattern{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,black 30%,transparent)}
+    .hero__glow{position:absolute;top:-20%;right:-10%;width:800px;height:800px;background:radial-gradient(circle,rgba(0,56,168,.35) 0%,transparent 70%);pointer-events:none}
+    .hero__glow2{position:absolute;bottom:-30%;left:-5%;width:600px;height:600px;background:radial-gradient(circle,rgba(245,183,49,.1) 0%,transparent 70%);pointer-events:none}
+    .hero .container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .hero__content{}
+    .hero__eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);background:rgba(245,183,49,.12);border:1px solid rgba(245,183,49,.2);padding:6px 14px;border-radius:var(--radius-full);margin-bottom:24px}
+    .hero__title{font-size:clamp(2rem,4vw,3rem);font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1.15;margin-bottom:20px}
+    .hero__title span{background:linear-gradient(135deg,var(--accent) 0%,#fde68a 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero__subtitle{font-size:clamp(1rem,2vw,1.125rem);color:rgba(248,250,252,.72);margin-bottom:36px;line-height:1.7;max-width:500px}
+    .hero__actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:48px}
+    .hero__trust{display:flex;flex-wrap:wrap;gap:16px}
+    .trust-item{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,.7);font-weight:500}
+    .trust-item svg{color:var(--success);flex-shrink:0}
+
+    .hero__visual{position:relative}
+    .hero__image-wrap{position:relative;border-radius:var(--radius-xl);overflow:hidden;box-shadow:0 32px 80px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.08)}
+    .hero__image-wrap img{width:100%;height:480px;object-fit:cover}
+    .hero__stats-float{position:absolute;bottom:-24px;left:-24px;background:#fff;border-radius:var(--radius-lg);padding:20px 24px;box-shadow:var(--shadow-lg);display:grid;grid-template-columns:repeat(2,1fr);gap:16px 24px;min-width:280px}
+    .stat-item{text-align:center}
+    .stat-value{font-size:1.5rem;font-weight:800;color:var(--primary);letter-spacing:-.02em;line-height:1}
+    .stat-label{font-size:11px;color:var(--text-muted);margin-top:4px;font-weight:500}
+    .hero__badge{position:absolute;top:20px;right:-16px;background:var(--accent);color:var(--secondary);font-size:11px;font-weight:800;padding:8px 14px;border-radius:var(--radius-full);text-transform:uppercase;letter-spacing:.06em;box-shadow:0 4px 16px rgba(245,183,49,.4);transform:rotate(3deg)}
+
+    @media(max-width:960px){
+      .hero .container{grid-template-columns:1fr;gap:48px}
+      .hero__visual{display:none}
+      .hero{min-height:auto;padding-bottom:64px}
+    }
+
+    /* COMO FUNCIONA */
+    .steps-section{background:var(--surface-muted)}
+    .steps-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+    .steps-grid::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,transparent,var(--primary),var(--accent),var(--primary),transparent);opacity:.3;z-index:0}
+    .step-item{text-align:center;padding:0 16px;position:relative;z-index:1}
+    .step-number{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);color:#fff;font-size:1.25rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;box-shadow:0 8px 24px var(--primary-glow);position:relative;transition:var(--transition)}
+    .step-item:hover .step-number{transform:scale(1.08);box-shadow:0 12px 32px var(--primary-glow)}
+    .step-item:nth-child(even) .step-number{background:linear-gradient(135deg,var(--secondary) 0%,#1a3060 100%)}
+    .step-title{font-size:.9375rem;font-weight:700;color:var(--secondary);margin-bottom:8px}
+    .step-desc{font-size:13px;color:var(--text-muted);line-height:1.5}
+    .steps-note{margin-top:56px;background:linear-gradient(135deg,rgba(0,56,168,.06) 0%,rgba(0,56,168,.03) 100%);border:1px solid rgba(0,56,168,.12);border-left:4px solid var(--primary);border-radius:var(--radius-lg);padding:24px 32px;max-width:780px;margin-left:auto;margin-right:auto;text-align:center}
+    .steps-note p{color:var(--text);font-size:1rem;line-height:1.7;font-weight:500}
+    .steps-note p strong{color:var(--primary)}
+
+    @media(max-width:900px){
+      .steps-grid{grid-template-columns:repeat(3,1fr);gap:32px}
+      .steps-grid::before{display:none}
+    }
+    @media(max-width:560px){
+      .steps-grid{grid-template-columns:1fr 1fr;gap:28px}
+    }
+    @media(max-width:380px){
+      .steps-grid{grid-template-columns:1fr;gap:24px}
+    }
+
+    /* VEÍCULOS */
+    .vehicles-section{}
+    .vehicles-tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:48px}
+    .tab-btn{padding:9px 20px;border-radius:var(--radius-full);border:1.5px solid var(--border);background:transparent;color:var(--text-muted);font-size:13px;font-weight:600;cursor:pointer;transition:var(--transition);font-family:inherit}
+    .tab-btn:hover,.tab-btn.active{background:var(--primary);border-color:var(--primary);color:#fff}
+    .vehicles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .vehicle-card{background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-card);transition:var(--transition);display:flex;flex-direction:column}
+    .vehicle-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:transparent}
+    .vehicle-card__img{position:relative;padding-top:62%;overflow:hidden;background:linear-gradient(145deg,#e8edf5 0%,#f4f6fb 100%)}
+    .vehicle-card__img img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.4,0,.2,1)}
+    .vehicle-card:hover .vehicle-card__img img{transform:scale(1.06)}
+    .vehicle-card__badge{position:absolute;top:12px;left:12px;background:var(--primary);color:#fff;font-size:11px;font-weight:700;padding:5px 10px;border-radius:var(--radius-full);text-transform:uppercase;letter-spacing:.05em;z-index:2}
+    .vehicle-card__body{padding:20px;flex:1;display:flex;flex-direction:column}
+    .vehicle-card__category{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:6px}
+    .vehicle-card__title{font-size:1.0625rem;font-weight:700;color:var(--secondary);margin-bottom:8px}
+    .vehicle-card__desc{font-size:13px;color:var(--text-muted);line-height:1.5;margin-bottom:16px;flex:1}
+    .vehicle-card__btn{width:100%;margin-top:auto}
+
+    @media(max-width:900px){.vehicles-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.vehicles-grid{grid-template-columns:1fr}}
+
+    /* DIFERENCIAIS */
+    .diferenciais-section{background:linear-gradient(160deg,var(--secondary) 0%,#0a1f4d 50%,var(--primary-dark) 100%);position:relative;overflow:hidden}
+    .diferenciais-section::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+    .diferenciais-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .diferencial-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:32px 28px;transition:var(--transition);backdrop-filter:blur(8px)}
+    .diferencial-card:hover{background:rgba(255,255,255,.1);border-color:rgba(245,183,49,.3);transform:translateY(-4px)}
+    .diferencial-card__icon{width:56px;height:56px;background:linear-gradient(135deg,rgba(245,183,49,.2) 0%,rgba(245,183,49,.08) 100%);border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;color:var(--accent);margin-bottom:20px;border:1px solid rgba(245,183,49,.2)}
+    .diferencial-card h3{font-size:1.0625rem;font-weight:700;color:#fff;margin-bottom:10px}
+    .diferencial-card p{font-size:14px;color:rgba(248,250,252,.6);line-height:1.6}
+
+    @media(max-width:900px){.diferenciais-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.diferenciais-grid{grid-template-columns:1fr}}
+
+    /* PROVA SOCIAL */
+    .social-section{background:var(--surface-muted)}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .review-card{background:var(--surface);border-radius:var(--radius-lg);padding:28px;border:1px solid var(--border);box-shadow:var(--shadow-card);transition:var(--transition)}
+    .review-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);border-color:transparent}
+    .review-stars{display:flex;gap:4px;margin-bottom:14px}
+    .review-stars span{color:var(--accent);font-size:16px}
+    .review-text{font-size:14px;color:var(--text);line-height:1.7;margin-bottom:20px;font-style:italic}
+    .review-author{display:flex;align-items:center;gap:12px}
+    .review-author__avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:14px;flex-shrink:0}
+    .review-author__name{font-weight:700;font-size:14px;color:var(--secondary)}
+    .review-author__tag{font-size:12px;color:var(--text-muted)}
+    .google-badge{display:flex;align-items:center;gap:8px;margin-top:32px;justify-content:center}
+    .google-badge__icon{width:36px;height:36px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);border:1px solid var(--border)}
+    .google-badge__text{font-size:13px;font-weight:600;color:var(--text-muted)}
+    .google-badge__text strong{color:var(--secondary)}
+
+    .deliveries-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+    .delivery-card{background:var(--surface);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow-card)}
+    .delivery-card__img{padding-top:75%;position:relative;overflow:hidden;background:linear-gradient(145deg,#e8edf5,#f4f6fb)}
+    .delivery-card__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+    @media(max-width:900px){.reviews-grid{grid-template-columns:repeat(2,1fr)}.deliveries-row{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.reviews-grid{grid-template-columns:1fr}.deliveries-row{grid-template-columns:repeat(2,1fr)}}
+
+    /* QUALIFICAÇÃO */
+    .qualificacao-section{background:var(--surface)}
+    .qualificacao-wrap{max-width:720px;margin:0 auto;background:var(--surface);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);border:1px solid var(--border);overflow:hidden}
+    .qualificacao-header{background:linear-gradient(135deg,var(--secondary) 0%,#0a1f4d 100%);padding:40px 48px;text-align:center}
+    .qualificacao-header h3{color:#fff;font-size:1.375rem;margin-bottom:8px}
+    .qualificacao-header p{color:rgba(248,250,252,.65);font-size:15px}
+    .qualificacao-body{padding:40px 48px}
+    .q-step{display:none}
+    .q-step.active{display:block;animation:fadeIn .3s ease}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    .q-step__label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--primary);margin-bottom:8px}
+    .q-step__question{font-size:1.125rem;font-weight:700;color:var(--secondary);margin-bottom:24px;line-height:1.4}
+    .q-options{display:flex;flex-direction:column;gap:12px}
+    .q-option{display:flex;align-items:center;gap:14px;padding:16px 20px;border:2px solid var(--border);border-radius:var(--radius-md);cursor:pointer;transition:var(--transition);background:var(--surface)}
+    .q-option:hover{border-color:var(--primary);background:rgba(0,56,168,.03)}
+    .q-option.selected{border-color:var(--primary);background:rgba(0,56,168,.05)}
+    .q-option__radio{width:20px;height:20px;border-radius:50%;border:2px solid var(--border-strong);flex-shrink:0;display:flex;align-items:center;justify-content:center;transition:var(--transition)}
+    .q-option.selected .q-option__radio{border-color:var(--primary);background:var(--primary)}
+    .q-option.selected .q-option__radio::after{content:'';width:7px;height:7px;border-radius:50%;background:#fff;display:block}
+    .q-option__text{font-size:15px;font-weight:500;color:var(--text)}
+    .q-progress{display:flex;gap:6px;margin-bottom:32px}
+    .q-dot{height:4px;flex:1;border-radius:var(--radius-full);background:var(--border);transition:var(--transition)}
+    .q-dot.done{background:var(--primary)}
+    .q-dot.active{background:var(--accent)}
+    .q-nav{display:flex;justify-content:flex-end;margin-top:28px}
+    .q-btn-next{padding:12px 28px;background:linear-gradient(135deg,var(--primary) 0%,var(--primary-light) 100%);color:#fff;border:none;border-radius:var(--radius-md);font-weight:700;font-size:15px;cursor:pointer;transition:var(--transition);font-family:inherit;display:flex;align-items:center;gap:8px}
+    .q-btn-next:hover{transform:translateY(-2px);box-shadow:0 8px 24px var(--primary-glow)}
+    .q-btn-next:disabled{opacity:.45;cursor:not-allowed;transform:none}
+
+    .q-result{display:none;text-align:center;padding:8px 0}
+    .q-result.show{display:block;animation:fadeIn .4s ease}
+    .q-result__icon{width:72px;height:72px;background:linear-gradient(135deg,var(--success),#22c55e);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;margin:0 auto 24px;font-size:2rem}
+    .q-result h3{font-size:1.375rem;color:var(--secondary);margin-bottom:12px}
+    .q-result p{color:var(--text-muted);margin-bottom:28px;font-size:15px;line-height:1.6}
+
+    @media(max-width:640px){
+      .qualificacao-header{padding:28px 24px}
+      .qualificacao-body{padding:28px 24px}
+    }
+
+    /* CTA FINAL */
+    .cta-section{position:relative;padding:96px 0;overflow:hidden}
+    .cta-section__bg{position:absolute;inset:0;background:linear-gradient(135deg,var(--secondary) 0%,#0a1f4d 50%,var(--primary-dark) 100%)}
+    .cta-section__pattern{position:absolute;inset:0;opacity:.06;background-image:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+    .cta-section .container{position:relative;z-index:1;text-align:center}
+    .cta-section h2{color:#fff;font-size:clamp(1.75rem,3vw,2.5rem);margin-bottom:16px}
+    .cta-section p{color:rgba(248,250,252,.7);font-size:1.0625rem;margin-bottom:40px;max-width:560px;margin-left:auto;margin-right:auto}
+    .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .cta-accent{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:48px;flex-wrap:wrap}
+    .cta-accent__item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.6);font-size:13px;font-weight:500}
+    .cta-accent__item svg{color:var(--accent)}
+
+    /* FOOTER */
+    .lp-footer{background:var(--secondary);color:rgba(248,250,252,.55);padding:56px 0 0}
+    .lp-footer__content{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .lp-footer__logo-text{font-size:1.375rem;font-weight:800;color:#fff;letter-spacing:-.02em}
+    .lp-footer__logo-text span{color:var(--accent)}
+    .lp-footer__brand p{margin:12px 0 20px;font-size:14px;line-height:1.7;max-width:280px}
+    .lp-footer__social{display:inline-flex;align-items:center;gap:10px;color:rgba(248,250,252,.75);font-size:14px;font-weight:500;padding:10px 16px;background:rgba(255,255,255,.06);border-radius:var(--radius-md);border:1px solid rgba(255,255,255,.08);transition:var(--transition)}
+    .lp-footer__social:hover{background:rgba(255,255,255,.1);color:#fff}
+    .lp-footer__links h4,.lp-footer__contact h4{color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px}
+    .lp-footer__links a{display:block;color:rgba(248,250,252,.55);font-size:14px;margin-bottom:12px;transition:var(--transition)}
+    .lp-footer__links a:hover{color:#fff;padding-left:4px}
+    .lp-footer__contact p{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.5;margin-bottom:12px}
+    .lp-footer__contact svg{flex-shrink:0;margin-top:2px;color:var(--accent)}
+    .lp-footer__bottom{text-align:center;padding:20px 0;font-size:12px;color:rgba(248,250,252,.3)}
+    @media(max-width:768px){.lp-footer__content{grid-template-columns:1fr;gap:32px}}
+
+    /* FLOAT WHATSAPP */
+    .wpp-float{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;align-items:center;gap:12px;text-decoration:none}
+    .wpp-float__btn{width:58px;height:58px;background:var(--whatsapp);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 6px 24px rgba(37,211,102,.45);transition:var(--transition)}
+    .wpp-float:hover .wpp-float__btn{transform:scale(1.08);box-shadow:0 8px 32px rgba(37,211,102,.55)}
+    .wpp-float__label{background:#fff;color:var(--text);font-size:13px;font-weight:600;padding:8px 14px;border-radius:var(--radius-full);box-shadow:var(--shadow-md);white-space:nowrap;opacity:0;transform:translateX(10px);transition:var(--transition)}
+    .wpp-float:hover .wpp-float__label{opacity:1;transform:translateX(0)}
+    @media(max-width:768px){.wpp-float__label{display:none}.wpp-float{bottom:16px;right:16px}}
+
+    /* ANIMATIONS */
+    .fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER FIXO -->
+  <header class="lp-header" id="lp-header">
+    <div class="container">
+      <a href="https://www.bragancaveiculos.com.br/" class="lp-logo" target="_blank">
+        <div>
+          <div class="lp-logo__text">Bragança <span>Veículos</span></div>
+          <div class="lp-logo__sub">Bragança Paulista — SP</div>
+        </div>
+      </a>
+      <div class="lp-header__cta">
+        <a href="tel:+5511932069533" class="btn btn-outline" style="font-size:13px;padding:10px 18px">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (11) 9 3206-9533
+        </a>
+        <a href="#qualificacao" class="btn btn-primary">Agendar Visita</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================
+       HERO
+  ================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__grid-pattern"></div>
+    <div class="hero__glow"></div>
+    <div class="hero__glow2"></div>
+    <div class="container">
+      <div class="hero__content fade-up">
+        <div class="hero__eyebrow">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Multimarcas · Bragança Paulista/SP
+        </div>
+        <h1 class="hero__title">
+          Troque seu veículo<br/>
+          <span>com mais segurança</span><br/>
+          e as melhores condições.
+        </h1>
+        <p class="hero__subtitle">
+          Mais de 200 veículos disponíveis, avaliação do seu usado e análise personalizada com mais de 15 bancos parceiros.
+        </p>
+        <div class="hero__actions">
+          <a href="#qualificacao" class="btn btn-primary btn-xl" onclick="fbq && fbq('track','Lead')">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Quero Agendar Minha Visita
+          </a>
+          <a href="tel:+5511932069533" class="btn btn-outline btn-lg">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Ligar Agora
+          </a>
+        </div>
+        <div class="hero__trust">
+          <div class="trust-item">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            +8 anos de mercado
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            +3.000 veículos vendidos
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            +200 veículos em estoque
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            +15 bancos parceiros
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual fade-up" style="transition-delay:.2s">
+        <div class="hero__image-wrap">
+          <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=900&q=80" alt="Showroom Bragança Veículos" loading="eager" />
+          <div class="hero__badge">Estoque disponível</div>
+        </div>
+        <div class="hero__stats-float">
+          <div class="stat-item">
+            <div class="stat-value">+200</div>
+            <div class="stat-label">Veículos em estoque</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+15</div>
+            <div class="stat-label">Bancos parceiros</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+8</div>
+            <div class="stat-label">Anos de mercado</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+3k</div>
+            <div class="stat-label">Veículos vendidos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       COMO FUNCIONA
+  ================================ -->
+  <section class="section steps-section">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__eyebrow">Processo simples e transparente</span>
+        <h2 class="section__title">Como <span>funciona</span> na prática</h2>
+        <p class="section__subtitle">Do agendamento à entrega, cada etapa é pensada para encontrar as melhores condições para o seu perfil.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item fade-up">
+          <div class="step-number">01</div>
+          <div class="step-title">Agende seu atendimento</div>
+          <div class="step-desc">Escolha o melhor horário e venha à nossa loja em Bragança Paulista.</div>
+        </div>
+        <div class="step-item fade-up" style="transition-delay:.1s">
+          <div class="step-number">02</div>
+          <div class="step-title">Traga seu veículo para avaliação</div>
+          <div class="step-desc">Avaliamos seu usado na hora, com laudo transparente e sem custo.</div>
+        </div>
+        <div class="step-item fade-up" style="transition-delay:.15s">
+          <div class="step-number">03</div>
+          <div class="step-title">Definimos sua estratégia</div>
+          <div class="step-desc">Entrada, parcela e forma de pagamento adequadas à sua realidade.</div>
+        </div>
+        <div class="step-item fade-up" style="transition-delay:.2s">
+          <div class="step-number">04</div>
+          <div class="step-title">Consultamos os bancos</div>
+          <div class="step-desc">Mais de 15 bancos parceiros analisados simultaneamente para você.</div>
+        </div>
+        <div class="step-item fade-up" style="transition-delay:.25s">
+          <div class="step-number">05</div>
+          <div class="step-title">Apresentamos as melhores possibilidades</div>
+          <div class="step-desc">Você escolhe a proposta que faz mais sentido para o seu bolso.</div>
+        </div>
+      </div>
+      <div class="steps-note fade-up">
+        <p>💡 A <strong>análise presencial</strong> permite uma avaliação mais completa do seu perfil e amplia as possibilidades de encontrar condições adequadas para a sua realidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       VEÍCULOS
+  ================================ -->
+  <section class="section vehicles-section" id="estoque">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__eyebrow">+200 veículos disponíveis</span>
+        <h2 class="section__title">Veículos que você encontra<br/><span>na Bragança Veículos</span></h2>
+        <p class="section__subtitle">Seminovos selecionados, com procedência verificada e prontos para avaliação presencial.</p>
+      </div>
+      <div class="vehicles-tabs fade-up">
+        <button class="tab-btn active" onclick="filterVehicles(this,'all')">Todos</button>
+        <button class="tab-btn" onclick="filterVehicles(this,'suv')">SUVs</button>
+        <button class="tab-btn" onclick="filterVehicles(this,'sedan')">Sedans</button>
+        <button class="tab-btn" onclick="filterVehicles(this,'hatch')">Hatchs</button>
+        <button class="tab-btn" onclick="filterVehicles(this,'app')">Para Aplicativo</button>
+        <button class="tab-btn" onclick="filterVehicles(this,'familiar')">Familiares</button>
+        <button class="tab-btn" onclick="filterVehicles(this,'utilitario')">Utilitários</button>
+      </div>
+      <div class="vehicles-grid" id="vehicles-grid">
+        <!-- cards injetados via JS -->
+      </div>
+      <div style="text-align:center;margin-top:40px">
+        <a href="https://www.bragancaveiculos.com.br/" target="_blank" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Ver Todo o Estoque
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       DIFERENCIAIS
+  ================================ -->
+  <section class="section diferenciais-section">
+    <div class="container">
+      <div class="section__header fade-up" style="--text-muted:#fff">
+        <span class="section__eyebrow" style="background:rgba(245,183,49,.15);color:var(--accent)">Por que a Bragança Veículos?</span>
+        <h2 class="section__title" style="color:#fff">Diferenciais que fazem<br/><span style="color:var(--accent)">toda a diferença</span></h2>
+        <p class="section__subtitle" style="color:rgba(248,250,252,.65)">Mais de 8 anos cuidando da troca de veículo das famílias de Bragança Paulista e região.</p>
+      </div>
+      <div class="diferenciais-grid">
+        <div class="diferencial-card fade-up">
+          <div class="diferencial-card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+          </div>
+          <h3>+15 bancos parceiros</h3>
+          <p>Consultamos simultaneamente as melhores taxas do mercado para encontrar a opção ideal para o seu perfil.</p>
+        </div>
+        <div class="diferencial-card fade-up" style="transition-delay:.08s">
+          <div class="diferencial-card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Avaliação do usado na hora</h3>
+          <p>Traga seu veículo e saiba quanto ele vale ainda durante o atendimento. Sem burocracia, sem surpresas.</p>
+        </div>
+        <div class="diferencial-card fade-up" style="transition-delay:.16s">
+          <div class="diferencial-card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Atendimento consultivo</h3>
+          <p>Nosso time entende sua situação e apresenta as opções mais adequadas — sem pressão, com transparência.</p>
+        </div>
+        <div class="diferencial-card fade-up" style="transition-delay:.08s">
+          <div class="diferencial-card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="3" width="15" height="13" rx="1"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>+200 veículos em estoque</h3>
+          <p>SUVs, sedans, hatchs, utilitários e mais — todos seminovos selecionados, com procedência verificada.</p>
+        </div>
+        <div class="diferencial-card fade-up" style="transition-delay:.16s">
+          <div class="diferencial-card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3>Entrada em até 18x no cartão</h3>
+          <p>Facilite sua entrada parcelando em até 18x no cartão de crédito. Não trabalhamos com promissória.</p>
+        </div>
+        <div class="diferencial-card fade-up" style="transition-delay:.24s">
+          <div class="diferencial-card__icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Processo transparente e presencial</h3>
+          <p>Aqui você vê tudo de perto — avaliação, documentação e negociação com total clareza e segurança.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       PROVA SOCIAL
+  ================================ -->
+  <section class="section social-section" id="avaliacoes">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__eyebrow">Quem já trocou com a gente</span>
+        <h2 class="section__title">Avaliações de quem <span>confia na Bragança</span></h2>
+        <p class="section__subtitle">Mais de 3.000 famílias já encontraram as melhores condições presencialmente.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card fade-up">
+          <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="review-text">"Atendimento impecável. Trouxe meu carro, avaliaram na hora e saí com um SUV bem melhor. Tudo transparente do início ao fim."</p>
+          <div class="review-author">
+            <div class="review-author__avatar">RL</div>
+            <div>
+              <div class="review-author__name">Rodrigo Lima</div>
+              <div class="review-author__tag">Avaliação Google · Bragança Paulista</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up" style="transition-delay:.1s">
+          <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="review-text">"Achei que seria difícil conseguir financiamento, mas eles consultaram vários bancos e encontraram uma parcela que cabia no meu orçamento."</p>
+          <div class="review-author">
+            <div class="review-author__avatar">CF</div>
+            <div>
+              <div class="review-author__name">Camila Fernandes</div>
+              <div class="review-author__tag">Avaliação Google · Atibaia</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card fade-up" style="transition-delay:.2s">
+          <div class="review-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+          <p class="review-text">"Uso o veículo para aplicativo e eles me indicaram os melhores modelos pra isso. Estoque enorme, saí satisfeito e dentro do meu planejamento."</p>
+          <div class="review-author">
+            <div class="review-author__avatar">MS</div>
+            <div>
+              <div class="review-author__name">Marcos Silva</div>
+              <div class="review-author__tag">Avaliação Google · Bragança Paulista</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="google-badge fade-up" style="margin-top:32px">
+        <div class="google-badge__icon">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M21.35 11.1H12.18V13.83H18.69C18.36 17.64 15.19 19.27 12.19 19.27C8.36 19.27 5 16.25 5 12C5 7.9 8.2 4.73 12.2 4.73C15.29 4.73 17.1 6.7 17.1 6.7L19 4.72C19 4.72 16.56 2 12.1 2C6.42 2 2.03 6.8 2.03 12C2.03 17.05 6.16 22 12.25 22C17.6 22 21.5 18.33 21.5 12.91C21.5 11.76 21.35 11.1 21.35 11.1Z"/></svg>
+        </div>
+        <div class="google-badge__text"><strong>Avaliação 4.9 ★</strong> no Google · mais de 200 avaliações</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       QUALIFICAÇÃO
+  ================================ -->
+  <section class="section" id="qualificacao" style="background:var(--surface-muted)">
+    <div class="container">
+      <div class="section__header fade-up">
+        <span class="section__eyebrow">Agende sua visita</span>
+        <h2 class="section__title">Descubra suas <span>reais possibilidades</span></h2>
+        <p class="section__subtitle">Responda 4 perguntas rápidas para que nossa equipe possa preparar um atendimento mais direcionado ao seu perfil.</p>
+      </div>
+      <div class="qualificacao-wrap fade-up">
+        <div class="qualificacao-header">
+          <h3>Pré-atendimento rápido</h3>
+          <p>Leva menos de 1 minuto · Sem compromisso</p>
+        </div>
+        <div class="qualificacao-body">
+          <!-- Barra de progresso -->
+          <div class="q-progress" id="q-progress">
+            <div class="q-dot active" id="dot-0"></div>
+            <div class="q-dot" id="dot-1"></div>
+            <div class="q-dot" id="dot-2"></div>
+            <div class="q-dot" id="dot-3"></div>
+          </div>
+
+          <!-- Passo 1 -->
+          <div class="q-step active" id="step-0">
+            <div class="q-step__label">Pergunta 1 de 4</div>
+            <div class="q-step__question">Você possui veículo para troca?</div>
+            <div class="q-options">
+              <div class="q-option" onclick="selectOption(this,0,'Sim')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">✅ Sim, tenho veículo para troca</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,0,'Não')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">❌ Não, farei apenas financiamento</div>
+              </div>
+            </div>
+            <div class="q-nav"><button class="q-btn-next" id="next-0" disabled onclick="nextStep(1)">Continuar <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button></div>
+          </div>
+
+          <!-- Passo 2 -->
+          <div class="q-step" id="step-1">
+            <div class="q-step__label">Pergunta 2 de 4</div>
+            <div class="q-step__question">Quanto pretende investir como entrada?</div>
+            <div class="q-options">
+              <div class="q-option" onclick="selectOption(this,1,'Entre R$ 10.000 e R$ 20.000')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Entre R$ 10.000 e R$ 20.000</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,1,'Entre R$ 20.000 e R$ 30.000')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Entre R$ 20.000 e R$ 30.000</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,1,'Acima de R$ 30.000')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Acima de R$ 30.000</div>
+              </div>
+            </div>
+            <div class="q-nav"><button class="q-btn-next" id="next-1" disabled onclick="nextStep(2)">Continuar <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button></div>
+          </div>
+
+          <!-- Passo 3 -->
+          <div class="q-step" id="step-2">
+            <div class="q-step__label">Pergunta 3 de 4</div>
+            <div class="q-step__question">Qual parcela seria confortável para você?</div>
+            <div class="q-options">
+              <div class="q-option" onclick="selectOption(this,2,'Entre R$ 1.000 e R$ 1.500')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Entre R$ 1.000 e R$ 1.500</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,2,'Entre R$ 1.500 e R$ 2.000')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Entre R$ 1.500 e R$ 2.000</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,2,'Entre R$ 2.000 e R$ 3.000')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Entre R$ 2.000 e R$ 3.000</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,2,'Acima de R$ 3.000')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">Acima de R$ 3.000</div>
+              </div>
+            </div>
+            <div class="q-nav"><button class="q-btn-next" id="next-2" disabled onclick="nextStep(3)">Continuar <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button></div>
+          </div>
+
+          <!-- Passo 4 -->
+          <div class="q-step" id="step-3">
+            <div class="q-step__label">Pergunta 4 de 4</div>
+            <div class="q-step__question">Quando pretende trocar de veículo?</div>
+            <div class="q-options">
+              <div class="q-option" onclick="selectOption(this,3,'Imediatamente')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">🚀 Imediatamente</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,3,'Nos próximos 30 dias')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">📅 Nos próximos 30 dias</div>
+              </div>
+              <div class="q-option" onclick="selectOption(this,3,'Nos próximos 90 dias')">
+                <div class="q-option__radio"></div>
+                <div class="q-option__text">🗓️ Nos próximos 90 dias</div>
+              </div>
+            </div>
+            <div class="q-nav"><button class="q-btn-next" id="next-3" disabled onclick="finishQuiz()">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              Agendar via WhatsApp
+            </button></div>
+          </div>
+
+          <!-- Resultado -->
+          <div class="q-result" id="q-result">
+            <div class="q-result__icon">✓</div>
+            <h3>Ótimo! Suas informações foram registradas.</h3>
+            <p>Clique abaixo para ser direcionado ao WhatsApp da Bragança Veículos. Nossa equipe irá preparar um atendimento personalizado para o seu perfil.</p>
+            <a href="#" id="wpp-link" target="_blank" class="btn btn-whatsapp btn-xl" style="width:100%;justify-content:center" onclick="trackWhatsApp()">
+              <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+              Confirmar Agendamento no WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       CTA FINAL
+  ================================ -->
+  <section class="cta-section">
+    <div class="cta-section__bg"></div>
+    <div class="cta-section__pattern"></div>
+    <div class="container fade-up">
+      <h2>Descubra pessoalmente quais são as melhores possibilidades para sua próxima troca.</h2>
+      <p>Agende sua visita e converse com especialistas que irão analisar seu caso de forma personalizada.</p>
+      <div class="cta-buttons">
+        <a href="#qualificacao" class="btn btn-primary btn-xl">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agendar Visita Presencial
+        </a>
+        <a href="tel:+5511932069533" class="btn btn-outline btn-xl">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (11) 9 3206-9533
+        </a>
+      </div>
+      <div class="cta-accent">
+        <div class="cta-accent__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Av. José Gomes da Rocha Leal, 1267
+        </div>
+        <div class="cta-accent__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Seg–Sáb, 8h às 18h
+        </div>
+        <div class="cta-accent__item">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+          Bragança Paulista — SP
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       FOOTER
+  ================================ -->
+  <footer class="lp-footer">
+    <div class="container">
+      <div class="lp-footer__content">
+        <div class="lp-footer__brand">
+          <div class="lp-footer__logo-text">Bragança <span>Veículos</span></div>
+          <p>Multimarcas especializada em veículos seminovos selecionados. Mais de 8 anos conectando famílias ao veículo certo, com transparência e segurança.</p>
+          <a href="https://www.instagram.com/braganca_veiculos" target="_blank" class="lp-footer__social">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            @braganca_veiculos
+          </a>
+        </div>
+        <div class="lp-footer__links">
+          <h4>Links rápidos</h4>
+          <a href="https://www.bragancaveiculos.com.br/" target="_blank">Página Inicial</a>
+          <a href="https://www.bragancaveiculos.com.br/" target="_blank">Estoque Completo</a>
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#qualificacao">Agendar Visita</a>
+        </div>
+        <div class="lp-footer__contact">
+          <h4>Contato</h4>
+          <p>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.38 2 2 0 0 1 3.6 1.2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (11) 9 3206-9533
+          </p>
+          <p>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Av. José Gomes da Rocha Leal, 1267 — Bragança Paulista/SP
+          </p>
+          <p>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Seg–Sáb: 8h às 18h
+          </p>
+        </div>
+      </div>
+      <div class="lp-footer__bottom">
+        <p>© 2025 Bragança Veículos · Todos os direitos reservados · Av. José Gomes da Rocha Leal, 1267 — Bragança Paulista/SP</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5511932069533?text=Olá%2C%20gostaria%20de%20informações%20sobre%20os%20veículos%20da%20Bragança%20Veículos." target="_blank" class="wpp-float" aria-label="WhatsApp">
+    <div class="wpp-float__btn">
+      <svg width="26" height="26" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </div>
+    <div class="wpp-float__label">Falar no WhatsApp</div>
+  </a>
+
+  <!-- ================================
+       SCRIPTS
+  ================================ -->
+  <script>
+    // =================== VEHICLES DATA ===================
+    const vehicles = [
+      {cat:'suv',badge:'SUV',title:'Toyota Corolla Cross',desc:'SUV compacto premium, ideal para famílias que buscam conforto e tecnologia.', img:'https://images.unsplash.com/photo-1630897940949-35c5a24d0a9e?auto=format&fit=crop&w=600&q=75'},
+      {cat:'suv',badge:'SUV',title:'Jeep Compass',desc:'Conforto e desempenho off-road. Um dos SUVs mais requisitados do Brasil.',img:'https://images.unsplash.com/photo-1621929747188-0b4dc28498d2?auto=format&fit=crop&w=600&q=75'},
+      {cat:'sedan',badge:'Sedan',title:'Honda Civic',desc:'Espaçoso, econômico e elegante. Referência em sedans no mercado.',img:'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=75'},
+      {cat:'hatch',badge:'Hatch',title:'Volkswagen Polo',desc:'Hatch moderno com câmbio automático e central multimídia de série.',img:'https://images.unsplash.com/photo-1585503418537-88331351ad99?auto=format&fit=crop&w=600&q=75'},
+      {cat:'app',badge:'Aplicativo',title:'Chevrolet Onix',desc:'O queridinho dos motoristas de aplicativo. Econômico e fácil de manter.',img:'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=600&q=75'},
+      {cat:'familiar',badge:'Familiar',title:'Fiat Argo',desc:'Espaço de sobra, porta-malas generoso e custo-benefício imbatível.',img:'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=600&q=75'},
+      {cat:'utilitario',badge:'Utilitário',title:'Fiat Strada',desc:'Picape leve versátil para trabalho e lazer, com cabine dupla.',img:'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=75'},
+      {cat:'suv',badge:'SUV',title:'Hyundai Creta',desc:'Design moderno, câmbio automático e ótimo acabamento interno.',img:'https://images.unsplash.com/photo-1616789916664-ea6e2e5a8f28?auto=format&fit=crop&w=600&q=75'},
+      {cat:'sedan',badge:'Sedan',title:'Toyota Corolla',desc:'O sedan mais vendido do mundo. Confiabilidade e elegância.',img:'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=600&q=75'},
+    ];
+
+    function renderVehicles(filter){
+      const grid = document.getElementById('vehicles-grid');
+      const list = filter==='all' ? vehicles : vehicles.filter(v=>v.cat===filter);
+      grid.innerHTML = list.map(v=>`
+        <div class="vehicle-card fade-up visible">
+          <div class="vehicle-card__img">
+            <img src="${v.img}" alt="${v.title}" loading="lazy" />
+            <div class="vehicle-card__badge">${v.badge}</div>
+          </div>
+          <div class="vehicle-card__body">
+            <div class="vehicle-card__category">${v.badge}</div>
+            <h3 class="vehicle-card__title">${v.title}</h3>
+            <p class="vehicle-card__desc">${v.desc}</p>
+            <a href="#qualificacao" class="btn btn-primary vehicle-card__btn">
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Tenho Interesse
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterVehicles(btn, cat){
+      document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      renderVehicles(cat);
+    }
+
+    renderVehicles('all');
+
+    // =================== QUIZ ===================
+    const answers = ['','','',''];
+
+    function selectOption(el, step, value){
+      el.closest('.q-options').querySelectorAll('.q-option').forEach(o=>o.classList.remove('selected'));
+      el.classList.add('selected');
+      answers[step] = value;
+      document.getElementById('next-'+step).disabled = false;
+    }
+
+    function nextStep(to){
+      document.querySelectorAll('.q-step').forEach(s=>s.classList.remove('active'));
+      document.getElementById('step-'+to).classList.add('active');
+      // atualiza progresso
+      for(let i=0;i<4;i++){
+        const dot = document.getElementById('dot-'+i);
+        dot.classList.remove('active','done');
+        if(i<to) dot.classList.add('done');
+        else if(i===to) dot.classList.add('active');
+      }
+    }
+
+    function finishQuiz(){
+      if(!answers[3]) return;
+      const msg =
+        `Olá, gostaria de agendar uma visita na Bragança Veículos.%0A%0A` +
+        `Possuo veículo para troca: ${answers[0]}%0A` +
+        `Entrada pretendida: ${answers[1]}%0A` +
+        `Parcela desejada: ${answers[2]}%0A` +
+        `Prazo para troca: ${answers[3]}%0A%0A` +
+        `Gostaria de conhecer minhas possibilidades presencialmente.`;
+      document.getElementById('wpp-link').href = `https://wa.me/5511932069533?text=${msg}`;
+      document.querySelectorAll('.q-step').forEach(s=>s.classList.remove('active'));
+      document.getElementById('q-result').classList.add('show');
+      // marcar todos como done
+      for(let i=0;i<4;i++){
+        const dot = document.getElementById('dot-'+i);
+        dot.classList.remove('active');
+        dot.classList.add('done');
+      }
+    }
+
+    function trackWhatsApp(){
+      if(window.fbq) fbq('track','Contact');
+      if(window.gtag) gtag('event','conversion',{'send_to':'YOUR_AW_ID/CONVERSION_LABEL'});
+    }
+
+    // =================== HEADER SCROLL ===================
+    const header = document.getElementById('lp-header');
+    window.addEventListener('scroll',()=>{
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    },{passive:true});
+
+    // =================== FADE IN ON SCROLL ===================
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}});
+    },{threshold:.12});
+    document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
