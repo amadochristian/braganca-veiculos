@@ -398,7 +398,7 @@ const CONFIG = {
   sheetsCSV: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0mJBzshSuYBeWVWJAzc10fsM326Z8nDDhfEq03WxPgU86HXYwk8ih2u2ELciyMEyRGVZ_jCsWxQXa/pub?gid=0&single=true&output=csv',
 
   videosPath:  'videos/',
-  imagensPath: 'imagens/',
+  imagensPath: 'images/',
   defaultTime: 10,
 
   // 2) Crie conta gratuita em openweathermap.org, copie sua API Key:
@@ -651,7 +651,7 @@ let mediaTimer = null;
 // ou configure a planilha Google Sheets
 const DEMO_PLAYLIST = [
   // { tipo:'IMAGEM', arquivo:'imagens/promo01.jpg', tempo:8 },
-  // { tipo:'VIDEO',  arquivo:'videos/video01.mp4',  tempo:15 },
+   { tipo:'VIDEO',  arquivo:'/videos/video01.mp4',  tempo:15 },
 ];
 
 async function loadPlaylist() {
