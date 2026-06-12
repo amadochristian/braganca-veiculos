@@ -1,13 +1,18 @@
 {
   "playlist": [
     {
-      "tipo": "VIDEO",
-      "caminho": "videos/video1.mp4",
-      "tempo": 21
-    },
-    {
       "tipo": "IMAGEM", 
-      "caminho": "images/imagem1.jpg",
+      "caminho": "images/imagem1.png",
+      "tempo": 5
+    },
+        {
+      "tipo": "IMAGEM", 
+      "caminho": "images/imagem2.png",
+      "tempo": 5
+    },
+        {
+      "tipo": "IMAGEM", 
+      "caminho": "images/imagem3.png",
       "tempo": 5
     }
   ]

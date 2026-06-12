@@ -17,7 +17,6 @@
     --gray-dim:  #3d4f6e;
     --font:      'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 
-    /* Altura útil (sem rodapé) = 970px. Vídeo 9:16 → largura = 970*9/16 = 546px */
     --media-w: 546px;
     --footer-h: 110px;
     --content-h: calc(1080px - var(--footer-h));
@@ -37,15 +36,12 @@
 
   #app {
     display: grid;
-    /* Esquerda: restante | Centro: fixo 9:16 | Direita: restante */
     grid-template-columns: 1fr var(--media-w) 1fr;
     grid-template-rows: var(--content-h) var(--footer-h);
     width: 1920px; height: 1080px;
   }
 
-  /* ════════════════════════════
-     COLUNA ESQUERDA
-  ════════════════════════════ */
+  /* COLUNA ESQUERDA */
   #left {
     grid-column: 1; grid-row: 1;
     background: var(--surface);
@@ -129,9 +125,7 @@
     color:var(--gray); text-align:center;
   }
 
-  /* ════════════════════════════
-     COLUNA CENTRAL — 9:16
-  ════════════════════════════ */
+  /* COLUNA CENTRAL */
   #center {
     grid-column: 2; grid-row: 1;
     background: #000;
@@ -173,14 +167,19 @@
   #media-placeholder {
     width:100%; height:100%;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
-    gap:20px; color:var(--gray-dim);
+    gap:20px; color:var(--gray-dim); text-align: center;
+    background: linear-gradient(135deg, #0a0e15, #000);
+    z-index: 10;
   }
   #media-placeholder .ph-icon { font-size:80px; }
   #media-placeholder .ph-text { font-size:18px; letter-spacing:3px; text-transform:uppercase; }
+  #media-placeholder .ph-sub {
+    font-size: 13px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
 
-  /* ════════════════════════════
-     COLUNA DIREITA
-  ════════════════════════════ */
+  /* COLUNA DIREITA */
   #right {
     grid-column: 3; grid-row: 1;
     background: var(--surface);
@@ -260,9 +259,7 @@
   }
   #review-author { font-size:14px; color:var(--gray); margin-top:4px; }
 
-  /* ════════════════════════════
-     RODAPÉ
-  ════════════════════════════ */
+  /* RODAPÉ */
   #footer {
     grid-column: 1 / -1; grid-row: 2;
     background: var(--surface2); border-top: 1px solid var(--border);
@@ -299,10 +296,9 @@
 <body>
 <div id="app">
 
-  <!-- ═══════ ESQUERDA ═══════ -->
   <aside id="left">
     <div id="logo-wrap">
-      <img src="images/LOGO NOVO branco.png" alt="Bragança Veículos">
+      <img src="images/LOGO NOVO branco.png" alt="Bragança Veículos" onerror="this.src='https://placehold.co/240x80/042c9b/white?text=BV'">
       <div id="slogan">Aqui da negócio</div>
     </div>
 
@@ -340,17 +336,16 @@
     </div>
   </aside>
 
-  <!-- ═══════ CENTRAL ═══════ -->
   <main id="center">
-    <div id="media-placeholder">
-      <div class="ph-icon">🎬</div>
-      <div class="ph-text">Configure a playlist no playlist.json</div>
+    <div id="media-placeholder" style="display: flex;">
+      <div class="ph-icon">📁</div>
+      <div class="ph-text">Aguardando mídias</div>
+      <div class="ph-sub">Coloque seus arquivos nas pastas /videos/ e /images/</div>
     </div>
     <div id="center-overlay"></div>
     <div id="media-dots"></div>
   </main>
 
-  <!-- ═══════ DIREITA ═══════ -->
   <aside id="right">
     <div>
       <div class="section-label">🔥 Oferta em destaque</div>
@@ -398,9 +393,8 @@
     </div>
   </aside>
 
-  <!-- ═══════ RODAPÉ ═══════ -->
   <footer id="footer">
-    <img src="images/LOGO NOVO branco.png" alt="BV" id="footer-logo">
+    <img src="images/LOGO NOVO branco.png" alt="BV" id="footer-logo" onerror="this.style.display='none'">
     <div class="footer-sep"></div>
     <div id="ticker"><div id="ticker-inner"></div></div>
     <div class="footer-sep"></div>
@@ -413,11 +407,9 @@
 <script>
 'use strict';
 
-/* ══════════════════════════════════════
-   CONFIGURAÇÃO
-══════════════════════════════════════ */
+/* CONFIGURAÇÃO */
 const CONFIG = {
-  playlistJSON: 'playlist.json',  // Arquivo JSON com a playlist
+  playlistJSON: 'playlist.json',
   weatherKey:  'c21fd50009eb2f0ef37c6f5ee8c03927',
   weatherCity: 'Bragança Paulista,BR',
   weatherInterval: 30 * 60 * 1000,
@@ -425,16 +417,14 @@ const CONFIG = {
   estoqueURL:  'https://www.bragancaveiculos.com.br/catalogo.html',
 };
 
-/* ══════════════════════════════════════
-   DADOS ESTÁTICOS
-══════════════════════════════════════ */
+/* DADOS ESTÁTICOS */
 const PROMOS = [
-  { title:'Financiamento facilitado',        desc:'Aprovação na hora — sem burocracia' },
-  { title:'Taxa a partir de 2% a.m.',     desc:'Condições especiais para você' },
-  { title:'Aceitamos seu usado na troca',     desc:'Avaliação com o melhor preço do mercado' },
-  { title:'Entrada facilitada',              desc:'Parcelas que cabem no seu bolso' },
-  { title:'Garantia da loja',                desc:'Segurança total na sua compra' },
-  { title:'Laudo cautelar aprovado',         desc:'Transparência em todos os veículos' },
+  { title:'Financiamento facilitado', desc:'Aprovação na hora — sem burocracia' },
+  { title:'Taxa a partir de 2% a.m.', desc:'Condições especiais para você' },
+  { title:'Aceitamos seu usado na troca', desc:'Avaliação com o melhor preço do mercado' },
+  { title:'Entrada facilitada', desc:'Parcelas que cabem no seu bolso' },
+  { title:'Garantia da loja', desc:'Segurança total na sua compra' },
+  { title:'Laudo cautelar aprovado', desc:'Transparência em todos os veículos' },
 ];
 
 const MSGS = [
@@ -466,9 +456,7 @@ const TICKER_ITEMS = [
   '+220 veículos em estoque esperando por você',
 ];
 
-/* ══════════════════════════════════════
-   RELÓGIO
-══════════════════════════════════════ */
+/* RELÓGIO */
 function updateClock() {
   const now = new Date();
   document.getElementById('clock').textContent =
@@ -481,9 +469,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-/* ══════════════════════════════════════
-   CLIMA
-══════════════════════════════════════ */
+/* CLIMA */
 const W_ICONS = {
   '01d':'☀️','01n':'🌙','02d':'⛅','02n':'⛅','03d':'🌥️','03n':'🌥️',
   '04d':'☁️','04n':'☁️','09d':'🌧️','09n':'🌧️','10d':'🌦️','10n':'🌧️',
@@ -511,9 +497,7 @@ async function fetchWeather() {
 fetchWeather();
 setInterval(fetchWeather, CONFIG.weatherInterval);
 
-/* ══════════════════════════════════════
-   TRÂNSITO
-══════════════════════════════════════ */
+/* TRÂNSITO */
 const TRAFFIC = [
   {id:'tr0',base:22},{id:'tr1',base:30},{id:'tr2',base:55},{id:'tr3',base:80}
 ];
@@ -529,9 +513,7 @@ function updateTraffic() {
 updateTraffic();
 setInterval(updateTraffic, 5*60*1000);
 
-/* ══════════════════════════════════════
-   QR CODES
-══════════════════════════════════════ */
+/* QR CODES */
 function makeQR(elId, url) {
   const el = document.getElementById(elId);
   if (!el || typeof QRCode === 'undefined') return;
@@ -543,9 +525,7 @@ window.addEventListener('load', function() {
   setTimeout(function() { makeQR('qr-whatsapp',CONFIG.whatsappURL); makeQR('qr-estoque',CONFIG.estoqueURL); }, 600);
 });
 
-/* ══════════════════════════════════════
-   INDICADORES
-══════════════════════════════════════ */
+/* INDICADORES */
 const INDS = [
   {id:'n1',target:4356,pre:'+'},{id:'n2',target:8,pre:''},{id:'n3',target:16,pre:'+'},{id:'n4',target:220,pre:''}
 ];
@@ -561,9 +541,7 @@ function runIndicators() { INDS.forEach(i=>{ const el=document.getElementById(i.
 setTimeout(runIndicators, 900);
 setInterval(runIndicators, 10*60*1000);
 
-/* ══════════════════════════════════════
-   PROMOÇÕES
-══════════════════════════════════════ */
+/* PROMOÇÕES */
 let pi=0;
 function nextPromo() {
   const p=PROMOS[pi++%PROMOS.length];
@@ -573,9 +551,7 @@ function nextPromo() {
 }
 nextPromo(); setInterval(nextPromo,8000);
 
-/* ══════════════════════════════════════
-   MENSAGENS
-══════════════════════════════════════ */
+/* MENSAGENS */
 let mi=0;
 function nextMsg() {
   const m=MSGS[mi++%MSGS.length], t=document.getElementById('msg-text');
@@ -584,9 +560,7 @@ function nextMsg() {
 }
 nextMsg(); setInterval(nextMsg,5000);
 
-/* ══════════════════════════════════════
-   AVALIAÇÕES
-══════════════════════════════════════ */
+/* AVALIAÇÕES */
 let ri=0;
 function nextReview() {
   const r=REVIEWS[ri++%REVIEWS.length], t=document.getElementById('review-text');
@@ -595,17 +569,13 @@ function nextReview() {
 }
 nextReview(); setInterval(nextReview,9000);
 
-/* ══════════════════════════════════════
-   TICKER
-══════════════════════════════════════ */
+/* TICKER */
 (function(){
   const inner=document.getElementById('ticker-inner');
   inner.innerHTML=[...TICKER_ITEMS,...TICKER_ITEMS].map(t=>'<span class="ticker-item">'+t+'</span>').join('');
 })();
 
-/* ══════════════════════════════════════
-   PLAYER DE MÍDIA (JSON SIMPLES)
-══════════════════════════════════════ */
+/* PLAYER DE MÍDIA */
 let playlist=[], currentIdx=0, slots=[], mediaTimer=null;
 
 async function loadPlaylist() {
@@ -616,24 +586,42 @@ async function loadPlaylist() {
     const data = await response.json();
     
     if (data.playlist && data.playlist.length) {
-      playlist = data.playlist;
-      console.log('✅ Playlist carregada:', playlist.length, 'itens');
-      initPlayer();
-    } else {
-      console.warn('⚠️ Playlist vazia ou sem itens');
-      showPlaceholder();
+      // Filtrar apenas itens válidos
+      const validItems = data.playlist.filter(item => {
+        if (!item.caminho || item.caminho.trim() === '') return false;
+        return true;
+      });
+      
+      if (validItems.length) {
+        playlist = validItems;
+        console.log('✅ Playlist carregada:', playlist.length, 'itens');
+        console.table(playlist.map(p => ({ tipo: p.tipo, caminho: p.caminho, tempo: p.tempo })));
+        initPlayer();
+        return;
+      }
     }
+    
+    console.warn('⚠️ Nenhum item válido na playlist');
+    showPlaceholder();
+    
   } catch(e) { 
-    console.error('❌ Erro ao carregar playlist.json:', e);
+    console.error('❌ Erro ao carregar playlist.json:', e.message);
+    console.log('📝 Certifique-se que o arquivo playlist.json existe e está no formato correto');
     showPlaceholder();
   }
 }
 
 function showPlaceholder() {
   const placeholder = document.getElementById('media-placeholder');
-  if (placeholder) placeholder.style.display = 'flex';
+  if (placeholder) {
+    placeholder.style.display = 'flex';
+    placeholder.innerHTML = `
+      <div class="ph-icon">🎬</div>
+      <div class="ph-text">Playlist não configurada</div>
+      <div class="ph-sub">Crie o arquivo playlist.json com suas mídias</div>
+    `;
+  }
   
-  // Limpar player existente
   if (slots.length) {
     slots.forEach(s => {
       const v = s.querySelector('video');
@@ -645,7 +633,8 @@ function showPlaceholder() {
       if (s && s.remove) s.remove();
     });
     slots = [];
-    document.getElementById('media-dots').innerHTML = '';
+    const dotsEl = document.getElementById('media-dots');
+    if (dotsEl) dotsEl.innerHTML = '';
   }
 }
 
@@ -665,14 +654,14 @@ function initPlayer() {
     }
   });
   slots = [];
-  dotsEl.innerHTML = '';
+  if (dotsEl) dotsEl.innerHTML = '';
   
   if (!playlist.length) {
-    placeholder.style.display = 'flex';
+    if (placeholder) placeholder.style.display = 'flex';
     return;
   }
   
-  placeholder.style.display = 'none';
+  if (placeholder) placeholder.style.display = 'none';
 
   playlist.forEach(function(item, i) {
     const slot = document.createElement('div');
@@ -680,21 +669,22 @@ function initPlayer() {
     
     if (item.tipo === 'VIDEO') {
       const v = document.createElement('video');
-      v.src = item.caminho + '?t=' + Date.now();
+      v.src = item.caminho;
       v.muted = true;
       v.playsInline = true;
       v.preload = 'auto';
       v.loop = false;
       
       v.onerror = () => console.error('❌ Erro no vídeo:', item.caminho);
-      v.oncanplay = () => console.log('✅ Vídeo pronto:', item.caminho);
+      v.oncanplay = () => console.log('✅ Vídeo carregado:', item.caminho);
       
       slot.appendChild(v);
     } else {
       const img = document.createElement('img');
-      img.src = item.caminho + '?t=' + Date.now();
+      img.src = item.caminho;
       img.alt = '';
       img.onerror = () => console.error('❌ Erro na imagem:', item.caminho);
+      img.onload = () => console.log('✅ Imagem carregada:', item.caminho);
       slot.appendChild(img);
     }
     
@@ -703,7 +693,7 @@ function initPlayer() {
     
     const dot = document.createElement('div');
     dot.className = 'dot';
-    dotsEl.appendChild(dot);
+    if (dotsEl) dotsEl.appendChild(dot);
   });
   
   showMedia(0);
@@ -714,19 +704,17 @@ function showMedia(idx) {
   
   clearTimeout(mediaTimer);
   
-  // Parar todos os vídeos
-  slots.forEach(s => {
+  slots.forEach((s, i) => {
     s.classList.remove('active');
     const v = s.querySelector('video');
     if (v) {
       v.pause();
-      if (v !== slots[idx]?.querySelector('video')) {
+      if (i !== idx) {
         v.currentTime = 0;
       }
     }
   });
   
-  // Atualizar dots
   document.querySelectorAll('.dot').forEach((d, i) => {
     d.classList.toggle('active', i === idx);
   });
@@ -739,41 +727,46 @@ function showMedia(idx) {
   const vid = slot.querySelector('video');
   
   if (vid) {
-    setTimeout(() => {
-      vid.play().catch(err => {
-        console.error('❌ Erro ao reproduzir vídeo:', err);
-        // Se falhar, pular para o próximo
-        if (err.name !== 'NotAllowedError') {
-          clearTimeout(mediaTimer);
-          setTimeout(() => goNext(), 1000);
-        }
+    // Limpar listeners antigos
+    vid.removeEventListener('ended', onVideoEnd);
+    
+    const playPromise = vid.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(err => {
+        console.error('❌ Erro ao reproduzir:', item.caminho, err.message);
+        // Tentar recarregar o vídeo
+        vid.load();
+        setTimeout(() => {
+          vid.play().catch(e => console.error('❌ Falha na segunda tentativa:', e.message));
+        }, 500);
       });
-    }, 100);
+    }
     
-    const timerDuration = (item.tempo || 10) * 1000;
-    mediaTimer = setTimeout(() => goNext(), timerDuration);
+    const duration = (item.tempo || 10) * 1000;
+    mediaTimer = setTimeout(() => goNext(), duration);
     
-    const onEnd = function() {
-      vid.removeEventListener('ended', onEnd);
+    function onVideoEnd() {
+      vid.removeEventListener('ended', onVideoEnd);
       clearTimeout(mediaTimer);
       goNext();
-    };
-    vid.addEventListener('ended', onEnd);
+    }
+    vid.addEventListener('ended', onVideoEnd);
     
   } else {
-    // Para imagens
-    const timerDuration = (item.tempo || 8) * 1000;
-    mediaTimer = setTimeout(() => goNext(), timerDuration);
+    const duration = (item.tempo || 8) * 1000;
+    mediaTimer = setTimeout(() => goNext(), duration);
   }
 }
 
 function goNext() {
-  showMedia((currentIdx + 1) % playlist.length);
+  if (playlist.length) {
+    showMedia((currentIdx + 1) % playlist.length);
+  }
 }
 
-// Carregar playlist ao iniciar e recarregar a cada 5 minutos
+// Iniciar
 loadPlaylist();
-setInterval(loadPlaylist, 5 * 60 * 1000);
+setInterval(loadPlaylist, 30 * 1000); // Recarregar a cada 30 segundos para testar
 </script>
 </body>
 </html>
