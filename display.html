@@ -635,49 +635,170 @@ async function loadPlaylist() {
   } catch(e){ console.warn('Planilha:',e); }
 }
 
-function initPlayer() {
-  const container=document.getElementById('center');
-  const placeholder=document.getElementById('media-placeholder');
-  const dotsEl=document.getElementById('media-dots');
-  slots.forEach(s=>s.remove()); slots=[]; dotsEl.innerHTML='';
-  if(!playlist.length){ placeholder.style.display='flex'; return; }
-  placeholder.style.display='none';
+async function loadPlaylist() {
+  try {
+    const csv = await (await fetch(CONFIG.sheetsCSV + '&t=' + Date.now())).text();
+    console.log('📊 CSV recebido:', csv);
+    
+    const lines = csv.trim().split('\n').slice(1);
+    const items = [];
+    
+    lines.forEach(function(line) {
+      const cols = line.split(',').map(c => c.trim().replace(/^"|"$/g, ''));
+      console.log('📝 Linha processada:', cols);
+      
+      if (!cols[0] || cols[0].toUpperCase() !== 'SIM') return;
+      
+      const tipo = (cols[1] || '').toUpperCase();
+      const arquivo = cols[2] || '';
+      const tempo = parseInt(cols[3]) || CONFIG.defaultTime;
+      
+      if (!arquivo) return;
+      
+      const path = tipo === 'VIDEO' ? CONFIG.videosPath + arquivo : CONFIG.imagensPath + arquivo;
+      console.log(`🎬 Adicionado: ${tipo} - ${path}`);
+      items.push({ tipo, arquivo: path, tempo });
+    });
+    
+    console.log('📋 Playlist final:', items);
+    
+    if (items.length) {
+      playlist = items;
+      initPlayer();
+    } else {
+      console.warn('⚠️ Nenhum item válido na playlist');
+    }
+  } catch(e) { 
+    console.error('❌ Erro ao carregar planilha:', e); 
+  }
+}
 
-  playlist.forEach(function(item,i){
-    const slot=document.createElement('div');
-    slot.className='media-slot';
-    if(item.tipo==='VIDEO'){
-      const v=document.createElement('video');
-      v.src=item.arquivo; v.muted=true; v.playsInline=true; v.preload='auto'; v.loop=false;
+function initPlayer() {
+  const container = document.getElementById('center');
+  const placeholder = document.getElementById('media-placeholder');
+  const dotsEl = document.getElementById('media-dots');
+  
+  // Limpar slots anteriores
+  slots.forEach(s => {
+    if (s && s.remove) s.remove();
+    const v = s?.querySelector('video');
+    if (v) {
+      v.pause();
+      v.removeAttribute('src');
+      v.load();
+    }
+  });
+  slots = [];
+  dotsEl.innerHTML = '';
+  
+  if (!playlist.length) {
+    placeholder.style.display = 'flex';
+    return;
+  }
+  placeholder.style.display = 'none';
+
+  playlist.forEach(function(item, i) {
+    const slot = document.createElement('div');
+    slot.className = 'media-slot';
+    
+    if (item.tipo === 'VIDEO') {
+      const v = document.createElement('video');
+      // 🔧 SOLUÇÃO: Adicionar timestamp para evitar cache problemático
+      v.src = item.arquivo;
+      v.muted = true;
+      v.playsInline = true;
+      v.preload = 'auto';
+      v.loop = false;
+
+      
+      // Eventos de debug
+      v.onerror = (e) => console.error('❌ Erro no vídeo:', item.arquivo, e);
+      v.oncanplay = () => console.log('✅ Vídeo pronto:', item.arquivo);
+      
       slot.appendChild(v);
     } else {
-      const img=document.createElement('img');
-      img.src=item.arquivo; img.alt='';
+      const img = document.createElement('img');
+      img.src = item.arquivo + '?t=' + Date.now();
+      img.alt = '';
+      img.onerror = () => console.error('❌ Erro na imagem:', item.arquivo);
       slot.appendChild(img);
     }
-    container.insertBefore(slot,document.getElementById('center-overlay'));
+    
+    container.insertBefore(slot, document.getElementById('center-overlay'));
     slots.push(slot);
-    const dot=document.createElement('div'); dot.className='dot'; dotsEl.appendChild(dot);
+    
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    dotsEl.appendChild(dot);
   });
+  
   showMedia(0);
 }
 
 function showMedia(idx) {
-  if(!slots.length) return;
+  if (!slots.length) return;
+  
   clearTimeout(mediaTimer);
-  slots.forEach(s=>{ s.classList.remove('active'); const v=s.querySelector('video'); if(v){v.pause();v.currentTime=0;} });
-  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
-  currentIdx=idx;
-  const slot=slots[idx], item=playlist[idx];
+  
+  // Parar todos os vídeos
+  slots.forEach(s => {
+    s.classList.remove('active');
+    const v = s.querySelector('video');
+    if (v) {
+      v.pause();
+      // Não resetar o currentTime completamente para evitar recarregamento
+      if (v !== slots[idx]?.querySelector('video')) {
+        v.currentTime = 0;
+      }
+    }
+  });
+  
+  // Atualizar dots
+  document.querySelectorAll('.dot').forEach((d, i) => {
+    d.classList.toggle('active', i === idx);
+  });
+  
+  currentIdx = idx;
+  const slot = slots[idx];
+  const item = playlist[idx];
+  
   slot.classList.add('active');
-  const vid=slot.querySelector('video');
-  if(vid){
-    vid.play().catch(()=>{});
-    const sg=setTimeout(goNext,item.tempo*1000+4000);
-    vid.addEventListener('ended',function onEnd(){ vid.removeEventListener('ended',onEnd); clearTimeout(sg); goNext(); });
-    mediaTimer=sg;
+  const vid = slot.querySelector('video');
+  
+  if (vid) {
+    // 🔧 Forçar recarregamento do vídeo se necessário
+    const currentSrc = vid.src;
+    
+    // Pequeno delay para garantir que o load foi processado
+    setTimeout(() => {
+      vid.play().catch(err => {
+        console.error('❌ Erro ao reproduzir:', err);
+        // Tentar recarregar o src se falhar
+        if (err.name === 'NotAllowedError') {
+          console.log('⏳ Aguardando interação do usuário...');
+        } else if (err.name === 'NotSupportedError') {
+          vid.src = currentSrc + '&retry=' + Date.now();
+          vid.load();
+          vid.play().catch(e => console.error('❌ Falha na segunda tentativa:', e));
+        }
+      });
+    }, 100);
+    
+    // Timer para próximo
+    const timerDuration = item.tempo * 1000;
+    mediaTimer = setTimeout(() => goNext(), timerDuration);
+    
+    // Evento de fim do vídeo
+    const onEnd = function() {
+      vid.removeEventListener('ended', onEnd);
+      clearTimeout(mediaTimer);
+      goNext();
+    };
+    vid.addEventListener('ended', onEnd);
+    
   } else {
-    mediaTimer=setTimeout(goNext,item.tempo*1000);
+    // Para imagens
+    mediaTimer = setTimeout(() => goNext(), item.tempo * 1000);
   }
 }
 function goNext(){ showMedia((currentIdx+1)%playlist.length); }
