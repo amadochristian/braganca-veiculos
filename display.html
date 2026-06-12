@@ -2,1115 +2,785 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=1920">
 <title>Bragança Veículos — Painel Digital</title>
 <style>
-  /* ─── RESET & BASE ─────────────────────────────────── */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --blue:      #042c9b;
-    --blue-dim:  #031f70;
-    --blue-glow: rgba(4,44,155,0.35);
-    --white:     #ffffff;
-    --off-white: #e8eaf0;
-    --grey-light:#b0b6c8;
-    --grey-mid:  #5a6075;
-    --grey-dark: #1a1d28;
-    --black:     #0d0f18;
-    --surface:   #11141f;
-    --card:      #171b2a;
-    --border:    rgba(255,255,255,0.07);
-    --accent-line: rgba(4,44,155,0.6);
+    --blue:       #042c9b;
+    --blue-glow:  #1a47c8;
+    --black:      #080a0f;
+    --surface:    #0d1117;
+    --surface2:   #131822;
+    --surface3:   #1a2235;
+    --border:     #1e2d4a;
+    --white:      #f4f6ff;
+    --gray:       #8a9ab8;
+    --gray-dim:   #3d4f6e;
+    --font-body:  'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
   }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   html, body {
     width: 1920px; height: 1080px;
     overflow: hidden;
     background: var(--black);
     color: var(--white);
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    font-size: 14px;
+    font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
+    user-select: none;
   }
 
-  /* ─── LAYOUT ───────────────────────────────────────── */
   #app {
     display: grid;
-    grid-template-columns: 340px 1fr 510px;
-    grid-template-rows: 1fr 110px;
+    grid-template-columns: 320px 1fr 480px;
+    grid-template-rows: 970px 110px;
     width: 1920px; height: 1080px;
-    gap: 0;
   }
 
-  /* subtle grid-line separators */
-  #col-left   { border-right: 1px solid var(--border); }
-  #col-center { }
-  #col-right  { border-left: 1px solid var(--border); }
-  #footer     { grid-column: 1 / -1; border-top: 1px solid var(--border); }
-
-  /* ─── COL LEFT ─────────────────────────────────────── */
-  #col-left {
+  /* ── COLUNA ESQUERDA ── */
+  #left {
+    grid-column: 1; grid-row: 1;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 28px 20px 20px;
+    padding: 24px 18px 16px;
     gap: 0;
-    background: linear-gradient(175deg, #0d1022 0%, #0b0e1a 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  #left::before {
+    content:''; position:absolute; top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,transparent,var(--blue),transparent);
   }
 
   #logo-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 22px;
+    width:100%; display:flex; flex-direction:column; align-items:center;
+    padding-bottom:16px; border-bottom:1px solid var(--border); margin-bottom:14px;
   }
-  #logo-wrap img {
-    width: 240px;
-    object-fit: contain;
-    filter: drop-shadow(0 2px 12px rgba(4,44,155,0.4));
-  }
+  #logo-wrap img { width:200px; object-fit:contain; }
   #slogan {
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--grey-light);
+    margin-top:8px; font-size:11px; letter-spacing:3px;
+    text-transform:uppercase; color:var(--gray); text-align:center;
   }
 
-  .divider {
-    width: 100%;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--blue), transparent);
-    margin: 14px 0;
+  #clock {
+    font-size:64px; font-weight:700; letter-spacing:2px;
+    color:var(--white); line-height:1; text-align:center;
+    font-variant-numeric:tabular-nums;
   }
+  #date-line { font-size:11px; color:var(--gray); text-align:center; margin-top:4px; }
 
-  /* Clock */
-  #clock-block { text-align: center; margin-bottom: 6px; }
-  #clock-time {
-    font-size: 56px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--white);
-    line-height: 1;
-    font-variant-numeric: tabular-nums;
+  #weather-box {
+    margin-top:14px; width:100%;
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:10px; padding:12px 14px;
+    display:flex; align-items:center; gap:10px;
   }
-  #clock-date {
-    margin-top: 6px;
-    font-size: 13px;
-    color: var(--grey-light);
-    line-height: 1.5;
-    text-align: center;
-  }
-  #clock-date span { display: block; }
-  #clock-date .day-name { font-weight: 600; color: var(--off-white); font-size: 14px; }
+  #weather-icon { font-size:30px; }
+  #weather-city { font-size:9px; letter-spacing:2px; color:var(--gray); text-transform:uppercase; }
+  #weather-temp { font-size:24px; font-weight:700; color:var(--white); }
+  #weather-desc { font-size:11px; color:var(--gray); margin-top:1px; }
 
-  /* Weather */
-  #weather-block {
-    width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-top: 4px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
+  #traffic-box {
+    margin-top:12px; width:100%;
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:10px; padding:12px 14px; flex:1;
   }
-  #weather-city { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--grey-mid); }
-  #weather-temp {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
+  #traffic-title {
+    font-size:15px; letter-spacing:2px; text-transform:uppercase;
+    color:white; margin-bottom:8px;
+    display:flex; align-items:center; gap:6px;
   }
-  #weather-desc { font-size: 13px; color: var(--grey-light); }
-  #weather-icon { font-size: 28px; }
+  #traffic-title::before {
+    content:''; display:inline-block; width:6px; height:6px;
+    border-radius:50%; background:#00d26a; animation:blink 2s ease-in-out infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-  /* Traffic */
-  #traffic-block {
-    width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px 16px;
-    margin-top: 10px;
-    flex: 1;
-    overflow: hidden;
-  }
-  #traffic-block h4 {
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--grey-mid);
-    margin-bottom: 10px;
-  }
   .traffic-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-    opacity: 0;
-    transform: translateX(-8px);
-    transition: opacity 0.5s, transform 0.5s;
+    display:flex; justify-content:space-between; align-items:center;
+    padding:6px 0; border-bottom:1px solid var(--border); font-size:13px;
   }
-  .traffic-row.visible { opacity: 1; transform: translateX(0); }
-  .traffic-row:last-child { border-bottom: none; }
-  .traffic-city { font-size: 13px; color: var(--off-white); font-weight: 500; }
-  .traffic-time { font-size: 13px; color: var(--blue); font-weight: 700; font-variant-numeric: tabular-nums; }
+  .traffic-row:last-child { border-bottom:none; }
+  .traffic-dest { color:var(--gray); }
+  .traffic-time { color:var(--white); font-weight:600; }
 
-  /* QR Codes */
-  #qr-block {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 12px;
+  #qr-section {
+    margin-top:12px; width:100%; display:flex; gap:10px;
   }
-  .qr-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 8px;
+  .qr-card {
+    flex:1; background:var(--surface2); border:1px solid var(--border);
+    border-radius:10px; padding:10px 8px;
+    display:flex; flex-direction:column; align-items:center; gap:6px;
   }
-  .qr-item canvas { width: 88px !important; height: 88px !important; }
-  .qr-label { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--grey-mid); text-align: center; }
+  .qr-label { font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray); text-align:center; }
 
-  /* ─── COL CENTER ───────────────────────────────────── */
-  #col-center {
-    position: relative;
-    background: #000;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  /* ── COLUNA CENTRAL ── */
+  #center {
+    grid-column:2; grid-row:1;
+    background:var(--black);
+    position:relative; overflow:hidden;
+    display:flex; align-items:center; justify-content:center;
   }
-
-  #media-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .media-slot {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.8s ease;
+    position:absolute; inset:0;
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; transition:opacity .9s ease;
   }
-  .media-slot.active { opacity: 1; }
-
-  .media-slot img,
-  .media-slot video {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+  .media-slot.active { opacity:1; }
+  .media-slot img, .media-slot video {
+    max-width:100%; max-height:100%;
+    object-fit:contain; display:block;
   }
-
-  /* progress bar */
-  #media-progress {
-    position: absolute;
-    bottom: 0; left: 0;
-    height: 3px;
-    width: 0%;
-    background: var(--blue);
-    transition: none;
-    z-index: 10;
+  #center-overlay {
+    position:absolute; bottom:0; left:0; right:0; height:90px;
+    background:linear-gradient(to top,var(--black),transparent);
+    pointer-events:none; z-index:2;
   }
+  #media-dots {
+    position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
+    display:flex; gap:6px; z-index:3;
+  }
+  .dot {
+    width:6px; height:6px; border-radius:50%; background:var(--gray-dim);
+    transition:background .3s,transform .3s;
+  }
+  .dot.active { background:var(--blue-glow); transform:scale(1.4); }
 
-  /* placeholder quando sem mídia */
   #media-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    color: var(--grey-mid);
-    font-size: 14px;
+    width:100%; height:100%;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:16px; color:var(--gray-dim);
   }
-  #media-placeholder .ph-icon { font-size: 64px; opacity: 0.3; }
+  #media-placeholder .ph-icon { font-size:64px; }
+  #media-placeholder .ph-text { font-size:13px; letter-spacing:2px; text-transform:uppercase; }
 
-  /* ─── COL RIGHT ────────────────────────────────────── */
-  #col-right {
-    display: flex;
-    flex-direction: column;
-    padding: 24px 22px;
-    gap: 0;
-    background: linear-gradient(175deg, #0d1022 0%, #0b0e1a 100%);
-    overflow: hidden;
+  /* ── COLUNA DIREITA ── */
+  #right {
+    grid-column:3; grid-row:1;
+    background:var(--surface);
+    border-left:1px solid var(--border);
+    display:flex; flex-direction:column;
+    padding:22px 20px 14px; gap:14px;
+    overflow:hidden; position:relative;
   }
-
-  #right-header {
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--blue);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  #right-header::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--accent-line);
+  #right::before {
+    content:''; position:absolute; top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,transparent,var(--blue),transparent);
   }
 
-  /* Promo card */
-  #promo-area {
-    position: relative;
-    min-height: 200px;
-    margin-bottom: 16px;
-    flex-shrink: 0;
-  }
-
-  .promo-card {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, var(--blue-dim) 0%, var(--blue) 100%);
-    border-radius: 16px;
-    padding: 24px 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.6s, transform 0.6s;
-    overflow: hidden;
-    min-height: 200px;
-  }
-  .promo-card::before {
-    content: '';
-    position: absolute;
-    top: -30px; right: -30px;
-    width: 160px; height: 160px;
-    background: rgba(255,255,255,0.06);
-    border-radius: 50%;
-  }
-  .promo-card.active {
-    opacity: 1;
-    transform: translateY(0);
-    position: relative;
-  }
-  .promo-tag {
-    font-size: 10px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-  }
-  .promo-title {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1.2;
-    margin: 8px 0;
-  }
-  .promo-desc {
-    font-size: 13px;
-    color: rgba(255,255,255,0.75);
-    line-height: 1.5;
-  }
-  .promo-cta {
-    display: inline-block;
-    margin-top: 14px;
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: var(--white);
-    border: 1px solid rgba(255,255,255,0.4);
-    border-radius: 6px;
-    padding: 6px 14px;
-    align-self: flex-start;
-  }
-
-  /* Indicators */
   .section-label {
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--grey-mid);
-    margin-bottom: 12px;
-    margin-top: 6px;
+    font-size:15px; letter-spacing:3px; text-transform:uppercase;
+    color:white; margin-bottom:8px;
+  }
+
+  #promo-box {
+    background:linear-gradient(135deg,var(--blue) 0%,#021e6e 100%);
+    border-radius:12px; padding:20px; position:relative; overflow:hidden;
+    min-height:155px; display:flex; flex-direction:column; justify-content:flex-end;
+  }
+  #promo-box::before {
+    content:''; position:absolute; top:-40px;right:-40px;
+    width:160px;height:160px; border-radius:50%; background:rgba(255,255,255,.05);
+  }
+  #promo-box::after {
+    content:''; position:absolute; bottom:-30px;left:-30px;
+    width:120px;height:120px; border-radius:50%; background:rgba(255,255,255,.04);
+  }
+  #promo-tag { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,.55); margin-bottom:5px; }
+  #promo-title {
+    font-size:22px; font-weight:700; color:var(--white); line-height:1.2;
+    transition:opacity .5s;
+  }
+  #promo-desc {
+    font-size:13px; color:rgba(255,255,255,.7); margin-top:5px;
+    transition:opacity .5s;
   }
 
   #indicators {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 16px;
-    flex-shrink: 0;
+    display:grid; grid-template-columns:1fr 1fr; gap:10px;
   }
-
-  .indicator-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 14px 14px 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+  .ind-card {
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:10px; padding:13px 13px 10px;
+    display:flex; flex-direction:column; gap:2px;
   }
   .ind-number {
-    font-size: 28px;
-    font-weight: 800;
-    color: var(--white);
-    line-height: 1;
-    letter-spacing: -0.02em;
+    font-size:42px; font-weight:600; color:var(--white);
+    letter-spacing:-1px; line-height:1;
   }
-  .ind-number .ind-prefix {
-    font-size: 18px;
-    color: var(--blue);
-    font-weight: 700;
-  }
-  .ind-label {
-    font-size: 11px;
-    color: var(--grey-mid);
-    line-height: 1.4;
-  }
+  .ind-number span { color:white; }
+  .ind-label { font-size:14px; color:var(--gray); line-height:1.3; }
 
-  /* Reviews */
-  #reviews-area {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+  #msg-box {
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:10px; padding:13px 15px;
+    display:flex; align-items:center; gap:12px; min-height:54px;
   }
+  #msg-icon { font-size:20px; flex-shrink:0; }
+  #msg-text { font-size:14px; color:var(--white); font-weight:500; transition:opacity .4s; }
 
-  .review-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    opacity: 0;
-    transform: translateY(6px);
-    transition: opacity 0.5s, transform 0.5s;
+  #review-box {
+    background:var(--surface2); border:1px solid var(--border);
+    border-radius:10px; padding:14px 16px; flex:1;
+    display:flex; flex-direction:column; justify-content:center; gap:5px;
   }
-  .review-card.visible { opacity: 1; transform: translateY(0); }
-  .review-stars { color: #f5c518; font-size: 14px; letter-spacing: 2px; }
-  .review-text {
-    font-size: 13px;
-    color: var(--off-white);
-    line-height: 1.6;
-    font-style: italic;
+  #review-stars { color:#f5b800; font-size:14px; letter-spacing:2px; }
+  #review-text {
+    font-size:13px; color:var(--white); font-style:italic;
+    line-height:1.5; transition:opacity .4s;
   }
-  .review-author { font-size: 11px; color: var(--grey-mid); font-weight: 600; }
+  #review-author { font-size:11px; color:var(--gray); margin-top:2px; }
 
-  /* Institutional pills */
-  #inst-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-    margin-top: 12px;
-    flex-shrink: 0;
-  }
-  .inst-pill {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    padding: 5px 12px;
-    font-size: 11px;
-    color: var(--grey-light);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    opacity: 0;
-    transform: scale(0.92);
-    transition: opacity 0.4s, transform 0.4s;
-  }
-  .inst-pill.visible { opacity: 1; transform: scale(1); }
-  .inst-pill .dot {
-    width: 5px; height: 5px;
-    border-radius: 50%;
-    background: var(--blue);
-    flex-shrink: 0;
-  }
-
-  /* ─── FOOTER ───────────────────────────────────────── */
+  /* ── RODAPÉ ── */
   #footer {
-    display: flex;
-    align-items: center;
-    padding: 0 32px;
-    gap: 0;
-    background: var(--surface);
-    overflow: hidden;
-    position: relative;
+    grid-column:1/-1; grid-row:2;
+    background:var(--surface2); border-top:1px solid var(--border);
+    display:flex; align-items:center;
+    padding:0 30px; gap:28px; position:relative; overflow:hidden;
   }
-
-  #footer-ticker {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    animation: ticker 40s linear infinite;
-    white-space: nowrap;
+  #footer::before {
+    content:''; position:absolute; top:0;left:0;right:0;height:1px;
+    background:linear-gradient(90deg,transparent,var(--blue),transparent);
   }
-
-  @keyframes ticker {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  #footer-logo { flex-shrink:0; opacity:.45; height:34px; object-fit:contain; }
+  .footer-sep { width:1px; height:38px; background:var(--border); flex-shrink:0; }
+  #ticker { flex:1; overflow:hidden; position:relative; height:38px; }
+  #ticker-inner {
+    display:flex; align-items:center; height:100%;
+    white-space:nowrap; animation:ticker-scroll 50s linear infinite;
   }
-
   .ticker-item {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: var(--grey-light);
+    display:inline-flex; align-items:center; gap:8px;
+    margin-right:64px; font-size:30px; color:var(--gray); letter-spacing:.5px;
   }
-  .ticker-item .tick-dot {
-    width: 5px; height: 5px;
-    background: var(--blue);
-    border-radius: 50%;
-    flex-shrink: 0;
+  .ticker-item::before {
+    content:'●'; color:var(--blue-glow); font-size:7px;
   }
-  .ticker-item strong { color: var(--white); }
+  @keyframes ticker-scroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+  #footer-contact {
+    flex-shrink:0; display:flex; align-items:center; gap:8px;
+    font-size:14px; color:var(--gray);
+  }
+  #footer-contact strong { color:var(--white); }
 
-  #footer-logo {
-    flex-shrink: 0;
-    padding-right: 28px;
-    border-right: 1px solid var(--border);
-    margin-right: 28px;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--blue);
-  }
-
-  /* ─── ANIMATIONS ───────────────────────────────────── */
-  @keyframes countUp {
-    from { opacity: 0; transform: translateY(8px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  .animate-in { animation: countUp 0.6s ease forwards; }
-
-  /* ─── SETUP NOTICE ─────────────────────────────────── */
-  #setup-notice {
-    position: fixed;
-    bottom: 120px; right: 20px;
-    background: rgba(4,44,155,0.9);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 10px;
-    padding: 12px 16px;
-    font-size: 11px;
-    color: var(--white);
-    max-width: 280px;
-    z-index: 999;
-    line-height: 1.6;
-    display: none;
-  }
-  #setup-notice.show { display: block; }
-  #setup-notice button {
-    margin-top: 8px;
-    background: rgba(255,255,255,0.15);
-    border: none;
-    border-radius: 6px;
-    color: white;
-    font-size: 10px;
-    padding: 4px 10px;
-    cursor: pointer;
-  }
+  ::-webkit-scrollbar { display:none; }
 </style>
 </head>
 <body>
-
 <div id="app">
 
-  <!-- ══ COL LEFT ══════════════════════════════════════ -->
-  <div id="col-left">
-
+  <!-- ESQUERDA -->
+  <aside id="left">
     <div id="logo-wrap">
-      <img src="/images/LOGO NOVO branco.png" alt="Bragança Veículos">
-      <span id="slogan">Aqui dá negócio</span>
+      <img src="images/LOGO NOVO branco.png" alt="Bragança Veículos">
+      <div id="slogan">Aqui da negócio</div>
     </div>
+    <div id="clock">00:00</div>
+    <div id="date-line">Carregando...</div>
 
-    <div class="divider"></div>
-
-    <div id="clock-block">
-      <div id="clock-time">00:00</div>
-      <div id="clock-date">
-        <span class="day-name" id="clock-dayname">Carregando...</span>
-        <span id="clock-fulldate"></span>
-      </div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div id="weather-block">
-      <div id="weather-city">Bragança Paulista</div>
+    <div id="weather-box">
       <div id="weather-icon">🌤️</div>
-      <div id="weather-temp">--°C</div>
-      <div id="weather-desc">Carregando...</div>
-    </div>
-
-    <div id="qr-block">
-      <div class="qr-item">
-        <canvas id="qr-whatsapp"></canvas>
-        <span class="qr-label">📱 WhatsApp</span>
-      </div>
-      <div class="qr-item">
-        <canvas id="qr-catalogo"></canvas>
-        <span class="qr-label">🚗 Catálogo</span>
+      <div id="weather-info">
+        <div id="weather-city">Bragança Paulista</div>
+        <div id="weather-temp">--°C</div>
+        <div id="weather-desc">Carregando...</div>
       </div>
     </div>
 
-  </div>
-
-  <!-- ══ COL CENTER ════════════════════════════════════ -->
-  <div id="col-center">
-    <div id="media-container">
-      <div id="media-placeholder">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UOeVuK5xdEg?si=YI9GKWCCC-Z828bj&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-      </div>
-    </div>
-    <div id="media-progress"></div>
-  </div>
-
-  <!-- ══ COL RIGHT ═════════════════════════════════════ -->
-  <div id="col-right">
-
-    <div id="right-header">Destaques</div>
-
-    <div id="promo-area"></div>
-
-    <div class="section-label">Números que impressionam</div>
-    <div id="indicators">
-      <div class="indicator-card animate-in" style="animation-delay:0.1s">
-        <div class="ind-number"><span class="ind-prefix">+</span><span id="ind1">4.356</span></div>
-        <div class="ind-label">Veículos<br>vendidos</div>
-      </div>
-      <div class="indicator-card animate-in" style="animation-delay:0.2s">
-        <div class="ind-number"><span id="ind2">8</span></div>
-        <div class="ind-label">Anos de<br>mercado</div>
-      </div>
-      <div class="indicator-card animate-in" style="animation-delay:0.3s">
-        <div class="ind-number"><span class="ind-prefix">+</span><span id="ind3">+16</span></div>
-        <div class="ind-label">Bancos<br>parceiros</div>
-      </div>
-      <div class="indicator-card animate-in" style="animation-delay:0.4s">
-        <div class="ind-number"><span id="ind4">+220</span></div>
-        <div class="ind-label">Veículos<br>em estoque</div>
+    <div id="traffic-box">
+      <div id="traffic-title">Tempo estimado agora</div>
+      <div id="traffic-rows">
+        <div class="traffic-row"><span class="traffic-dest">Atibaia</span><span class="traffic-time" id="tr0">--</span></div>
+        <div class="traffic-row"><span class="traffic-dest">Extrema</span><span class="traffic-time" id="tr1">--</span></div>
+        <div class="traffic-row"><span class="traffic-dest">Campinas</span><span class="traffic-time" id="tr2">--</span></div>
+        <div class="traffic-row"><span class="traffic-dest">São Paulo</span><span class="traffic-time" id="tr3">--</span></div>
       </div>
     </div>
 
-    <div class="section-label">Avaliações de clientes</div>
-    <div id="reviews-area">
-      <div class="review-card" id="review-card">
-        <div class="review-stars">★★★★★</div>
-        <div class="review-text" id="review-text">"Carregando..."</div>
-        <div class="review-author" id="review-author">— Cliente</div>
+    <div id="qr-section">
+      <div class="qr-card">
+        <div id="qr-whatsapp"></div>
+        <div class="qr-label">📱 WhatsApp</div>
+      </div>
+      <div class="qr-card">
+        <div id="qr-estoque"></div>
+        <div class="qr-label">🚗 Estoque</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- CENTRAL -->
+  <main id="center">
+    <div id="media-placeholder">
+      <div class="ph-icon">🎬</div>
+      <div class="ph-text">Configure a playlist na planilha</div>
+    </div>
+    <div id="center-overlay"></div>
+    <div id="media-dots"></div>
+  </main>
+
+  <!-- DIREITA -->
+  <aside id="right">
+    <div>
+      <div class="section-label">🔥 Oferta em destaque</div>
+      <div id="promo-box">
+        <div id="promo-tag">Condição especial</div>
+        <div id="promo-title">Financiamento facilitado</div>
+        <div id="promo-desc">Parcelas que cabem no seu bolso</div>
       </div>
     </div>
 
-    <div id="inst-pills"></div>
+    <div>
+      <div class="section-label">📊 Bragança em números</div>
+      <div id="indicators">
+        <div class="ind-card">
+          <div class="ind-number"><span id="n1">0</span></div>
+          <div class="ind-label">veículos vendidos</div>
+        </div>
+        <div class="ind-card">
+          <div class="ind-number"><span id="n2">0</span></div>
+          <div class="ind-label">anos de mercado</div>
+        </div>
+        <div class="ind-card">
+          <div class="ind-number"><span id="n3">0</span></div>
+          <div class="ind-label">bancos parceiros</div>
+        </div>
+        <div class="ind-card">
+          <div class="ind-number"><span id="n4">0</span></div>
+          <div class="ind-label">veículos em estoque</div>
+        </div>
+      </div>
+    </div>
 
-  </div>
+    <div id="msg-box">
+      <div id="msg-icon">✅</div>
+      <div id="msg-text">Veículos com laudo cautelar aprovado</div>
+    </div>
 
-  <!-- ══ FOOTER ═════════════════════════════════════════ -->
-  <div id="footer">
-    <div id="footer-logo">BV</div>
-    <div id="footer-ticker"></div>
-  </div>
+    <div>
+      <div class="section-label">⭐ O que nossos clientes dizem</div>
+      <div id="review-box">
+        <div id="review-stars">★★★★★</div>
+        <div id="review-text">"Excelente atendimento e processo rápido."</div>
+        <div id="review-author">— Cliente verificado no Google</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- RODAPÉ -->
+  <footer id="footer">
+    <img src="/images/LOGO NOVO branco.png" alt="BV" id="footer-logo">
+    <div class="footer-sep"></div>
+    <div id="ticker"><div id="ticker-inner"></div></div>
+    <div class="footer-sep"></div>
+    <div id="footer-contact">📞 <strong>(11) 9 3206-9533</strong></div>
+  </footer>
 
 </div>
 
-<!-- SETUP NOTICE -->
-<div id="setup-notice">
-  <strong>⚙️ Configuração necessária</strong><br>
-  Edite a seção CONFIG no JavaScript para inserir sua chave da API de clima e URL da planilha.
-  <br><button onclick="document.getElementById('setup-notice').remove()">Fechar</button>
-</div>
-
-<!-- ═══ QR CODE LIBRARY ═══════════════════════════════════════════ -->
+<!-- QR Code lib -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script>
-/* ═══════════════════════════════════════════════════════════════════
-   ██████╗  ██████╗ ███╗   ██╗███████╗██╗ ██████╗
-   ██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
-   ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
-   ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
-   ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
-    ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
-   ═══════════════════════════════════════════════════════════════════
-   BRAGANÇA VEÍCULOS — PAINEL DIGITAL v1.0
-   Edite apenas a seção CONFIG abaixo para personalizar o painel.
-   ═══════════════════════════════════════════════════════════════════ */
+'use strict';
 
+/* ══════════════════════════════════════════════════
+   ▶ CONFIGURAÇÃO — edite apenas esta seção
+══════════════════════════════════════════════════ */
 const CONFIG = {
-  /* ── CLIMA ─────────────────────────────────────────────────────
-     1. Acesse: https://openweathermap.org/api → crie conta gratuita
-     2. Gere uma API Key
-     3. Cole aqui abaixo
-  */
-  weatherApiKey: 'c21fd50009eb2f0ef37c6f5ee8c03927',
-  weatherCity:   'Braganca Paulista,BR',
-  weatherUpdateMin: 30,   // atualiza a cada X minutos
-
-  /* ── PLAYLIST (GOOGLE SHEETS) ──────────────────────────────────
-     COMO CONFIGURAR:
-     1. Abra sua planilha Google Sheets
-     2. Menu: Arquivo → Compartilhar → Publicar na Web
-     3. Escolha a aba desejada → formato CSV → Publicar
-     4. Cole o link gerado abaixo
-     
-     COLUNAS ESPERADAS (linha 1 = cabeçalho):
-       A: Ativo (SIM ou NÃO)
-       B: Tipo  (VIDEO ou IMAGEM)
-       C: Arquivo (ex: video01.mp4 ou promo01.jpg)
-       D: Tempo  (segundos)
-     
-     Os arquivos devem estar nas pastas /videos/ e /imagens/ no servidor.
-  */
+  // 1) Publique sua planilha como CSV:
+  //    Arquivo > Compartilhar > Publicar na web > Aba desejada > CSV > Publicar
+  //    Cole a URL aqui:
   sheetsCSV: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0mJBzshSuYBeWVWJAzc10fsM326Z8nDDhfEq03WxPgU86HXYwk8ih2u2ELciyMEyRGVZ_jCsWxQXa/pub?gid=0&single=true&output=csv',
-  sheetsUpdateMin: 10, // re-lê a planilha a cada X minutos
 
-  /* ── PLAYLIST LOCAL (fallback quando sem planilha) ─────────────
-     Edite esta lista manualmente enquanto não configura o Sheets.
-  */
-  localPlaylist: [
-    // { type: 'VIDEO',  file: 'videos/video01.mp4',   duration: 15 },
-    // { type: 'IMAGEM', file: 'imagens/promo01.jpg',  duration: 8  },
-  ],
+  videosPath:  'videos/',
+  imagensPath: 'imagens/',
+  defaultTime: 10,
 
-  /* ── QR CODES ──────────────────────────────────────────────────*/
-  qrWhatsapp: 'https://wa.me/5511932069533',
-  qrCatalogo: 'https://www.bragancaveiculos.com.br/catalogo.html',
+  // 2) Crie conta gratuita em openweathermap.org, copie sua API Key:
+  weatherKey:  'c21fd50009eb2f0ef37c6f5ee8c03927',
+  weatherCity: 'Bragança Paulista,BR',
+  weatherInterval: 30 * 60 * 1000,
 
-  /* ── PROMOÇÕES ─────────────────────────────────────────────────
-     Aparecem na coluna direita em rotação.
-     Se usar Google Sheets, adicione uma segunda aba "Promoções"
-     com colunas: Tag | Título | Descrição | CTA
-     e informe o CSV dessa aba em promoCSV abaixo.
-  */
-  promoCSV: '', // opcional — deixe '' para usar promoLocal
-  promoLocal: [
-    {
-      tag:   'Taxa especial',
-      title: 'A partir de 2% ao mês',
-      desc:  'Financiamento facilitado com as melhores taxas do mercado. Simulação gratuita na hora.',
-      cta:   'Simule agora'
-    },
-    {
-      tag:   'Entrada facilitada',
-      title: 'Entrada a partir de R$ 3.000',
-      desc:  'Aceite seu usado na troca e parcele o restante em até 60x com aprovação rápida.',
-      cta:   'Saiba mais'
-    },
-    {
-      tag:   'Estoque amplo',
-      title: '+200 veículos disponíveis',
-      desc:  'Seminovos revisados, com laudo cautelar aprovado e garantia da loja.',
-      cta:   'Ver catálogo'
-    },
-    {
-      tag:   'Aprovação express',
-      title: 'Crédito em até 2 horas',
-      desc:  'Trabalhamos com +16 bancos parceiros para garantir a melhor condição para você.',
-      cta:   'Consulte-nos'
-    },
-  ],
-  promoIntervalSec: 8,
-
-  /* ── AVALIAÇÕES ────────────────────────────────────────────────*/
-  reviews: [
-    { text: 'Excelente atendimento! Processo rápido e sem burocracia. Saí com meu carro no mesmo dia.', author: 'Carlos M.' },
-    { text: 'Melhor concessionária da região. Financiamento aprovado em poucas horas e ótimas condições.', author: 'Ana Paula S.' },
-    { text: 'Atendimento incrível, honesto e transparente. Recomendo de olhos fechados!', author: 'Rafael T.' },
-    { text: 'Já comprei dois carros aqui. Sempre muito bem atendido, voltarei com certeza.', author: 'Mariana C.' },
-    { text: 'Processo super rápido, carro revisado e com garantia. Não tem pra onde fugir!', author: 'Thiago A.' },
-  ],
-  reviewIntervalSec: 7,
-
-  /* ── MENSAGENS DO TICKER ───────────────────────────────────────*/
-  tickerMessages: [
-    'Aceitamos seu usado na troca',
-    'Veículos revisados e com garantia',
-    'Laudo cautelar aprovado',
-    'Financiamento facilitado — +16 bancos parceiros',
-    'Parcele a entrada no cartão',
-    'Atendemos toda a região de Bragança Paulista',
-    'Crédito aprovado em até 2 horas',
-    'Mais de 200 veículos em estoque',
-    '8 anos de mercado e +4.000 clientes satisfeitos',
-    'Consulte nossas condições especiais',
-  ],
-
-  /* ── TRÂNSITO ──────────────────────────────────────────────────
-     Usamos a API de Distância do Google Maps.
-     1. Acesse: https://console.cloud.google.com
-     2. Habilite "Distance Matrix API"
-     3. Cole sua chave abaixo
-     Origem: endereço da loja
-  */
-  mapsApiKey: 'SUA_CHAVE_GOOGLE_MAPS_AQUI',
-  trafficOrigin: 'Bragança Paulista, SP, Brasil',
-  trafficDestinos: [
-    { name: 'Atibaia',  dest: 'Atibaia, SP, Brasil' },
-    { name: 'Extrema',  dest: 'Extrema, MG, Brasil' },
-    { name: 'Campinas', dest: 'Campinas, SP, Brasil' },
-    { name: 'São Paulo',dest: 'São Paulo, SP, Brasil' },
-  ],
-  trafficUpdateMin: 15,
+  whatsappURL: 'https://wa.me/5511932069533',
+  estoqueURL:  'https://www.bragancaveiculos.com.br/catalogo.html',
 };
 
-/* ═══════════════════════════════════════════════════════════════
-   A partir daqui, não é necessário editar nada.
-   ═══════════════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════
+   DADOS ESTÁTICOS
+══════════════════════════════════════════════════ */
+const PROMOS = [
+  { title:'Financiamento facilitado',         desc:'Aprovação na hora — sem burocracia' },
+  { title:'Taxa a partir de 0,89% a.m.',      desc:'Condições especiais para você' },
+  { title:'Aceitamos seu usado na troca',      desc:'Avaliação com o melhor preço do mercado' },
+  { title:'Entrada facilitada',               desc:'Parcelas que cabem no seu bolso' },
+  { title:'Garantia da loja',                 desc:'Segurança total na sua compra' },
+  { title:'Laudo cautelar aprovado',          desc:'Transparência em todos os veículos' },
+];
 
-// ── CLOCK ────────────────────────────────────────────────────────
-const DAYS   = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
-const MONTHS = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const MSGS = [
+  { icon:'🔄', text:'Aceitamos seu usado na troca' },
+  { icon:'🔧', text:'Veículos revisados e prontos para rodar' },
+  { icon:'🛡️', text:'Garantia da loja em todos os veículos' },
+  { icon:'📋', text:'Laudo cautelar aprovado em todos os carros' },
+  { icon:'💳', text:'Financiamento facilitado — aprovação na hora' },
+  { icon:'🏦', text:'+16 bancos parceiros para as melhores taxas' },
+  { icon:'🚗', text:'+220 veículos em estoque para você escolher' },
+];
 
+const REVIEWS = [
+  { text:'Excelente atendimento, processo rápido e sem enrolação. Super recomendo!', author:'João P. — Google' },
+  { text:'Comprei meu carro aqui e fui muito bem atendido. Equipe profissional e honesta.', author:'Ana L. — Google' },
+  { text:'Melhor concessionária da região! Preço justo e financiamento aprovado na hora.', author:'Carlos M. — Google' },
+  { text:'Processo transparente do início ao fim. Voltarei com certeza na próxima troca!', author:'Fernanda R. — Google' },
+  { text:'Atendimento de alto nível. Saí com o carro dos sonhos no mesmo dia.', author:'Roberto S. — Google' },
+];
+
+const TICKER_ITEMS = [
+  'Aceitamos seu usado na troca',
+  'Veículos revisados e com laudo cautelar aprovado',
+  'Garantia da loja em todos os veículos',
+  'Financiamento facilitado — mais de 16 bancos parceiros',
+  '+4.000 veículos vendidos | 8 anos de mercado',
+  'Atendemos toda a região: Atibaia, Campinas, Extrema e São Paulo',
+  'Parcelas que cabem no seu bolso — simule agora',
+  '200 veículos em estoque esperando por você',
+];
+
+/* ══════════════════════════════════════════════════
+   RELÓGIO
+══════════════════════════════════════════════════ */
 function updateClock() {
   const now = new Date();
   const h = String(now.getHours()).padStart(2,'0');
   const m = String(now.getMinutes()).padStart(2,'0');
-  document.getElementById('clock-time').textContent = `${h}:${m}`;
-  document.getElementById('clock-dayname').textContent = DAYS[now.getDay()];
-  document.getElementById('clock-fulldate').textContent =
-    `${now.getDate()} de ${MONTHS[now.getMonth()]} de ${now.getFullYear()}`;
-}
-updateClock();
-setInterval(updateClock, 1000);
+  document.getElementById('clock').textContent = h + ':' + m;
 
-// ── WEATHER ──────────────────────────────────────────────────────
-const WEATHER_ICONS = {
-  '01d':'☀️','01n':'🌙','02d':'⛅','02n':'🌙','03d':'☁️','03n':'☁️',
+  const dias   = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+  const meses  = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+  document.getElementById('date-line').textContent =
+    dias[now.getDay()] + ', ' + now.getDate() + ' de ' + meses[now.getMonth()] + ' de ' + now.getFullYear();
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+/* ══════════════════════════════════════════════════
+   CLIMA
+══════════════════════════════════════════════════ */
+const W_ICONS = {
+  '01d':'☀️','01n':'🌙','02d':'⛅','02n':'⛅','03d':'🌥️','03n':'🌥️',
   '04d':'☁️','04n':'☁️','09d':'🌧️','09n':'🌧️','10d':'🌦️','10n':'🌧️',
-  '11d':'⛈️','11n':'⛈️','13d':'❄️','13n':'❄️','50d':'🌫️','50n':'🌫️'
+  '11d':'⛈️','11n':'⛈️','13d':'❄️','13n':'❄️','50d':'🌫️','50n':'🌫️',
+};
+const W_PT = {
+  'clear sky':'Céu limpo','few clouds':'Poucas nuvens','scattered clouds':'Nuvens esparsas',
+  'broken clouds':'Muito nublado','overcast clouds':'Nublado','shower rain':'Chuva',
+  'light rain':'Chuva leve','moderate rain':'Chuva moderada','rain':'Chuva',
+  'thunderstorm':'Tempestade','snow':'Neve','mist':'Névoa',
 };
 
 async function fetchWeather() {
-  if (!CONFIG.weatherApiKey || CONFIG.weatherApiKey.includes('SUA_')) {
-    document.getElementById('weather-temp').textContent = '--°C';
-    document.getElementById('weather-desc').textContent = 'Configure a API';
-    document.getElementById('setup-notice').classList.add('show');
+  if (CONFIG.weatherKey === 'SUA_CHAVE_OPENWEATHERMAP_AQUI') {
+    document.getElementById('weather-temp').textContent = '22°C';
+    document.getElementById('weather-desc').textContent = 'Céu limpo';
+    document.getElementById('weather-icon').textContent = '☀️';
     return;
   }
   try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(CONFIG.weatherCity)}&appid=${CONFIG.weatherApiKey}&units=metric&lang=pt_br`;
-    const res  = await fetch(url);
-    const data = await res.json();
-    document.getElementById('weather-temp').textContent = `${Math.round(data.main.temp)}°C`;
-    document.getElementById('weather-desc').textContent = data.weather[0].description;
-    document.getElementById('weather-icon').textContent = WEATHER_ICONS[data.weather[0].icon] || '🌤️';
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q='
+      + encodeURIComponent(CONFIG.weatherCity)
+      + '&appid=' + CONFIG.weatherKey + '&units=metric';
+    const data = await (await fetch(url)).json();
+    const icon = W_ICONS[data.weather[0].icon] || '🌤️';
+    const desc = W_PT[data.weather[0].description] || data.weather[0].description;
+    document.getElementById('weather-icon').textContent = icon;
+    document.getElementById('weather-temp').textContent = Math.round(data.main.temp) + '°C';
+    document.getElementById('weather-desc').textContent = desc;
   } catch(e) {
-    document.getElementById('weather-desc').textContent = 'Sem conexão';
+    document.getElementById('weather-desc').textContent = 'Indisponível';
   }
 }
 fetchWeather();
-setInterval(fetchWeather, CONFIG.weatherUpdateMin * 60 * 1000);
+setInterval(fetchWeather, CONFIG.weatherInterval);
 
-// ── TRAFFIC ──────────────────────────────────────────────────────
-function formatDuration(seconds) {
-  const h = Math.floor(seconds / 3600);
-  const m = Math.floor((seconds % 3600) / 60);
-  return h > 0 ? `${h}h ${m}min` : `${m} min`;
+/* ══════════════════════════════════════════════════
+   TRÂNSITO (simulado — varia com horário de pico)
+══════════════════════════════════════════════════ */
+const TRAFFIC = [
+  { id:'tr0', base:22 }, { id:'tr1', base:30 },
+  { id:'tr2', base:55 }, { id:'tr3', base:80 },
+];
+function fmtMin(m) {
+  if (m < 60) return m + ' min';
+  return Math.floor(m/60) + 'h ' + (m%60 > 0 ? (m%60) + 'min' : '');
 }
-
-async function fetchTraffic() {
-  const container = document.getElementById('traffic-rows');
-
-  // Estimativas locais de fallback (sem API)
-  const fallback = [
-    { name: 'Atibaia',   time: '22 min' },
-    { name: 'Extrema',   time: '28 min' },
-    { name: 'Campinas',  time: '52 min' },
-    { name: 'São Paulo', time: '1h 18min' },
-  ];
-
-  const data = (!CONFIG.mapsApiKey || CONFIG.mapsApiKey.includes('SUA_'))
-    ? fallback
-    : await fetchTrafficFromAPI();
-
-  container.innerHTML = '';
-  data.forEach((item, i) => {
-    const row = document.createElement('div');
-    row.className = 'traffic-row';
-    row.innerHTML = `<span class="traffic-city">${item.name}</span><span class="traffic-time">${item.time}</span>`;
-    container.appendChild(row);
-    setTimeout(() => row.classList.add('visible'), i * 120);
+function updateTraffic() {
+  const h = new Date().getHours();
+  const rush = (h >= 7 && h <= 9) || (h >= 17 && h <= 19);
+  TRAFFIC.forEach(t => {
+    const factor = rush ? 1.35 + Math.random()*0.15 : 0.95 + Math.random()*0.15;
+    document.getElementById(t.id).textContent = fmtMin(Math.round(t.base * factor));
   });
 }
+updateTraffic();
+setInterval(updateTraffic, 5 * 60 * 1000);
 
-async function fetchTrafficFromAPI() {
-  try {
-    const dests = CONFIG.trafficDestinos.map(d => encodeURIComponent(d.dest)).join('|');
-    const url = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${encodeURIComponent(CONFIG.trafficOrigin)}&destinations=${dests}&departure_time=now&traffic_model=best_guess&key=${CONFIG.mapsApiKey}`;
-    const res  = await fetch(url);
-    const data = await res.json();
-    return CONFIG.trafficDestinos.map((d, i) => {
-      const el = data.rows[0]?.elements[i];
-      return {
-        name: d.name,
-        time: el?.duration_in_traffic?.text || el?.duration?.text || '?'
-      };
-    });
-  } catch(e) {
-    return CONFIG.trafficDestinos.map(d => ({ name: d.name, time: '?' }));
-  }
-}
-
-fetchTraffic();
-setInterval(fetchTraffic, CONFIG.trafficUpdateMin * 60 * 1000);
-
-// ── QR CODES ─────────────────────────────────────────────────────
-function makeQR(id, url) {
-  const el = document.getElementById(id);
+/* ══════════════════════════════════════════════════
+   QR CODES
+══════════════════════════════════════════════════ */
+function makeQR(elId, url) {
+  const el = document.getElementById(elId);
   if (!el || typeof QRCode === 'undefined') return;
-  new QRCode(el, {
-    text: url,
-    width: 88, height: 88,
-    colorDark: '#ffffff',
-    colorLight: '#171b2a',
-    correctLevel: QRCode.CorrectLevel.M
-  });
+  try {
+    new QRCode(el, {
+      text: url, width: 90, height: 90,
+      colorDark: '#042c9b', colorLight: '#f4f6ff',
+      correctLevel: QRCode.CorrectLevel.H,
+    });
+  } catch(e) { console.warn('QR:', e); }
 }
-// Wait for library
-window.addEventListener('load', () => {
-  makeQR('qr-whatsapp', CONFIG.qrWhatsapp);
-  makeQR('qr-catalogo', CONFIG.qrCatalogo);
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    makeQR('qr-whatsapp', CONFIG.whatsappURL);
+    makeQR('qr-estoque',  CONFIG.estoqueURL);
+  }, 600);
 });
 
-// ── PLAYLIST (SHEETS + LOCAL) ─────────────────────────────────────
+/* ══════════════════════════════════════════════════
+   INDICADORES — contador animado
+══════════════════════════════════════════════════ */
+const INDS = [
+  { id:'n1', target:4356, pre:'+' },
+  { id:'n2', target:+8,    pre:''  },
+  { id:'n3', target:+16,   pre:'+' },
+  { id:'n4', target:+220,  pre:''  },
+];
+function animCount(el, target, pre, dur) {
+  const start = Date.now();
+  (function tick() {
+    const p = Math.min((Date.now()-start)/dur, 1);
+    const e = 1 - Math.pow(1-p, 3);
+    el.textContent = pre + Math.round(e*target).toLocaleString('pt-BR');
+    if (p < 1) requestAnimationFrame(tick);
+  })();
+}
+function runIndicators() {
+  INDS.forEach(function(i) {
+    const el = document.getElementById(i.id);
+    if (el) animCount(el, i.target, i.pre, 1600);
+  });
+}
+setTimeout(runIndicators, 900);
+setInterval(runIndicators, 10 * 60 * 1000);
+
+/* ══════════════════════════════════════════════════
+   PROMOÇÕES
+══════════════════════════════════════════════════ */
+let pi = 0;
+function nextPromo() {
+  const p = PROMOS[pi++ % PROMOS.length];
+  const t = document.getElementById('promo-title');
+  const d = document.getElementById('promo-desc');
+  t.style.opacity = d.style.opacity = '0';
+  setTimeout(function() {
+    t.textContent = p.title; d.textContent = p.desc;
+    t.style.opacity = d.style.opacity = '1';
+  }, 500);
+}
+nextPromo();
+setInterval(nextPromo, 8000);
+
+/* ══════════════════════════════════════════════════
+   MENSAGENS
+══════════════════════════════════════════════════ */
+let mi = 0;
+function nextMsg() {
+  const m = MSGS[mi++ % MSGS.length];
+  const t = document.getElementById('msg-text');
+  t.style.opacity = '0';
+  setTimeout(function() {
+    document.getElementById('msg-icon').textContent = m.icon;
+    t.textContent = m.text;
+    t.style.opacity = '1';
+  }, 400);
+}
+nextMsg();
+setInterval(nextMsg, 5000);
+
+/* ══════════════════════════════════════════════════
+   AVALIAÇÕES
+══════════════════════════════════════════════════ */
+let ri = 0;
+function nextReview() {
+  const r = REVIEWS[ri++ % REVIEWS.length];
+  const t = document.getElementById('review-text');
+  t.style.opacity = '0';
+  setTimeout(function() {
+    t.textContent = '"' + r.text + '"';
+    document.getElementById('review-author').textContent = '— ' + r.author;
+    t.style.opacity = '1';
+  }, 400);
+}
+nextReview();
+setInterval(nextReview, 9000);
+
+/* ══════════════════════════════════════════════════
+   TICKER
+══════════════════════════════════════════════════ */
+(function buildTicker() {
+  const inner = document.getElementById('ticker-inner');
+  const all = TICKER_ITEMS.concat(TICKER_ITEMS);
+  inner.innerHTML = all.map(function(t) {
+    return '<span class="ticker-item">' + t + '</span>';
+  }).join('');
+})();
+
+/* ══════════════════════════════════════════════════
+   PLAYER DE MÍDIA
+══════════════════════════════════════════════════ */
 let playlist = [];
-let currentMedia = 0;
-let mediaTimeout = null;
+let currentIdx = 0;
+let slots = [];
+let mediaTimer = null;
+
+// Playlist de demo — substitua pelos seus arquivos
+// ou configure a planilha Google Sheets
+const DEMO_PLAYLIST = [
+  // { tipo:'IMAGEM', arquivo:'imagens/promo01.jpg', tempo:8 },
+  // { tipo:'VIDEO',  arquivo:'videos/video01.mp4',  tempo:15 },
+];
 
 async function loadPlaylist() {
-  if (CONFIG.sheetsCSV && !CONFIG.sheetsCSV.includes('SEU_ID')) {
-    try {
-      const res = await fetch(CONFIG.sheetsCSV + '&_=' + Date.now());
-      const text = await res.text();
-      const rows = text.trim().split('\n').slice(1); // skip header
-      playlist = rows
-        .map(r => {
-          const cols = r.split(',').map(c => c.trim().replace(/^"|"$/g,''));
-          return { active: cols[0]?.toUpperCase() === 'SIM', type: cols[1]?.toUpperCase(), file: cols[2], duration: parseInt(cols[3]) || 10 };
-        })
-        .filter(r => r.active && r.file);
-    } catch(e) {
-      playlist = CONFIG.localPlaylist;
-    }
-  } else {
-    playlist = CONFIG.localPlaylist;
+  if (CONFIG.sheetsCSV === 'SUA_URL_SHEETS_CSV_AQUI') {
+    playlist = DEMO_PLAYLIST;
+    initPlayer();
+    return;
   }
-
-  if (playlist.length > 0) {
-    clearMediaContainer();
-    buildMediaSlots();
-    showMedia(0);
+  try {
+    const csv = await (await fetch(CONFIG.sheetsCSV + '&t=' + Date.now())).text();
+    const lines = csv.trim().split('\n').slice(1);
+    const items = [];
+    lines.forEach(function(line) {
+      const cols = line.split(',').map(function(c){ return c.trim().replace(/^"|"$/g,''); });
+      if (!cols[0] || cols[0].toUpperCase() !== 'SIM') return;
+      const tipo    = (cols[1]||'').toUpperCase();
+      const arquivo = cols[2]||'';
+      const tempo   = parseInt(cols[3])||CONFIG.defaultTime;
+      if (!arquivo) return;
+      const path = tipo === 'VIDEO' ? CONFIG.videosPath + arquivo : CONFIG.imagensPath + arquivo;
+      items.push({ tipo, arquivo:path, tempo });
+    });
+    playlist = items.length ? items : DEMO_PLAYLIST;
+  } catch(e) {
+    console.warn('Planilha:', e);
+    playlist = DEMO_PLAYLIST;
   }
+  initPlayer();
 }
 
-function clearMediaContainer() {
-  const c = document.getElementById('media-container');
+function initPlayer() {
+  const container  = document.getElementById('center');
   const placeholder = document.getElementById('media-placeholder');
-  if (placeholder) placeholder.remove();
-  // remove old slots
-  c.querySelectorAll('.media-slot').forEach(el => el.remove());
-}
+  const dotsEl     = document.getElementById('media-dots');
 
-function buildMediaSlots() {
-  const c = document.getElementById('media-container');
-  playlist.forEach((item, i) => {
+  // limpa slots anteriores
+  slots.forEach(function(s){ s.remove(); });
+  slots = [];
+  dotsEl.innerHTML = '';
+
+  if (!playlist.length) { placeholder.style.display = 'flex'; return; }
+  placeholder.style.display = 'none';
+
+  playlist.forEach(function(item, i) {
     const slot = document.createElement('div');
     slot.className = 'media-slot';
-    slot.id = `slot-${i}`;
 
-    if (item.type === 'VIDEO') {
-      const vid = document.createElement('video');
-      vid.src = item.file;
-      vid.autoplay = false;
-      vid.muted = true;
-      vid.playsInline = true;
-      vid.loop = false;
-      vid.style.maxHeight = '100%';
-      vid.style.maxWidth = '100%';
-      vid.style.objectFit = 'contain';
-      slot.appendChild(vid);
+    if (item.tipo === 'VIDEO') {
+      const v = document.createElement('video');
+      v.src = item.arquivo; v.muted = true; v.playsInline = true;
+      v.preload = 'auto'; v.loop = false;
+      slot.appendChild(v);
     } else {
       const img = document.createElement('img');
-      img.src = item.file;
-      img.alt = '';
-      img.style.maxHeight = '100%';
-      img.style.maxWidth = '100%';
-      img.style.objectFit = 'contain';
+      img.src = item.arquivo; img.alt = '';
       slot.appendChild(img);
     }
 
-    c.insertBefore(slot, document.getElementById('media-progress'));
+    container.insertBefore(slot, document.getElementById('center-overlay'));
+    slots.push(slot);
+
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    dotsEl.appendChild(dot);
   });
+
+  showMedia(0);
 }
 
-function showMedia(index) {
-  if (playlist.length === 0) return;
-  clearTimeout(mediaTimeout);
+function showMedia(idx) {
+  if (!slots.length) return;
+  clearTimeout(mediaTimer);
 
-  const prev = document.querySelector('.media-slot.active');
-  if (prev) {
-    prev.classList.remove('active');
-    const vid = prev.querySelector('video');
-    if (vid) { vid.pause(); vid.currentTime = 0; }
-  }
-
-  currentMedia = ((index % playlist.length) + playlist.length) % playlist.length;
-  const item = playlist[currentMedia];
-  const slot = document.getElementById(`slot-${currentMedia}`);
-  if (!slot) { showMedia(0); return; }
-
-  slot.classList.add('active');
-
-  const progress = document.getElementById('media-progress');
-  progress.style.transition = 'none';
-  progress.style.width = '0%';
-
-  let duration = item.duration * 1000;
-
-  if (item.type === 'VIDEO') {
-    const vid = slot.querySelector('video');
-    if (vid) {
-      vid.currentTime = 0;
-      vid.play().catch(() => {});
-      vid.onended = () => showMedia(currentMedia + 1);
-      duration = vid.duration ? vid.duration * 1000 : duration;
-    }
-  }
-
-  // animate progress bar
-  requestAnimationFrame(() => {
-    progress.style.transition = `width ${item.duration}s linear`;
-    progress.style.width = '100%';
+  slots.forEach(function(s, i) {
+    s.classList.remove('active');
+    const v = s.querySelector('video');
+    if (v) { v.pause(); v.currentTime = 0; }
+  });
+  document.querySelectorAll('.dot').forEach(function(d,i){
+    d.classList.toggle('active', i === idx);
   });
 
-  mediaTimeout = setTimeout(() => showMedia(currentMedia + 1), duration);
+  currentIdx = idx;
+  const slot = slots[idx];
+  const item = playlist[idx];
+  slot.classList.add('active');
+
+  const vid = slot.querySelector('video');
+  if (vid) {
+    vid.play().catch(function(){});
+    const safeguard = setTimeout(goNext, item.tempo * 1000 + 4000);
+    vid.addEventListener('ended', function onEnd() {
+      vid.removeEventListener('ended', onEnd);
+      clearTimeout(safeguard);
+      goNext();
+    });
+    mediaTimer = safeguard;
+  } else {
+    mediaTimer = setTimeout(goNext, item.tempo * 1000);
+  }
+}
+
+function goNext() {
+  showMedia((currentIdx + 1) % playlist.length);
 }
 
 loadPlaylist();
-setInterval(loadPlaylist, CONFIG.sheetsUpdateMin * 60 * 1000);
+setInterval(loadPlaylist, 5 * 60 * 1000);
 
-// ── PROMOS ────────────────────────────────────────────────────────
-let promoIndex = 0;
-
-async function loadPromos() {
-  let promos = CONFIG.promoLocal;
-  if (CONFIG.promoCSV && !CONFIG.promoCSV.includes('SEU_')) {
-    try {
-      const res = await fetch(CONFIG.promoCSV + '&_=' + Date.now());
-      const text = await res.text();
-      const rows = text.trim().split('\n').slice(1);
-      promos = rows.map(r => {
-        const c = r.split(',').map(v => v.trim().replace(/^"|"$/g,''));
-        return { tag: c[0], title: c[1], desc: c[2], cta: c[3] };
-      }).filter(p => p.title);
-    } catch(e) {}
-  }
-  renderPromo(promos);
-}
-
-function renderPromo(promos) {
-  const area = document.getElementById('promo-area');
-  area.innerHTML = '';
-  promos.forEach((p, i) => {
-    const card = document.createElement('div');
-    card.className = 'promo-card' + (i === 0 ? ' active' : '');
-    card.id = `promo-${i}`;
-    card.innerHTML = `
-      <div>
-        <div class="promo-tag">${p.tag}</div>
-        <div class="promo-title">${p.title}</div>
-        <div class="promo-desc">${p.desc}</div>
-      </div>
-      <span class="promo-cta">${p.cta || 'Saiba mais'}</span>
-    `;
-    area.appendChild(card);
-  });
-
-  // set area height to first card
-  if (promos.length > 0) {
-    area.style.minHeight = area.firstChild.offsetHeight + 'px';
-  }
-
-  let pi = 0;
-  setInterval(() => {
-    const curr = document.getElementById(`promo-${pi}`);
-    if (curr) { curr.classList.remove('active'); curr.style.position = 'absolute'; }
-    pi = (pi + 1) % promos.length;
-    const next = document.getElementById(`promo-${pi}`);
-    if (next) { next.classList.add('active'); next.style.position = 'relative'; }
-  }, CONFIG.promoIntervalSec * 1000);
-}
-
-loadPromos();
-
-// ── REVIEWS ──────────────────────────────────────────────────────
-let reviewIndex = 0;
-const reviewCard = document.getElementById('review-card');
-const reviewText = document.getElementById('review-text');
-const reviewAuthor = document.getElementById('review-author');
-
-function showReview() {
-  reviewCard.classList.remove('visible');
-  setTimeout(() => {
-    const r = CONFIG.reviews[reviewIndex % CONFIG.reviews.length];
-    reviewText.textContent = `"${r.text}"`;
-    reviewAuthor.textContent = `— ${r.author}`;
-    reviewCard.classList.add('visible');
-    reviewIndex++;
-  }, 400);
-}
-showReview();
-setInterval(showReview, CONFIG.reviewIntervalSec * 1000);
-
-// ── INSTITUTIONAL PILLS ───────────────────────────────────────────
-const pillTexts = [
-  'Aceitamos seu usado na troca',
-  'Veículos revisados',
-  'Garantia da loja',
-  'Laudo cautelar aprovado',
-  'Financiamento facilitado',
-  'Parcele a entrada no cartão',
-];
-const pillContainer = document.getElementById('inst-pills');
-pillTexts.forEach((txt, i) => {
-  const pill = document.createElement('div');
-  pill.className = 'inst-pill';
-  pill.innerHTML = `<span class="dot"></span>${txt}`;
-  pillContainer.appendChild(pill);
-  setTimeout(() => pill.classList.add('visible'), 300 + i * 150);
-});
-
-// ── FOOTER TICKER ─────────────────────────────────────────────────
-function buildTicker() {
-  const ticker = document.getElementById('footer-ticker');
-  // duplicate for seamless loop
-  const all = [...CONFIG.tickerMessages, ...CONFIG.tickerMessages];
-  ticker.innerHTML = all.map(msg =>
-    `<div class="ticker-item"><span class="tick-dot"></span><strong>${msg}</strong></div>`
-  ).join('');
-}
-buildTicker();
-
+/* ══════════════════════════════════════════════════
+   CONSOLE — instruções
+══════════════════════════════════════════════════ */
+console.info([
+  '╔══════════════════════════════════════════════╗',
+  '║  BRAGANÇA VEÍCULOS — PAINEL DIGITAL          ║',
+  '╠══════════════════════════════════════════════╣',
+  '║  CLIMA:                                      ║',
+  '║  1. Acesse openweathermap.org → cadastre-se  ║',
+  '║  2. Copie a API Key gratuita                 ║',
+  '║  3. Cole em CONFIG.weatherKey                ║',
+  '║                                              ║',
+  '║  PLAYLIST (vídeos/imagens):                  ║',
+  '║  1. Planilha com colunas:                    ║',
+  '║     Ativo | Tipo | Arquivo | Tempo           ║',
+  '║  2. Arquivo > Publicar na web > CSV          ║',
+  '║  3. Cole a URL em CONFIG.sheetsCSV           ║',
+  '║  4. Vídeos → /videos/  Imagens → /imagens/  ║',
+  '╚══════════════════════════════════════════════╝',
+].join('\n'));
 </script>
 </body>
 </html>
