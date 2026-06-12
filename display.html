@@ -137,7 +137,6 @@
     background: #000;
     position: relative; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
-    /* largura exata = var(--media-w), altura = var(--content-h) */
     width: var(--media-w);
     height: var(--content-h);
   }
@@ -145,13 +144,12 @@
   .media-slot {
     position: absolute; inset: 0;
     display: flex; align-items: center; justify-content: center;
-    opacity: 0; transition: opacity .9s ease;
+    opacity: 0; transition: opacity .7s ease;
   }
   .media-slot.active { opacity: 1; }
 
   .media-slot img,
   .media-slot video {
-    /* preenche todo o slot 9:16 sem distorcer */
     width: 100%; height: 100%;
     object-fit: cover;
     display: block;
@@ -346,7 +344,7 @@
   <main id="center">
     <div id="media-placeholder">
       <div class="ph-icon">🎬</div>
-      <div class="ph-text">Configure a playlist</div>
+      <div class="ph-text">Configure a playlist no playlist.json</div>
     </div>
     <div id="center-overlay"></div>
     <div id="media-dots"></div>
@@ -419,10 +417,7 @@
    CONFIGURAÇÃO
 ══════════════════════════════════════ */
 const CONFIG = {
-  sheetsCSV: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0mJBzshSuYBeWVWJAzc10fsM326Z8nDDhfEq03WxPgU86HXYwk8ih2u2ELciyMEyRGVZ_jCsWxQXa/pub?gid=0&single=true&output=csv',
-  videosPath:  'videos/',
-  imagensPath: 'images/',
-  defaultTime: 10,
+  playlistJSON: 'playlist.json',  // Arquivo JSON com a playlist
   weatherKey:  'c21fd50009eb2f0ef37c6f5ee8c03927',
   weatherCity: 'Bragança Paulista,BR',
   weatherInterval: 30 * 60 * 1000,
@@ -609,67 +604,48 @@ nextReview(); setInterval(nextReview,9000);
 })();
 
 /* ══════════════════════════════════════
-   PLAYER DE MÍDIA
+   PLAYER DE MÍDIA (JSON SIMPLES)
 ══════════════════════════════════════ */
 let playlist=[], currentIdx=0, slots=[], mediaTimer=null;
 
 async function loadPlaylist() {
   try {
-    const csv=await (await fetch(CONFIG.sheetsCSV+'&t='+Date.now())).text();
-    const lines=csv.trim().split('\n').slice(1);
-    const items=[];
-    lines.forEach(function(line){
-      const cols=line.split(',').map(c=>c.trim().replace(/^"|"$/g,''));
-      if(!cols[0]||cols[0].toUpperCase()!=='SIM') return;
-      const tipo=(cols[1]||'').toUpperCase();
-      const arquivo=cols[2]||'';
-      const tempo=parseInt(cols[3])||CONFIG.defaultTime;
-      if(!arquivo) return;
-      const path=tipo==='VIDEO'?CONFIG.videosPath+arquivo:CONFIG.imagensPath+arquivo;
-      items.push({tipo,arquivo:path,tempo});
-    });
-    if(items.length){
-      playlist=items;
-      initPlayer();
-    }
-  } catch(e){ console.warn('Planilha:',e); }
-}
-
-async function loadPlaylist() {
-  try {
-    const csv = await (await fetch(CONFIG.sheetsCSV + '&t=' + Date.now())).text();
-    console.log('📊 CSV recebido:', csv);
+    const response = await fetch(CONFIG.playlistJSON + '?t=' + Date.now());
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     
-    const lines = csv.trim().split('\n').slice(1);
-    const items = [];
+    const data = await response.json();
     
-    lines.forEach(function(line) {
-      const cols = line.split(',').map(c => c.trim().replace(/^"|"$/g, ''));
-      console.log('📝 Linha processada:', cols);
-      
-      if (!cols[0] || cols[0].toUpperCase() !== 'SIM') return;
-      
-      const tipo = (cols[1] || '').toUpperCase();
-      const arquivo = cols[2] || '';
-      const tempo = parseInt(cols[3]) || CONFIG.defaultTime;
-      
-      if (!arquivo) return;
-      
-      const path = tipo === 'VIDEO' ? CONFIG.videosPath + arquivo : CONFIG.imagensPath + arquivo;
-      console.log(`🎬 Adicionado: ${tipo} - ${path}`);
-      items.push({ tipo, arquivo: path, tempo });
-    });
-    
-    console.log('📋 Playlist final:', items);
-    
-    if (items.length) {
-      playlist = items;
+    if (data.playlist && data.playlist.length) {
+      playlist = data.playlist;
+      console.log('✅ Playlist carregada:', playlist.length, 'itens');
       initPlayer();
     } else {
-      console.warn('⚠️ Nenhum item válido na playlist');
+      console.warn('⚠️ Playlist vazia ou sem itens');
+      showPlaceholder();
     }
   } catch(e) { 
-    console.error('❌ Erro ao carregar planilha:', e); 
+    console.error('❌ Erro ao carregar playlist.json:', e);
+    showPlaceholder();
+  }
+}
+
+function showPlaceholder() {
+  const placeholder = document.getElementById('media-placeholder');
+  if (placeholder) placeholder.style.display = 'flex';
+  
+  // Limpar player existente
+  if (slots.length) {
+    slots.forEach(s => {
+      const v = s.querySelector('video');
+      if (v) {
+        v.pause();
+        v.removeAttribute('src');
+        v.load();
+      }
+      if (s && s.remove) s.remove();
+    });
+    slots = [];
+    document.getElementById('media-dots').innerHTML = '';
   }
 }
 
@@ -695,6 +671,7 @@ function initPlayer() {
     placeholder.style.display = 'flex';
     return;
   }
+  
   placeholder.style.display = 'none';
 
   playlist.forEach(function(item, i) {
@@ -703,24 +680,21 @@ function initPlayer() {
     
     if (item.tipo === 'VIDEO') {
       const v = document.createElement('video');
-      // 🔧 SOLUÇÃO: Adicionar timestamp para evitar cache problemático
-      v.src = item.arquivo;
+      v.src = item.caminho + '?t=' + Date.now();
       v.muted = true;
       v.playsInline = true;
       v.preload = 'auto';
       v.loop = false;
-
       
-      // Eventos de debug
-      v.onerror = (e) => console.error('❌ Erro no vídeo:', item.arquivo, e);
-      v.oncanplay = () => console.log('✅ Vídeo pronto:', item.arquivo);
+      v.onerror = () => console.error('❌ Erro no vídeo:', item.caminho);
+      v.oncanplay = () => console.log('✅ Vídeo pronto:', item.caminho);
       
       slot.appendChild(v);
     } else {
       const img = document.createElement('img');
-      img.src = item.arquivo + '?t=' + Date.now();
+      img.src = item.caminho + '?t=' + Date.now();
       img.alt = '';
-      img.onerror = () => console.error('❌ Erro na imagem:', item.arquivo);
+      img.onerror = () => console.error('❌ Erro na imagem:', item.caminho);
       slot.appendChild(img);
     }
     
@@ -746,7 +720,6 @@ function showMedia(idx) {
     const v = s.querySelector('video');
     if (v) {
       v.pause();
-      // Não resetar o currentTime completamente para evitar recarregamento
       if (v !== slots[idx]?.querySelector('video')) {
         v.currentTime = 0;
       }
@@ -766,29 +739,20 @@ function showMedia(idx) {
   const vid = slot.querySelector('video');
   
   if (vid) {
-    // 🔧 Forçar recarregamento do vídeo se necessário
-    const currentSrc = vid.src;
-    
-    // Pequeno delay para garantir que o load foi processado
     setTimeout(() => {
       vid.play().catch(err => {
-        console.error('❌ Erro ao reproduzir:', err);
-        // Tentar recarregar o src se falhar
-        if (err.name === 'NotAllowedError') {
-          console.log('⏳ Aguardando interação do usuário...');
-        } else if (err.name === 'NotSupportedError') {
-          vid.src = currentSrc + '&retry=' + Date.now();
-          vid.load();
-          vid.play().catch(e => console.error('❌ Falha na segunda tentativa:', e));
+        console.error('❌ Erro ao reproduzir vídeo:', err);
+        // Se falhar, pular para o próximo
+        if (err.name !== 'NotAllowedError') {
+          clearTimeout(mediaTimer);
+          setTimeout(() => goNext(), 1000);
         }
       });
     }, 100);
     
-    // Timer para próximo
-    const timerDuration = item.tempo * 1000;
+    const timerDuration = (item.tempo || 10) * 1000;
     mediaTimer = setTimeout(() => goNext(), timerDuration);
     
-    // Evento de fim do vídeo
     const onEnd = function() {
       vid.removeEventListener('ended', onEnd);
       clearTimeout(mediaTimer);
@@ -798,13 +762,18 @@ function showMedia(idx) {
     
   } else {
     // Para imagens
-    mediaTimer = setTimeout(() => goNext(), item.tempo * 1000);
+    const timerDuration = (item.tempo || 8) * 1000;
+    mediaTimer = setTimeout(() => goNext(), timerDuration);
   }
 }
-function goNext(){ showMedia((currentIdx+1)%playlist.length); }
 
+function goNext() {
+  showMedia((currentIdx + 1) % playlist.length);
+}
+
+// Carregar playlist ao iniciar e recarregar a cada 5 minutos
 loadPlaylist();
-setInterval(loadPlaylist,5*60*1000);
+setInterval(loadPlaylist, 5 * 60 * 1000);
 </script>
 </body>
 </html>

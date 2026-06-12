@@ -1,0 +1,14 @@
+{
+  "playlist": [
+    {
+      "tipo": "VIDEO",
+      "caminho": "videos/video1.mp4",
+      "tempo": 21
+    },
+    {
+      "tipo": "IMAGEM", 
+      "caminho": "images/imagem1.jpg",
+      "tempo": 5
+    }
+  ]
+}
