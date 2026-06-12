@@ -6,17 +6,21 @@
 <title>Bragança Veículos — Painel Digital</title>
 <style>
   :root {
-    --blue:       #042c9b;
-    --blue-glow:  #1a47c8;
-    --black:      #080a0f;
-    --surface:    #0d1117;
-    --surface2:   #131822;
-    --surface3:   #1a2235;
-    --border:     #1e2d4a;
-    --white:      #f4f6ff;
-    --gray:       #8a9ab8;
-    --gray-dim:   #3d4f6e;
-    --font-body:  'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    --blue:      #042c9b;
+    --blue-glow: white;
+    --black:     #080a0f;
+    --surface:   #0d1117;
+    --surface2:  #131822;
+    --border:    #1e2d4a;
+    --white:     #f4f6ff;
+    --gray:      #8a9ab8;
+    --gray-dim:  #3d4f6e;
+    --font:      'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+
+    /* Altura útil (sem rodapé) = 970px. Vídeo 9:16 → largura = 970*9/16 = 546px */
+    --media-w: 546px;
+    --footer-h: 110px;
+    --content-h: calc(1080px - var(--footer-h));
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -26,246 +30,270 @@
     overflow: hidden;
     background: var(--black);
     color: var(--white);
-    font-family: var(--font-body);
+    font-family: var(--font);
     -webkit-font-smoothing: antialiased;
     user-select: none;
   }
 
   #app {
     display: grid;
-    grid-template-columns: 320px 1fr 480px;
-    grid-template-rows: 970px 110px;
+    /* Esquerda: restante | Centro: fixo 9:16 | Direita: restante */
+    grid-template-columns: 1fr var(--media-w) 1fr;
+    grid-template-rows: var(--content-h) var(--footer-h);
     width: 1920px; height: 1080px;
   }
 
-  /* ── COLUNA ESQUERDA ── */
+  /* ════════════════════════════
+     COLUNA ESQUERDA
+  ════════════════════════════ */
   #left {
     grid-column: 1; grid-row: 1;
     background: var(--surface);
     border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
+    display: flex; flex-direction: column;
     align-items: center;
-    padding: 24px 18px 16px;
-    gap: 0;
-    position: relative;
-    overflow: hidden;
+    padding: 28px 24px 20px;
+    position: relative; overflow: hidden;
   }
   #left::before {
-    content:''; position:absolute; top:0;left:0;right:0;height:3px;
-    background:linear-gradient(90deg,transparent,var(--blue),transparent);
+    content:''; position:absolute; top:0; left:0; right:0; height:4px;
+    background: linear-gradient(90deg, transparent, var(--blue), transparent);
   }
 
   #logo-wrap {
     width:100%; display:flex; flex-direction:column; align-items:center;
-    padding-bottom:16px; border-bottom:1px solid var(--border); margin-bottom:14px;
+    padding-bottom:20px; border-bottom:1px solid var(--border); margin-bottom:20px;
   }
-  #logo-wrap img { width:200px; object-fit:contain; }
+  #logo-wrap img { width: 240px; object-fit:contain; }
   #slogan {
-    margin-top:8px; font-size:11px; letter-spacing:3px;
+    margin-top:10px; font-size:14px; letter-spacing:4px;
     text-transform:uppercase; color:var(--gray); text-align:center;
   }
 
   #clock {
-    font-size:64px; font-weight:700; letter-spacing:2px;
+    font-size: 96px; font-weight:700; letter-spacing:3px;
     color:var(--white); line-height:1; text-align:center;
-    font-variant-numeric:tabular-nums;
+    font-variant-numeric: tabular-nums;
   }
-  #date-line { font-size:11px; color:var(--gray); text-align:center; margin-top:4px; }
+  #date-line {
+    font-size: 17px; color:var(--gray); text-align:center; margin-top:6px;
+    letter-spacing: 0.5px;
+  }
 
   #weather-box {
-    margin-top:14px; width:100%;
+    margin-top:20px; width:100%;
     background:var(--surface2); border:1px solid var(--border);
-    border-radius:10px; padding:12px 14px;
-    display:flex; align-items:center; gap:10px;
+    border-radius:12px; padding:16px 18px;
+    display:flex; align-items:center; gap:14px;
   }
-  #weather-icon { font-size:30px; }
-  #weather-city { font-size:9px; letter-spacing:2px; color:var(--gray); text-transform:uppercase; }
-  #weather-temp { font-size:24px; font-weight:700; color:var(--white); }
-  #weather-desc { font-size:11px; color:var(--gray); margin-top:1px; }
+  #weather-icon { font-size:44px; }
+  #weather-city { font-size:12px; letter-spacing:2px; color:var(--gray); text-transform:uppercase; }
+  #weather-temp { font-size:38px; font-weight:700; color:var(--white); line-height:1.1; }
+  #weather-desc { font-size:16px; color:var(--gray); margin-top:2px; }
 
   #traffic-box {
-    margin-top:12px; width:100%;
+    margin-top:16px; width:100%;
     background:var(--surface2); border:1px solid var(--border);
-    border-radius:10px; padding:12px 14px; flex:1;
+    border-radius:12px; padding:16px 18px; flex:1;
   }
   #traffic-title {
-    font-size:15px; letter-spacing:2px; text-transform:uppercase;
-    color:white; margin-bottom:8px;
-    display:flex; align-items:center; gap:6px;
+    font-size:13px; letter-spacing:2.5px; text-transform:uppercase;
+    color:var(--blue-glow); margin-bottom:12px;
+    display:flex; align-items:center; gap:8px;
   }
   #traffic-title::before {
-    content:''; display:inline-block; width:6px; height:6px;
+    content:''; display:inline-block; width:8px; height:8px;
     border-radius:50%; background:#00d26a; animation:blink 2s ease-in-out infinite;
   }
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
   .traffic-row {
     display:flex; justify-content:space-between; align-items:center;
-    padding:6px 0; border-bottom:1px solid var(--border); font-size:13px;
+    padding:10px 0; border-bottom:1px solid var(--border); font-size:20px;
   }
   .traffic-row:last-child { border-bottom:none; }
   .traffic-dest { color:var(--gray); }
   .traffic-time { color:var(--white); font-weight:600; }
 
   #qr-section {
-    margin-top:12px; width:100%; display:flex; gap:10px;
+    margin-top:16px; width:100%; display:flex; gap:12px;
   }
   .qr-card {
     flex:1; background:var(--surface2); border:1px solid var(--border);
-    border-radius:10px; padding:10px 8px;
-    display:flex; flex-direction:column; align-items:center; gap:6px;
+    border-radius:12px; padding:12px 8px;
+    display:flex; flex-direction:column; align-items:center; gap:8px;
   }
-  .qr-label { font-size:9px; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray); text-align:center; }
+  .qr-card > div:first-child { line-height:0; }
+  .qr-label {
+    font-size:13px; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--gray); text-align:center;
+  }
 
-  /* ── COLUNA CENTRAL ── */
+  /* ════════════════════════════
+     COLUNA CENTRAL — 9:16
+  ════════════════════════════ */
   #center {
-    grid-column:2; grid-row:1;
-    background:var(--black);
-    position:relative; overflow:hidden;
-    display:flex; align-items:center; justify-content:center;
+    grid-column: 2; grid-row: 1;
+    background: #000;
+    position: relative; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    /* largura exata = var(--media-w), altura = var(--content-h) */
+    width: var(--media-w);
+    height: var(--content-h);
   }
+
   .media-slot {
-    position:absolute; inset:0;
-    display:flex; align-items:center; justify-content:center;
-    opacity:0; transition:opacity .9s ease;
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity .9s ease;
   }
-  .media-slot.active { opacity:1; }
-  .media-slot img, .media-slot video {
-    max-width:100%; max-height:100%;
-    object-fit:contain; display:block;
+  .media-slot.active { opacity: 1; }
+
+  .media-slot img,
+  .media-slot video {
+    /* preenche todo o slot 9:16 sem distorcer */
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
   }
+
   #center-overlay {
-    position:absolute; bottom:0; left:0; right:0; height:90px;
-    background:linear-gradient(to top,var(--black),transparent);
+    position:absolute; bottom:0; left:0; right:0; height:80px;
+    background:linear-gradient(to top, rgba(8,10,15,.8), transparent);
     pointer-events:none; z-index:2;
   }
   #media-dots {
-    position:absolute; bottom:18px; left:50%; transform:translateX(-50%);
-    display:flex; gap:6px; z-index:3;
+    position:absolute; bottom:16px; left:50%; transform:translateX(-50%);
+    display:flex; gap:8px; z-index:3;
   }
   .dot {
-    width:6px; height:6px; border-radius:50%; background:var(--gray-dim);
-    transition:background .3s,transform .3s;
+    width:8px; height:8px; border-radius:50%; background:var(--gray-dim);
+    transition:background .3s, transform .3s;
   }
-  .dot.active { background:var(--blue-glow); transform:scale(1.4); }
+  .dot.active { background:var(--blue-glow); transform:scale(1.5); }
 
   #media-placeholder {
     width:100%; height:100%;
     display:flex; flex-direction:column; align-items:center; justify-content:center;
-    gap:16px; color:var(--gray-dim);
+    gap:20px; color:var(--gray-dim);
   }
-  #media-placeholder .ph-icon { font-size:64px; }
-  #media-placeholder .ph-text { font-size:13px; letter-spacing:2px; text-transform:uppercase; }
+  #media-placeholder .ph-icon { font-size:80px; }
+  #media-placeholder .ph-text { font-size:18px; letter-spacing:3px; text-transform:uppercase; }
 
-  /* ── COLUNA DIREITA ── */
+  /* ════════════════════════════
+     COLUNA DIREITA
+  ════════════════════════════ */
   #right {
-    grid-column:3; grid-row:1;
-    background:var(--surface);
-    border-left:1px solid var(--border);
-    display:flex; flex-direction:column;
-    padding:22px 20px 14px; gap:14px;
-    overflow:hidden; position:relative;
+    grid-column: 3; grid-row: 1;
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    display: flex; flex-direction: column;
+    padding: 28px 24px 20px; gap: 16px;
+    overflow: hidden; position: relative;
   }
   #right::before {
-    content:''; position:absolute; top:0;left:0;right:0;height:3px;
-    background:linear-gradient(90deg,transparent,var(--blue),transparent);
+    content:''; position:absolute; top:0; left:0; right:0; height:4px;
+    background: linear-gradient(90deg, transparent, var(--blue), transparent);
   }
 
   .section-label {
-    font-size:15px; letter-spacing:3px; text-transform:uppercase;
-    color:white; margin-bottom:8px;
+    font-size:13px; letter-spacing:3px; text-transform:uppercase;
+    color:var(--blue-glow); margin-bottom:10px;
   }
 
   #promo-box {
-    background:linear-gradient(135deg,var(--blue) 0%,#021e6e 100%);
-    border-radius:12px; padding:20px; position:relative; overflow:hidden;
-    min-height:155px; display:flex; flex-direction:column; justify-content:flex-end;
+    background: linear-gradient(135deg, var(--blue) 0%, #021e6e 100%);
+    border-radius:14px; padding:24px; position:relative; overflow:hidden;
+    min-height:180px; display:flex; flex-direction:column; justify-content:flex-end;
   }
   #promo-box::before {
-    content:''; position:absolute; top:-40px;right:-40px;
-    width:160px;height:160px; border-radius:50%; background:rgba(255,255,255,.05);
+    content:''; position:absolute; top:-50px; right:-50px;
+    width:200px; height:200px; border-radius:50%; background:rgba(255,255,255,.05);
   }
   #promo-box::after {
-    content:''; position:absolute; bottom:-30px;left:-30px;
-    width:120px;height:120px; border-radius:50%; background:rgba(255,255,255,.04);
+    content:''; position:absolute; bottom:-40px; left:-40px;
+    width:160px; height:160px; border-radius:50%; background:rgba(255,255,255,.04);
   }
-  #promo-tag { font-size:9px; letter-spacing:3px; text-transform:uppercase; color:rgba(255,255,255,.55); margin-bottom:5px; }
+  #promo-tag {
+    font-size:12px; letter-spacing:3px; text-transform:uppercase;
+    color:rgba(255,255,255,.55); margin-bottom:6px;
+  }
   #promo-title {
-    font-size:22px; font-weight:700; color:var(--white); line-height:1.2;
+    font-size:30px; font-weight:700; color:var(--white); line-height:1.2;
     transition:opacity .5s;
   }
   #promo-desc {
-    font-size:13px; color:rgba(255,255,255,.7); margin-top:5px;
+    font-size:18px; color:rgba(255,255,255,.75); margin-top:6px;
     transition:opacity .5s;
   }
 
   #indicators {
-    display:grid; grid-template-columns:1fr 1fr; gap:10px;
+    display:grid; grid-template-columns:1fr 1fr; gap:12px;
   }
   .ind-card {
     background:var(--surface2); border:1px solid var(--border);
-    border-radius:10px; padding:13px 13px 10px;
-    display:flex; flex-direction:column; gap:2px;
+    border-radius:12px; padding:16px 14px 12px;
+    display:flex; flex-direction:column; gap:4px;
   }
   .ind-number {
-    font-size:42px; font-weight:600; color:var(--white);
+    font-size:46px; font-weight:800; color:var(--white);
     letter-spacing:-1px; line-height:1;
   }
-  .ind-number span { color:white; }
-  .ind-label { font-size:14px; color:var(--gray); line-height:1.3; }
+  .ind-number span { color:var(--blue-glow); }
+  .ind-label { font-size:15px; color:var(--gray); line-height:1.3; }
 
   #msg-box {
     background:var(--surface2); border:1px solid var(--border);
-    border-radius:10px; padding:13px 15px;
-    display:flex; align-items:center; gap:12px; min-height:54px;
+    border-radius:12px; padding:16px 18px;
+    display:flex; align-items:center; gap:14px; min-height:64px;
   }
-  #msg-icon { font-size:20px; flex-shrink:0; }
-  #msg-text { font-size:14px; color:var(--white); font-weight:500; transition:opacity .4s; }
+  #msg-icon { font-size:26px; flex-shrink:0; }
+  #msg-text { font-size:19px; color:var(--white); font-weight:500; transition:opacity .4s; line-height:1.4; }
 
   #review-box {
     background:var(--surface2); border:1px solid var(--border);
-    border-radius:10px; padding:14px 16px; flex:1;
-    display:flex; flex-direction:column; justify-content:center; gap:5px;
+    border-radius:12px; padding:18px 20px; flex:1;
+    display:flex; flex-direction:column; justify-content:center; gap:8px;
   }
-  #review-stars { color:#f5b800; font-size:14px; letter-spacing:2px; }
+  #review-stars { color:#f5b800; font-size:22px; letter-spacing:4px; }
   #review-text {
-    font-size:13px; color:var(--white); font-style:italic;
-    line-height:1.5; transition:opacity .4s;
+    font-size:17px; color:var(--white); font-style:italic;
+    line-height:1.6; transition:opacity .4s;
   }
-  #review-author { font-size:11px; color:var(--gray); margin-top:2px; }
+  #review-author { font-size:14px; color:var(--gray); margin-top:4px; }
 
-  /* ── RODAPÉ ── */
+  /* ════════════════════════════
+     RODAPÉ
+  ════════════════════════════ */
   #footer {
-    grid-column:1/-1; grid-row:2;
-    background:var(--surface2); border-top:1px solid var(--border);
+    grid-column: 1 / -1; grid-row: 2;
+    background: var(--surface2); border-top: 1px solid var(--border);
     display:flex; align-items:center;
-    padding:0 30px; gap:28px; position:relative; overflow:hidden;
+    padding: 0 36px; gap:32px; position:relative; overflow:hidden;
   }
   #footer::before {
-    content:''; position:absolute; top:0;left:0;right:0;height:1px;
-    background:linear-gradient(90deg,transparent,var(--blue),transparent);
+    content:''; position:absolute; top:0; left:0; right:0; height:1px;
+    background:linear-gradient(90deg, transparent, var(--blue), transparent);
   }
-  #footer-logo { flex-shrink:0; opacity:.45; height:34px; object-fit:contain; }
-  .footer-sep { width:1px; height:38px; background:var(--border); flex-shrink:0; }
-  #ticker { flex:1; overflow:hidden; position:relative; height:38px; }
+  #footer-logo { flex-shrink:0; opacity:.45; height:42px; object-fit:contain; }
+  .footer-sep { width:1px; height:48px; background:var(--border); flex-shrink:0; }
+  #ticker { flex:1; overflow:hidden; position:relative; height:48px; }
   #ticker-inner {
     display:flex; align-items:center; height:100%;
-    white-space:nowrap; animation:ticker-scroll 50s linear infinite;
+    white-space:nowrap; animation:ticker-scroll 55s linear infinite;
   }
   .ticker-item {
-    display:inline-flex; align-items:center; gap:8px;
-    margin-right:64px; font-size:30px; color:var(--gray); letter-spacing:.5px;
+    display:inline-flex; align-items:center; gap:10px;
+    margin-right:80px; font-size:22px; color:var(--gray); letter-spacing:.5px;
   }
-  .ticker-item::before {
-    content:'●'; color:var(--blue-glow); font-size:7px;
-  }
+  .ticker-item::before { content:'●'; color:var(--blue-glow); font-size:10px; }
   @keyframes ticker-scroll { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
   #footer-contact {
     flex-shrink:0; display:flex; align-items:center; gap:8px;
-    font-size:14px; color:var(--gray);
+    font-size:20px; color:var(--gray);
   }
-  #footer-contact strong { color:var(--white); }
+  #footer-contact strong { color:var(--white); font-size:22px; }
 
   ::-webkit-scrollbar { display:none; }
 </style>
@@ -273,12 +301,13 @@
 <body>
 <div id="app">
 
-  <!-- ESQUERDA -->
+  <!-- ═══════ ESQUERDA ═══════ -->
   <aside id="left">
     <div id="logo-wrap">
       <img src="images/LOGO NOVO branco.png" alt="Bragança Veículos">
       <div id="slogan">Aqui da negócio</div>
     </div>
+
     <div id="clock">00:00</div>
     <div id="date-line">Carregando...</div>
 
@@ -313,17 +342,17 @@
     </div>
   </aside>
 
-  <!-- CENTRAL -->
+  <!-- ═══════ CENTRAL ═══════ -->
   <main id="center">
     <div id="media-placeholder">
       <div class="ph-icon">🎬</div>
-      <div class="ph-text">Configure a playlist na planilha</div>
+      <div class="ph-text">Configure a playlist</div>
     </div>
     <div id="center-overlay"></div>
     <div id="media-dots"></div>
   </main>
 
-  <!-- DIREITA -->
+  <!-- ═══════ DIREITA ═══════ -->
   <aside id="right">
     <div>
       <div class="section-label">🔥 Oferta em destaque</div>
@@ -371,9 +400,9 @@
     </div>
   </aside>
 
-  <!-- RODAPÉ -->
+  <!-- ═══════ RODAPÉ ═══════ -->
   <footer id="footer">
-    <img src="/images/LOGO NOVO branco.png" alt="BV" id="footer-logo">
+    <img src="images/LOGO NOVO branco.png" alt="BV" id="footer-logo">
     <div class="footer-sep"></div>
     <div id="ticker"><div id="ticker-inner"></div></div>
     <div class="footer-sep"></div>
@@ -382,44 +411,35 @@
 
 </div>
 
-<!-- QR Code lib -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
 <script>
 'use strict';
 
-/* ══════════════════════════════════════════════════
-   ▶ CONFIGURAÇÃO — edite apenas esta seção
-══════════════════════════════════════════════════ */
+/* ══════════════════════════════════════
+   CONFIGURAÇÃO
+══════════════════════════════════════ */
 const CONFIG = {
-  // 1) Publique sua planilha como CSV:
-  //    Arquivo > Compartilhar > Publicar na web > Aba desejada > CSV > Publicar
-  //    Cole a URL aqui:
   sheetsCSV: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0mJBzshSuYBeWVWJAzc10fsM326Z8nDDhfEq03WxPgU86HXYwk8ih2u2ELciyMEyRGVZ_jCsWxQXa/pub?gid=0&single=true&output=csv',
-
   videosPath:  'videos/',
   imagensPath: 'images/',
   defaultTime: 10,
-
-  // 2) Crie conta gratuita em openweathermap.org, copie sua API Key:
   weatherKey:  'c21fd50009eb2f0ef37c6f5ee8c03927',
   weatherCity: 'Bragança Paulista,BR',
   weatherInterval: 30 * 60 * 1000,
-
   whatsappURL: 'https://wa.me/5511932069533',
   estoqueURL:  'https://www.bragancaveiculos.com.br/catalogo.html',
 };
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    DADOS ESTÁTICOS
-══════════════════════════════════════════════════ */
+══════════════════════════════════════ */
 const PROMOS = [
-  { title:'Financiamento facilitado',         desc:'Aprovação na hora — sem burocracia' },
-  { title:'Taxa a partir de 0,89% a.m.',      desc:'Condições especiais para você' },
-  { title:'Aceitamos seu usado na troca',      desc:'Avaliação com o melhor preço do mercado' },
-  { title:'Entrada facilitada',               desc:'Parcelas que cabem no seu bolso' },
-  { title:'Garantia da loja',                 desc:'Segurança total na sua compra' },
-  { title:'Laudo cautelar aprovado',          desc:'Transparência em todos os veículos' },
+  { title:'Financiamento facilitado',        desc:'Aprovação na hora — sem burocracia' },
+  { title:'Taxa a partir de 2% a.m.',     desc:'Condições especiais para você' },
+  { title:'Aceitamos seu usado na troca',     desc:'Avaliação com o melhor preço do mercado' },
+  { title:'Entrada facilitada',              desc:'Parcelas que cabem no seu bolso' },
+  { title:'Garantia da loja',                desc:'Segurança total na sua compra' },
+  { title:'Laudo cautelar aprovado',         desc:'Transparência em todos os veículos' },
 ];
 
 const MSGS = [
@@ -445,32 +465,30 @@ const TICKER_ITEMS = [
   'Veículos revisados e com laudo cautelar aprovado',
   'Garantia da loja em todos os veículos',
   'Financiamento facilitado — mais de 16 bancos parceiros',
-  '+4.000 veículos vendidos | 8 anos de mercado',
+  '+4.356 veículos vendidos | 8 anos de mercado',
   'Atendemos toda a região: Atibaia, Campinas, Extrema e São Paulo',
   'Parcelas que cabem no seu bolso — simule agora',
-  '200 veículos em estoque esperando por você',
+  '+220 veículos em estoque esperando por você',
 ];
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    RELÓGIO
-══════════════════════════════════════════════════ */
+══════════════════════════════════════ */
 function updateClock() {
   const now = new Date();
-  const h = String(now.getHours()).padStart(2,'0');
-  const m = String(now.getMinutes()).padStart(2,'0');
-  document.getElementById('clock').textContent = h + ':' + m;
-
-  const dias   = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
-  const meses  = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+  document.getElementById('clock').textContent =
+    String(now.getHours()).padStart(2,'0') + ':' + String(now.getMinutes()).padStart(2,'0');
+  const dias  = ['Domingo','Segunda-feira','Terça-feira','Quarta-feira','Quinta-feira','Sexta-feira','Sábado'];
+  const meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
   document.getElementById('date-line').textContent =
     dias[now.getDay()] + ', ' + now.getDate() + ' de ' + meses[now.getMonth()] + ' de ' + now.getFullYear();
 }
 setInterval(updateClock, 1000);
 updateClock();
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    CLIMA
-══════════════════════════════════════════════════ */
+══════════════════════════════════════ */
 const W_ICONS = {
   '01d':'☀️','01n':'🌙','02d':'⛅','02n':'⛅','03d':'🌥️','03n':'🌥️',
   '04d':'☁️','04n':'☁️','09d':'🌧️','09n':'🌧️','10d':'🌦️','10n':'🌧️',
@@ -482,24 +500,15 @@ const W_PT = {
   'light rain':'Chuva leve','moderate rain':'Chuva moderada','rain':'Chuva',
   'thunderstorm':'Tempestade','snow':'Neve','mist':'Névoa',
 };
-
 async function fetchWeather() {
-  if (CONFIG.weatherKey === 'SUA_CHAVE_OPENWEATHERMAP_AQUI') {
-    document.getElementById('weather-temp').textContent = '22°C';
-    document.getElementById('weather-desc').textContent = 'Céu limpo';
-    document.getElementById('weather-icon').textContent = '☀️';
-    return;
-  }
   try {
     const url = 'https://api.openweathermap.org/data/2.5/weather?q='
       + encodeURIComponent(CONFIG.weatherCity)
       + '&appid=' + CONFIG.weatherKey + '&units=metric';
-    const data = await (await fetch(url)).json();
-    const icon = W_ICONS[data.weather[0].icon] || '🌤️';
-    const desc = W_PT[data.weather[0].description] || data.weather[0].description;
-    document.getElementById('weather-icon').textContent = icon;
-    document.getElementById('weather-temp').textContent = Math.round(data.main.temp) + '°C';
-    document.getElementById('weather-desc').textContent = desc;
+    const d = await (await fetch(url)).json();
+    document.getElementById('weather-icon').textContent = W_ICONS[d.weather[0].icon] || '🌤️';
+    document.getElementById('weather-temp').textContent = Math.round(d.main.temp) + '°C';
+    document.getElementById('weather-desc').textContent = W_PT[d.weather[0].description] || d.weather[0].description;
   } catch(e) {
     document.getElementById('weather-desc').textContent = 'Indisponível';
   }
@@ -507,280 +516,174 @@ async function fetchWeather() {
 fetchWeather();
 setInterval(fetchWeather, CONFIG.weatherInterval);
 
-/* ══════════════════════════════════════════════════
-   TRÂNSITO (simulado — varia com horário de pico)
-══════════════════════════════════════════════════ */
+/* ══════════════════════════════════════
+   TRÂNSITO
+══════════════════════════════════════ */
 const TRAFFIC = [
-  { id:'tr0', base:22 }, { id:'tr1', base:30 },
-  { id:'tr2', base:55 }, { id:'tr3', base:80 },
+  {id:'tr0',base:22},{id:'tr1',base:30},{id:'tr2',base:55},{id:'tr3',base:80}
 ];
-function fmtMin(m) {
-  if (m < 60) return m + ' min';
-  return Math.floor(m/60) + 'h ' + (m%60 > 0 ? (m%60) + 'min' : '');
-}
+function fmtMin(m) { return m<60 ? m+' min' : Math.floor(m/60)+'h '+(m%60>0?(m%60)+'min':''); }
 function updateTraffic() {
   const h = new Date().getHours();
-  const rush = (h >= 7 && h <= 9) || (h >= 17 && h <= 19);
+  const rush = (h>=7&&h<=9)||(h>=17&&h<=19);
   TRAFFIC.forEach(t => {
-    const factor = rush ? 1.35 + Math.random()*0.15 : 0.95 + Math.random()*0.15;
-    document.getElementById(t.id).textContent = fmtMin(Math.round(t.base * factor));
+    const f = rush ? 1.35+Math.random()*.15 : 0.95+Math.random()*.15;
+    document.getElementById(t.id).textContent = fmtMin(Math.round(t.base*f));
   });
 }
 updateTraffic();
-setInterval(updateTraffic, 5 * 60 * 1000);
+setInterval(updateTraffic, 5*60*1000);
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    QR CODES
-══════════════════════════════════════════════════ */
+══════════════════════════════════════ */
 function makeQR(elId, url) {
   const el = document.getElementById(elId);
   if (!el || typeof QRCode === 'undefined') return;
   try {
-    new QRCode(el, {
-      text: url, width: 90, height: 90,
-      colorDark: '#042c9b', colorLight: '#f4f6ff',
-      correctLevel: QRCode.CorrectLevel.H,
-    });
-  } catch(e) { console.warn('QR:', e); }
+    new QRCode(el, { text:url, width:110, height:110, colorDark:'#042c9b', colorLight:'#f4f6ff', correctLevel:QRCode.CorrectLevel.H });
+  } catch(e) { console.warn('QR:',e); }
 }
 window.addEventListener('load', function() {
-  setTimeout(function() {
-    makeQR('qr-whatsapp', CONFIG.whatsappURL);
-    makeQR('qr-estoque',  CONFIG.estoqueURL);
-  }, 600);
+  setTimeout(function() { makeQR('qr-whatsapp',CONFIG.whatsappURL); makeQR('qr-estoque',CONFIG.estoqueURL); }, 600);
 });
 
-/* ══════════════════════════════════════════════════
-   INDICADORES — contador animado
-══════════════════════════════════════════════════ */
+/* ══════════════════════════════════════
+   INDICADORES
+══════════════════════════════════════ */
 const INDS = [
-  { id:'n1', target:4356, pre:'+' },
-  { id:'n2', target:+8,    pre:''  },
-  { id:'n3', target:+16,   pre:'+' },
-  { id:'n4', target:+220,  pre:''  },
+  {id:'n1',target:4356,pre:'+'},{id:'n2',target:8,pre:''},{id:'n3',target:16,pre:'+'},{id:'n4',target:220,pre:''}
 ];
-function animCount(el, target, pre, dur) {
-  const start = Date.now();
-  (function tick() {
-    const p = Math.min((Date.now()-start)/dur, 1);
-    const e = 1 - Math.pow(1-p, 3);
-    el.textContent = pre + Math.round(e*target).toLocaleString('pt-BR');
-    if (p < 1) requestAnimationFrame(tick);
+function animCount(el,target,pre,dur) {
+  const start=Date.now();
+  (function tick(){
+    const p=Math.min((Date.now()-start)/dur,1), e=1-Math.pow(1-p,3);
+    el.textContent=pre+Math.round(e*target).toLocaleString('pt-BR');
+    if(p<1) requestAnimationFrame(tick);
   })();
 }
-function runIndicators() {
-  INDS.forEach(function(i) {
-    const el = document.getElementById(i.id);
-    if (el) animCount(el, i.target, i.pre, 1600);
-  });
-}
+function runIndicators() { INDS.forEach(i=>{ const el=document.getElementById(i.id); if(el) animCount(el,i.target,i.pre,1600); }); }
 setTimeout(runIndicators, 900);
-setInterval(runIndicators, 10 * 60 * 1000);
+setInterval(runIndicators, 10*60*1000);
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    PROMOÇÕES
-══════════════════════════════════════════════════ */
-let pi = 0;
+══════════════════════════════════════ */
+let pi=0;
 function nextPromo() {
-  const p = PROMOS[pi++ % PROMOS.length];
-  const t = document.getElementById('promo-title');
-  const d = document.getElementById('promo-desc');
-  t.style.opacity = d.style.opacity = '0';
-  setTimeout(function() {
-    t.textContent = p.title; d.textContent = p.desc;
-    t.style.opacity = d.style.opacity = '1';
-  }, 500);
+  const p=PROMOS[pi++%PROMOS.length];
+  const t=document.getElementById('promo-title'), d=document.getElementById('promo-desc');
+  t.style.opacity=d.style.opacity='0';
+  setTimeout(()=>{ t.textContent=p.title; d.textContent=p.desc; t.style.opacity=d.style.opacity='1'; },500);
 }
-nextPromo();
-setInterval(nextPromo, 8000);
+nextPromo(); setInterval(nextPromo,8000);
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    MENSAGENS
-══════════════════════════════════════════════════ */
-let mi = 0;
+══════════════════════════════════════ */
+let mi=0;
 function nextMsg() {
-  const m = MSGS[mi++ % MSGS.length];
-  const t = document.getElementById('msg-text');
-  t.style.opacity = '0';
-  setTimeout(function() {
-    document.getElementById('msg-icon').textContent = m.icon;
-    t.textContent = m.text;
-    t.style.opacity = '1';
-  }, 400);
+  const m=MSGS[mi++%MSGS.length], t=document.getElementById('msg-text');
+  t.style.opacity='0';
+  setTimeout(()=>{ document.getElementById('msg-icon').textContent=m.icon; t.textContent=m.text; t.style.opacity='1'; },400);
 }
-nextMsg();
-setInterval(nextMsg, 5000);
+nextMsg(); setInterval(nextMsg,5000);
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    AVALIAÇÕES
-══════════════════════════════════════════════════ */
-let ri = 0;
+══════════════════════════════════════ */
+let ri=0;
 function nextReview() {
-  const r = REVIEWS[ri++ % REVIEWS.length];
-  const t = document.getElementById('review-text');
-  t.style.opacity = '0';
-  setTimeout(function() {
-    t.textContent = '"' + r.text + '"';
-    document.getElementById('review-author').textContent = '— ' + r.author;
-    t.style.opacity = '1';
-  }, 400);
+  const r=REVIEWS[ri++%REVIEWS.length], t=document.getElementById('review-text');
+  t.style.opacity='0';
+  setTimeout(()=>{ t.textContent='"'+r.text+'"'; document.getElementById('review-author').textContent='— '+r.author; t.style.opacity='1'; },400);
 }
-nextReview();
-setInterval(nextReview, 9000);
+nextReview(); setInterval(nextReview,9000);
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    TICKER
-══════════════════════════════════════════════════ */
-(function buildTicker() {
-  const inner = document.getElementById('ticker-inner');
-  const all = TICKER_ITEMS.concat(TICKER_ITEMS);
-  inner.innerHTML = all.map(function(t) {
-    return '<span class="ticker-item">' + t + '</span>';
-  }).join('');
+══════════════════════════════════════ */
+(function(){
+  const inner=document.getElementById('ticker-inner');
+  inner.innerHTML=[...TICKER_ITEMS,...TICKER_ITEMS].map(t=>'<span class="ticker-item">'+t+'</span>').join('');
 })();
 
-/* ══════════════════════════════════════════════════
+/* ══════════════════════════════════════
    PLAYER DE MÍDIA
-══════════════════════════════════════════════════ */
-let playlist = [];
-let currentIdx = 0;
-let slots = [];
-let mediaTimer = null;
-
-// Playlist de demo — substitua pelos seus arquivos
-// ou configure a planilha Google Sheets
-const DEMO_PLAYLIST = [
-  // { tipo:'IMAGEM', arquivo:'imagens/promo01.jpg', tempo:8 },
-   { tipo:'VIDEO',  arquivo:'/videos/video01.mp4',  tempo:15 },
-];
+══════════════════════════════════════ */
+let playlist=[], currentIdx=0, slots=[], mediaTimer=null;
 
 async function loadPlaylist() {
-  if (CONFIG.sheetsCSV === 'SUA_URL_SHEETS_CSV_AQUI') {
-    playlist = DEMO_PLAYLIST;
-    initPlayer();
-    return;
-  }
   try {
-    const csv = await (await fetch(CONFIG.sheetsCSV + '&t=' + Date.now())).text();
-    const lines = csv.trim().split('\n').slice(1);
-    const items = [];
-    lines.forEach(function(line) {
-      const cols = line.split(',').map(function(c){ return c.trim().replace(/^"|"$/g,''); });
-      if (!cols[0] || cols[0].toUpperCase() !== 'SIM') return;
-      const tipo    = (cols[1]||'').toUpperCase();
-      const arquivo = cols[2]||'';
-      const tempo   = parseInt(cols[3])||CONFIG.defaultTime;
-      if (!arquivo) return;
-      const path = tipo === 'VIDEO' ? CONFIG.videosPath + arquivo : CONFIG.imagensPath + arquivo;
-      items.push({ tipo, arquivo:path, tempo });
+    const csv=await (await fetch(CONFIG.sheetsCSV+'&t='+Date.now())).text();
+    const lines=csv.trim().split('\n').slice(1);
+    const items=[];
+    lines.forEach(function(line){
+      const cols=line.split(',').map(c=>c.trim().replace(/^"|"$/g,''));
+      if(!cols[0]||cols[0].toUpperCase()!=='SIM') return;
+      const tipo=(cols[1]||'').toUpperCase();
+      const arquivo=cols[2]||'';
+      const tempo=parseInt(cols[3])||CONFIG.defaultTime;
+      if(!arquivo) return;
+      const path=tipo==='VIDEO'?CONFIG.videosPath+arquivo:CONFIG.imagensPath+arquivo;
+      items.push({tipo,arquivo:path,tempo});
     });
-    playlist = items.length ? items : DEMO_PLAYLIST;
-  } catch(e) {
-    console.warn('Planilha:', e);
-    playlist = DEMO_PLAYLIST;
-  }
-  initPlayer();
+    if(items.length){
+      playlist=items;
+      initPlayer();
+    }
+  } catch(e){ console.warn('Planilha:',e); }
 }
 
 function initPlayer() {
-  const container  = document.getElementById('center');
-  const placeholder = document.getElementById('media-placeholder');
-  const dotsEl     = document.getElementById('media-dots');
+  const container=document.getElementById('center');
+  const placeholder=document.getElementById('media-placeholder');
+  const dotsEl=document.getElementById('media-dots');
+  slots.forEach(s=>s.remove()); slots=[]; dotsEl.innerHTML='';
+  if(!playlist.length){ placeholder.style.display='flex'; return; }
+  placeholder.style.display='none';
 
-  // limpa slots anteriores
-  slots.forEach(function(s){ s.remove(); });
-  slots = [];
-  dotsEl.innerHTML = '';
-
-  if (!playlist.length) { placeholder.style.display = 'flex'; return; }
-  placeholder.style.display = 'none';
-
-  playlist.forEach(function(item, i) {
-    const slot = document.createElement('div');
-    slot.className = 'media-slot';
-
-    if (item.tipo === 'VIDEO') {
-      const v = document.createElement('video');
-      v.src = item.arquivo; v.muted = true; v.playsInline = true;
-      v.preload = 'auto'; v.loop = false;
+  playlist.forEach(function(item,i){
+    const slot=document.createElement('div');
+    slot.className='media-slot';
+    if(item.tipo==='VIDEO'){
+      const v=document.createElement('video');
+      v.src=item.arquivo; v.muted=true; v.playsInline=true; v.preload='auto'; v.loop=false;
       slot.appendChild(v);
     } else {
-      const img = document.createElement('img');
-      img.src = item.arquivo; img.alt = '';
+      const img=document.createElement('img');
+      img.src=item.arquivo; img.alt='';
       slot.appendChild(img);
     }
-
-    container.insertBefore(slot, document.getElementById('center-overlay'));
+    container.insertBefore(slot,document.getElementById('center-overlay'));
     slots.push(slot);
-
-    const dot = document.createElement('div');
-    dot.className = 'dot';
-    dotsEl.appendChild(dot);
+    const dot=document.createElement('div'); dot.className='dot'; dotsEl.appendChild(dot);
   });
-
   showMedia(0);
 }
 
 function showMedia(idx) {
-  if (!slots.length) return;
+  if(!slots.length) return;
   clearTimeout(mediaTimer);
-
-  slots.forEach(function(s, i) {
-    s.classList.remove('active');
-    const v = s.querySelector('video');
-    if (v) { v.pause(); v.currentTime = 0; }
-  });
-  document.querySelectorAll('.dot').forEach(function(d,i){
-    d.classList.toggle('active', i === idx);
-  });
-
-  currentIdx = idx;
-  const slot = slots[idx];
-  const item = playlist[idx];
+  slots.forEach(s=>{ s.classList.remove('active'); const v=s.querySelector('video'); if(v){v.pause();v.currentTime=0;} });
+  document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+  currentIdx=idx;
+  const slot=slots[idx], item=playlist[idx];
   slot.classList.add('active');
-
-  const vid = slot.querySelector('video');
-  if (vid) {
-    vid.play().catch(function(){});
-    const safeguard = setTimeout(goNext, item.tempo * 1000 + 4000);
-    vid.addEventListener('ended', function onEnd() {
-      vid.removeEventListener('ended', onEnd);
-      clearTimeout(safeguard);
-      goNext();
-    });
-    mediaTimer = safeguard;
+  const vid=slot.querySelector('video');
+  if(vid){
+    vid.play().catch(()=>{});
+    const sg=setTimeout(goNext,item.tempo*1000+4000);
+    vid.addEventListener('ended',function onEnd(){ vid.removeEventListener('ended',onEnd); clearTimeout(sg); goNext(); });
+    mediaTimer=sg;
   } else {
-    mediaTimer = setTimeout(goNext, item.tempo * 1000);
+    mediaTimer=setTimeout(goNext,item.tempo*1000);
   }
 }
-
-function goNext() {
-  showMedia((currentIdx + 1) % playlist.length);
-}
+function goNext(){ showMedia((currentIdx+1)%playlist.length); }
 
 loadPlaylist();
-setInterval(loadPlaylist, 5 * 60 * 1000);
-
-/* ══════════════════════════════════════════════════
-   CONSOLE — instruções
-══════════════════════════════════════════════════ */
-console.info([
-  '╔══════════════════════════════════════════════╗',
-  '║  BRAGANÇA VEÍCULOS — PAINEL DIGITAL          ║',
-  '╠══════════════════════════════════════════════╣',
-  '║  CLIMA:                                      ║',
-  '║  1. Acesse openweathermap.org → cadastre-se  ║',
-  '║  2. Copie a API Key gratuita                 ║',
-  '║  3. Cole em CONFIG.weatherKey                ║',
-  '║                                              ║',
-  '║  PLAYLIST (vídeos/imagens):                  ║',
-  '║  1. Planilha com colunas:                    ║',
-  '║     Ativo | Tipo | Arquivo | Tempo           ║',
-  '║  2. Arquivo > Publicar na web > CSV          ║',
-  '║  3. Cole a URL em CONFIG.sheetsCSV           ║',
-  '║  4. Vídeos → /videos/  Imagens → /imagens/  ║',
-  '╚══════════════════════════════════════════════╝',
-].join('\n'));
+setInterval(loadPlaylist,5*60*1000);
 </script>
 </body>
 </html>
