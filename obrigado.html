@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ═══════════════════════════════════════════
+       GOOGLE TAG MANAGER
+  ═══════════════════════════════════════════ -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WCNC829N');</script>
+
+  <!-- ═══════════════════════════════════════════
+       META PIXEL — Evento Lead/Contact
+  ═══════════════════════════════════════════ -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1621301465624826');
+    fbq('track', 'PageView');
+    fbq('track', 'Contact');   /* Evento de conversão principal */
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1621301465624826&ev=Contact&noscript=1"/>
+  </noscript>
+
+  <!-- ═══════════════════════════════════════════
+       GOOGLE ANALYTICS 4 — Evento generate_lead
+  ═══════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D580S0LSG0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D580S0LSG0');
+    gtag('event', 'generate_lead', {
+      event_category: 'whatsapp',
+      event_label: 'contato_whatsapp'
+    });
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Obrigado pelo contato! — Bragança Veículos</title>
+  <link rel="canonical" href="https://bragancaveiculos.com.br/obrigado.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green-dark:   #071f0b;
+      --green-mid:    #009C3B;
+      --yellow:       #FFDD00;
+      --blue-br:      #002776;
+      --white:        #ffffff;
+      --gray-100:     #f4f5f4;
+      --gray-300:     #d1d5db;
+      --gray-500:     #6b7280;
+      --gray-800:     #1f2937;
+      --wa-green:     #25D366;
+      --wa-dark:      #128C7E;
+      --radius:       14px;
+      --shadow:       0 4px 24px rgba(0,0,0,.10);
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    /* ── Layout ── */
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Field grid bg */
+    .page::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(0deg, transparent, transparent 48px, rgba(255,255,255,0.025) 48px, rgba(255,255,255,0.025) 49px),
+        repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255,255,255,0.025) 48px, rgba(255,255,255,0.025) 49px);
+      pointer-events: none;
+    }
+
+    /* Brazil flag strip at bottom */
+    .flag-strip {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #009C3B 33.33%, #FFDD00 33.33%, #FFDD00 66.66%, #002776 66.66%);
+      z-index: 10;
+    }
+
+    /* ── Card ── */
+    .card {
+      position: relative;
+      z-index: 2;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 24px;
+      max-width: 520px;
+      width: 100%;
+      padding: 48px 40px 44px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 48px rgba(0,0,0,.35);
+    }
+
+    /* ── Check icon ── */
+    .check-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-mid), #00b848);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      box-shadow: 0 0 0 12px rgba(0,156,59,0.12), 0 0 0 24px rgba(0,156,59,0.06);
+      animation: popIn .55s cubic-bezier(.34,1.56,.64,1) both;
+    }
+
+    @keyframes popIn {
+      0%   { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .check-wrap svg { animation: drawCheck .4s .4s ease both; }
+    @keyframes drawCheck {
+      0%   { stroke-dashoffset: 40; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .check-wrap svg path { stroke-dasharray: 40; stroke-dashoffset: 40; }
+
+    /* ── Typography ── */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(255,221,0,0.10);
+      border: 1px solid rgba(255,221,0,.30);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--yellow);
+      letter-spacing: .04em;
+      margin-bottom: 20px;
+    }
+
+    .badge__dot {
+      width: 7px; height: 7px;
+      background: var(--yellow);
+      border-radius: 50%;
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: .45; transform: scale(.65); }
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    h1 span { color: var(--yellow); }
+
+    .subtitle {
+      font-size: 15px;
+      color: rgba(255,255,255,.65);
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+
+    /* ── WhatsApp CTA ── */
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--wa-green);
+      color: #fff;
+      font-weight: 700;
+      font-size: 15px;
+      border-radius: var(--radius);
+      padding: 15px 28px;
+      text-decoration: none;
+      width: 100%;
+      transition: background .2s, transform .15s;
+      margin-bottom: 12px;
+    }
+
+    .btn-wa:hover  { background: var(--wa-dark); transform: translateY(-1px); }
+    .btn-wa:active { transform: translateY(0); }
+
+    .btn-catalog {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: rgba(255,255,255,.70);
+      font-weight: 600;
+      font-size: 14px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius);
+      padding: 13px 24px;
+      text-decoration: none;
+      width: 100%;
+      transition: border-color .2s, color .2s;
+    }
+
+    .btn-catalog:hover { border-color: rgba(255,255,255,.45); color: #fff; }
+
+    /* ── Info row ── */
+    .info-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,221,0,0.07);
+      border: 1px solid rgba(255,221,0,.15);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 28px 0 0;
+      text-align: left;
+    }
+
+    .info-row svg { flex-shrink: 0; color: var(--yellow); }
+
+    .info-row p {
+      font-size: 13px;
+      color: rgba(255,255,255,.65);
+      line-height: 1.45;
+    }
+
+    .info-row p strong { color: var(--yellow); font-weight: 600; }
+
+    /* ── Logo ── */
+    .logo {
+      display: block;
+      margin: 0 auto 32px;
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--white);
+      letter-spacing: -.01em;
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--green-mid); }
+
+    /* ── Countdown ── */
+    .countdown-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .countdown-ring {
+      position: relative;
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+    }
+
+    .countdown-ring svg {
+      transform: rotate(-90deg);
+    }
+
+    .countdown-ring__track {
+      fill: none;
+      stroke: rgba(255,255,255,0.10);
+      stroke-width: 3.5;
+    }
+
+    .countdown-ring__fill {
+      fill: none;
+      stroke: var(--wa-green);
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-dasharray: 120;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+    }
+
+    .countdown-number {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .countdown-text {
+      font-size: 14px;
+      color: rgba(255,255,255,.60);
+      line-height: 1.4;
+    }
+
+    .countdown-text strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ── Footer note ── */
+    .footer-note {
+      position: relative;
+      z-index: 2;
+      margin-top: 28px;
+      font-size: 12px;
+      color: rgba(255,255,255,.30);
+      text-align: center;
+    }
+
+    .footer-note a { color: rgba(255,255,255,.45); text-decoration: none; }
+    .footer-note a:hover { color: rgba(255,255,255,.7); }
+
+    /* ── Countdown ── */
+    .countdown-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: rgba(37,211,102,0.08);
+      border: 1px solid rgba(37,211,102,0.20);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .countdown-ring { position: relative; width: 48px; height: 48px; flex-shrink: 0; }
+    .countdown-ring svg { transform: rotate(-90deg); }
+    .countdown-ring__track { fill: none; stroke: rgba(255,255,255,0.10); stroke-width: 3.5; }
+    .countdown-ring__fill {
+      fill: none; stroke: var(--wa-green); stroke-width: 3.5;
+      stroke-linecap: round; stroke-dasharray: 119.4; stroke-dashoffset: 0;
+      transition: stroke-dashoffset 1s linear;
+    }
+    .countdown-number {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px; font-weight: 800; color: #fff;
+    }
+    .countdown-text { font-size: 13px; color: rgba(255,255,255,.60); line-height: 1.45; }
+    .countdown-text strong { color: #fff; font-weight: 600; display: block; margin-bottom: 2px; }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px 32px; border-radius: 18px; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCNC829N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="page">
+
+  <a href="/" class="logo">Bragança <span>Veículos</span></a>
+
+  <div class="card">
+
+    <div class="check-wrap">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+           stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12l5 5L19 7"/>
+      </svg>
+    </div>
+
+    <div class="badge">
+      <span class="badge__dot"></span>
+      Mensagem recebida!
+    </div>
+
+    <h1>Ótima escolha! <span>🏆</span><br>Nossa equipe já foi avisada</h1>
+
+    <p class="subtitle">
+      Em instantes um dos nossos consultores vai entrar em contato com você pelo WhatsApp.<br>
+      Enquanto isso, que tal dar uma olhada no estoque completo?
+    </p>
+
+    <!-- Countdown automático -->
+    <div class="countdown-wrap">
+      <div class="countdown-ring">
+        <svg width="48" height="48" viewBox="0 0 48 48">
+          <circle class="countdown-ring__track" cx="24" cy="24" r="19"/>
+          <circle class="countdown-ring__fill" id="ring" cx="24" cy="24" r="19"/>
+        </svg>
+        <div class="countdown-number" id="count">3</div>
+      </div>
+      <div class="countdown-text">
+        <strong>Abrindo o WhatsApp automaticamente…</strong><br>
+        Nossa equipe já foi notificada e irá te atender
+      </div>
+    </div>
+
+    <a href="https://wa.me/5511932069533" target="_blank" rel="noopener" class="btn-wa" id="btn-wa">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Ir para o WhatsApp agora
+    </a>
+
+    <a href="/catalogo.html" class="btn-catalog">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+        <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+      </svg>
+      Ver estoque completo
+    </a>
+
+    <div class="info-row">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <p>Atendimento de seg. a sáb. — <strong>(11) 93206-9533</strong><br>
+      Av. José Gomes da Rocha Leal, 1267 — Bragança Paulista/SP</p>
+    </div>
+
+  </div>
+
+  <p class="footer-note">
+    <a href="/index.html">← Voltar para o início</a> &nbsp;·&nbsp;
+    © 2026 Bragança Veículos
+  </p>
+
+</div>
+
+<div class="flag-strip"></div>
+
+
+<script>
+(function() {
+  var WA_URL = 'https://wa.me/5511932069533';
+  var SECONDS = 3;
+  var circumference = 119.4;
+
+  var ring  = document.getElementById('ring');
+  var count = document.getElementById('count');
+  var btn   = document.getElementById('btn-wa');
+  var left  = SECONDS;
+
+  // Start ring full, drain to zero
+  ring.style.strokeDashoffset = '0';
+
+  var tick = setInterval(function() {
+    left--;
+    count.textContent = left;
+    // drain proportionally
+    ring.style.strokeDashoffset = String(circumference * (1 - left / SECONDS));
+
+    if (left <= 0) {
+      clearInterval(tick);
+      count.textContent = '✓';
+      window.open(WA_URL, '_blank', 'noopener');
+    }
+  }, 1000);
+
+  // Allow manual click too
+  if (btn) {
+    btn.addEventListener('click', function() {
+      clearInterval(tick);
+    });
+  }
+})();
+</script>
+</body>
+</html>
