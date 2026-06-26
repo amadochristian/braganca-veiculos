@@ -2607,7 +2607,7 @@ Valores, condições de pagamento e disponibilidade dos veículos podem ser alte
       <opcional>Pára-choques na cor do veiculo</opcional>
       <opcional>Volante com regulagem de altura</opcional>
       <opcional>Licenciado</opcional>
-      <opcional>Manual</opcional>
+      <opcional>Manual do proprietário</opcional>
     </opcionais>
     <fotos>
       <foto>
@@ -2806,134 +2806,6 @@ Valores, condições de pagamento e disponibilidade dos veículos podem ser alte
       <foto>
         <ordem>15</ordem>
         <url>https://www.autocerto.com/fotos/6960/4904901/18_043710.jpg?u=20260518163710</url>
-      </foto>
-    </fotos>
-  </veiculo>
-  <veiculo>
-    <idveiculo>4919017</idveiculo>
-    <tipoveiculo>Carro</tipoveiculo>
-    <dataCadastro>20/05/2026 17:53:16</dataCadastro>
-    <zerokm>N</zerokm>
-    <placa>FOY-9B35</placa>
-    <marca>TOYOTA</marca>
-    <modelo>COROLLA</modelo>
-    <versao><![CDATA[2.0 VVT-IE FLEX GLI DIRECT SHIFT]]></versao>
-    <anomodelo>2023/2024</anomodelo>
-    <cambio>Automático</cambio>
-    <quilometragem>43000</quilometragem>
-    <numeroportas>4</numeroportas>
-    <cor>Preto</cor>
-    <combustivel>Flex</combustivel>
-    <preco>R$ 129.900,00</preco>
-    <precodecimal>129900</precodecimal>
-    <observacoes><![CDATA[Condições sujeitas à análise e aprovação de crédito.
-
-Entrada facilitada em até 18x no cartão de crédito (consulte condições com nossos vendedores).
-
-Financiamento disponível em até 60 parcelas, sujeito à aprovação da instituição financeira.
-
-Contato: (11) 2473-0601
-WhatsApp: (11) 93206-9533
-Link direto com um consultor: https://wa.me/5511932069533
-
-Bragança Veículos
-Av. José Gomes da Rocha Leal, 1267 – Centro – Bragança Paulista/SP
-
-Valores, condições de pagamento e disponibilidade dos veículos podem ser alterados sem aviso prévio. Consulte nossa equipe para mais informações.]]></observacoes>
-    <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/corolla-2.0-vvt-ie-flex-gli-direct-shift-flex-2024/4919017/detalhes]]></linkAnuncioSite>
-    <linkVideo />
-    <DataAtualizacao>2026-06-02 18:17:07</DataAtualizacao>
-    <opcionais>
-      <opcional>Alarme</opcional>
-      <opcional>Ar condicionado</opcional>
-      <opcional>Controle de som no volante</opcional>
-      <opcional>Desembaçador traseiro</opcional>
-      <opcional>Direção Hidraulica</opcional>
-      <opcional>Freios ABS</opcional>
-      <opcional>Multimídia</opcional>
-      <opcional>Retrovisores elétricos</opcional>
-      <opcional>Rodas de liga leve</opcional>
-      <opcional>Travas elétricas</opcional>
-      <opcional>Vidros elétricos</opcional>
-      <opcional>Vidros elétricos Traseiros</opcional>
-      <opcional>Airbag motorista</opcional>
-      <opcional>Airbag passageiro</opcional>
-      <opcional>Banco do motorista com ajuste de altura</opcional>
-      <opcional>Computador de bordo</opcional>
-      <opcional>Entrada USB</opcional>
-      <opcional>Pára-choques na cor do veiculo</opcional>
-      <opcional>Piloto automático</opcional>
-      <opcional>Volante com regulagem de altura</opcional>
-      <opcional>Licenciado</opcional>
-    </opcionais>
-    <fotos>
-      <foto>
-        <ordem>1</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/6_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>2</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/7_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>3</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/8_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>4</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/1_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>5</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/9_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>6</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/2_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>7</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/15_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>8</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/10_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>9</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/11_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>10</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/12_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>11</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/3_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>12</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/17_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>13</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/13_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>14</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/14_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>15</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/4_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>16</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/16_055316.jpg?u=20260520175316</url>
-      </foto>
-      <foto>
-        <ordem>17</ordem>
-        <url>https://www.autocerto.com/fotos/6960/4919017/5_055316.jpg?u=20260520175316</url>
       </foto>
     </fotos>
   </veiculo>
