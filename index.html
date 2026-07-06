@@ -23,210 +23,643 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="canonical" href="https://bragancaveiculos.com.br">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        /* ── Copa do Mundo 2026 Hero ── */
+        /* ── Navbar CSS ── */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 12px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 16px;
+}
+
+/* ── Logo ── */
+.navbar__logo {
+    flex-shrink: 0;
+}
+
+.navbar__logo a {
+    display: block;
+}
+
+.navbar__logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+/* ── Menu ── */
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar__menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.navbar__menu a:hover {
+    color: #002f9b67;
+}
+
+.navbar__menu a.active {
+    color: #002E9B;
+}
+
+.navbar__menu a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background: #0066ff;
+    border-radius: 2px;
+}
+
+/* ── Botão Hamburguer ── */
+.navbar__toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 1001;
+}
+
+.navbar__toggle span {
+    display: block;
+    width: 25px;
+    height: 2.5px;
+    background: #002E9B;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+/* Animação do hamburguer para X */
+.navbar__toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar__toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.navbar__toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ── Botão Catálogo ── */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    flex-shrink: 0;
+}
+
+.btn-sm {
+    padding: 8px 16px;
+    font-size: 13px;
+}
+
+.btn-primary {
+    background: #002E9B;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 153, 255, 0.25);
+}
+
+/* ── Responsivo Mobile ── */
+@media (max-width: 768px) {
+    body {
+        padding-top: 64px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar__logo img {
+        height: 32px;
+    }
+
+    /* Mostrar botão hamburguer */
+    .navbar__toggle {
+        display: flex;
+    }
+
+    /* Esconder menu e botão catálogo */
+    .navbar__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(12px);
+        flex-direction: column;
+        padding: 80px 24px 24px;
+        gap: 4px;
+        transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border-left: 1px solid rgba(255, 255, 255, 0.06);
+        overflow-y: auto;
+    }
+
+    .navbar__menu.open {
+        right: 0;
+    }
+
+    .navbar__menu a {
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 16px;
+        text-align: left;
+        border-radius: 8px;
+    }
+
+    .navbar__menu a.active::after {
+        bottom: 10px;
+    }
+
+    /* Esconder botão catálogo no mobile (dentro do menu) */
+    .navbar .btn-primary {
+        display: none;
+    }
+
+    /* Overlay para fechar ao clicar fora */
+    .navbar__overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+
+    .navbar__overlay.active {
+        display: block;
+    }
+}
+
+/* ── Tablet ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar__menu a {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .btn-sm {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+}
+        /* ── Hero ── */
         .hero--copa {
-            background: #071f0b;
+            background: #071b1f;
             position: relative;
             overflow: hidden;
             min-height: 100vh;
             display: flex;
             align-items: center;
+            justify-content: center;
+            text-align: center;
         }
+
+        /* ── Elementos de Fundo ── */
         .hero__field-grid {
             position: absolute;
             inset: 0;
             background:
-                repeating-linear-gradient(0deg, transparent, transparent 48px, rgba(255,255,255,0.03) 48px, rgba(255,255,255,0.03) 49px),
-                repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255,255,255,0.03) 48px, rgba(255,255,255,0.03) 49px);
+                repeating-linear-gradient(0deg, transparent, transparent 48px, rgba(255, 255, 255, 0.02) 48px, rgba(255, 255, 255, 0.02) 49px),
+                repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255, 255, 255, 0.02) 48px, rgba(255, 255, 255, 0.02) 49px);
             pointer-events: none;
         }
+
         .hero__field-circle {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 500px;
-            height: 500px;
-            border: 1.5px solid rgba(255,255,255,0.05);
+            width: 80vw;
+            max-width: 500px;
+            height: 80vw;
+            max-height: 500px;
+            border: 1.5px solid rgba(255, 255, 255, 0.04);
             border-radius: 50%;
             pointer-events: none;
         }
+
         .hero__field-circle::before {
             content: '';
             position: absolute;
-            top: 50%; left: 0; right: 0;
+            top: 50%;
+            left: 0;
+            right: 0;
             height: 1.5px;
-            background: rgba(255,255,255,0.04);
+            background: rgba(255, 255, 255, 0.03);
             transform: translateY(-50%);
         }
+
         .hero__field-circle::after {
             content: '';
             position: absolute;
-            top: 50%; left: 50%;
+            top: 50%;
+            left: 50%;
             transform: translate(-50%, -50%);
-            width: 90px; height: 90px;
-            border: 1.5px solid rgba(255,255,255,0.06);
+            width: 15vw;
+            max-width: 90px;
+            height: 15vw;
+            max-height: 90px;
+            border: 1.5px solid rgba(255, 255, 255, 0.04);
             border-radius: 50%;
         }
+
         .hero__flag-strip {
             position: absolute;
-            bottom: 0; left: 0; right: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             height: 5px;
             background: linear-gradient(90deg, #009C3B 33.33%, #FFDD00 33.33%, #FFDD00 66.66%, #002776 66.66%);
             z-index: 0;
         }
+
+        /* ── Conteúdo ── */
         .hero--copa .hero__content {
             position: relative;
             z-index: 2;
-            padding-top: 120px;
-            padding-bottom: 80px;
+            padding: 80px 0 60px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        /* Badge Copa */
+
+        /* ── Badge ── */
         .hero__badge--copa {
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 221, 0, 0.1);
-            border: 1px solid rgba(255, 221, 0, 0.35);
+            background: rgba(0, 162, 255, 0.08);
+            border: 1px solid rgba(0, 225, 255, 0.25);
             border-radius: 999px;
-            padding: 7px 18px;
-            font-size: 13px;
+            padding: 6px 16px;
+            font-size: 11px;
             font-weight: 700;
-            color: #FFDD00;
-            letter-spacing: 0.02em;
-            margin-bottom: 28px;
+            color: #ffffff;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
         }
-        .hero--copa .hero__badge-dot {
-            width: 8px; height: 8px;
+
+        .hero__badge-dot {
+            width: 7px;
+            height: 7px;
             border-radius: 50%;
-            background: #FFDD00;
+            background: #00d9ff;
             animation: copaPulse 1.6s ease-in-out infinite;
             flex-shrink: 0;
         }
+
         @keyframes copaPulse {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(0.7); }
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.4;
+                transform: scale(0.7);
+            }
         }
-        /* Title Copa */
-        .hero__title--copa {
-            font-size: clamp(2rem, 5vw, 3.5rem);
-            font-weight: 800;
-            line-height: 1.1;
-            color: #fff;
-            margin-bottom: 0;
+
+        /* ── Logo ── */
+        .hero__logo {
+            max-width: 320px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 16px;
         }
-        .hero__title--copa span {
-            display: block;
-            color: #FFDD00;
-            font-size: clamp(2.4rem, 6vw, 4.2rem);
-            background: none;
-            -webkit-background-clip: unset;
-            -webkit-text-fill-color: #FFDD00;
-        }
-        /* Subtitle */
+
+        /* ── Subtitle ── */
         .hero--copa .hero__subtitle {
-            color: rgba(255,255,255,0.7);
-            max-width: 560px;
-            margin-top: 20px;
-            margin-bottom: 36px;
-            font-size: 1rem;
-            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 480px;
+            margin: 0 auto 28px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
+
         .hero--copa .hero__subtitle strong {
             color: #FFDD00;
             font-weight: 700;
         }
-        /* Buttons */
-        .btn-copa-green {
+
+        /* ── Botões ── */
+        .hero__actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 32px;
+        }
+
+        .btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            background: #009C3B;
-            color: #fff !important;
-            border: none;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            font-size: 15px;
             font-weight: 700;
-            border-radius: 8px;
-            transition: opacity .15s, transform .1s;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            width: 100%;
         }
-        .btn-copa-green:hover { opacity: 0.88; transform: translateY(-1px); }
+
+        .btn-lg {
+            padding: 16px 32px;
+            font-size: 16px;
+        }
+
         .btn-copa-yellow {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
             background: #FFDD00;
-            color: #071f0b !important;
-            border: none;
-            font-weight: 700;
+            color: #071b1f !important;
+        }
+
+        .btn-copa-yellow:hover {
+            opacity: 0.85;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 221, 0, 0.25);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.85) !important;
+        }
+
+        .btn-outline:hover {
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        /* ── Datas ── */
+        .f-dates-block {
+            width: 100%;
+            max-width: 480px;
+            background: rgba(22, 22, 22, 0.9);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            padding: 18px 16px 14px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(10px);
+        }
+
+        .f-dates-label {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #F4C608;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .f-days-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        .f-day {
+            background: rgba(36, 36, 36, 0.8);
             border-radius: 8px;
-            transition: opacity .15s, transform .1s;
+            padding: 10px 4px 8px;
+            text-align: center;
+            border-top: 3px solid #F4C608;
         }
-        .btn-copa-yellow:hover { opacity: 0.88; transform: translateY(-1px); }
-        .hero--copa .btn-outline {
-            border-color: rgba(255,255,255,0.3);
-            color: rgba(255,255,255,0.85) !important;
+
+        .f-day .dow {
+            font-size: 8px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: rgba(255, 255, 255, 0.6);
+            text-transform: uppercase;
         }
-        .hero--copa .btn-outline:hover {
-            border-color: rgba(255,255,255,0.6);
-            background: rgba(255,255,255,0.06);
+
+        .f-day .dnum {
+            font-family: 'Anton', sans-serif;
+            font-size: 38px;
+            color: #fff;
+            line-height: 1;
+            margin: 2px 0;
         }
-        /* Social callout box */
+
+        .f-day .dmon {
+            font-size: 7px;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .f-hours {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            padding-top: 6px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* ── Social Box ── */
         .hero__copa-social {
             display: flex;
             align-items: center;
             gap: 14px;
-            background: rgba(255,221,0,0.07);
-            border: 1px solid rgba(255,221,0,0.22);
-            border-radius: 10px;
+            background: rgba(0, 183, 255, 0.05);
+            border: 1px solid rgba(255, 221, 0, 0.15);
+            border-radius: 12px;
             padding: 14px 18px;
-            max-width: 560px;
-            margin-bottom: 36px;
+            width: 100%;
+            max-width: 480px;
+            text-align: left;
         }
+
         .hero__copa-social-icon {
-            width: 40px; height: 40px;
-            background: rgba(255,221,0,0.12);
-            border-radius: 8px;
-            display: flex; align-items: center; justify-content: center;
+            width: 40px;
+            height: 40px;
+            min-width: 40px;
+            background: rgba(255, 221, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-shrink: 0;
         }
+
         .hero__copa-social p {
-            font-size: 13px;
-            color: rgba(255,255,255,0.72);
-            line-height: 1.55;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
             margin: 0;
         }
+
         .hero__copa-social p strong {
-            color: #FFDD00;
+            color: #fff;
             font-weight: 700;
         }
-        /* Stats Copa */
-        .hero__stats--copa {
-            display: flex;
-            gap: 0;
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 12px;
-            overflow: hidden;
-            background: rgba(255,255,255,0.04);
-            max-width: 500px;
+
+        /* ── Responsivo Mobile-First ── */
+
+        /* Tablets e acima */
+        @media (min-width: 600px) {
+            .hero--copa {
+                min-height: 80vh;
+                text-align: left;
+            }
+
+            .hero--copa .hero__content {
+                align-items: flex-start;
+                padding: 100px 0 80px;
+            }
+
+            .hero__logo {
+                max-width: 400px;
+            }
+
+            .hero--copa .hero__subtitle {
+                margin: 0 0 28px 0;
+            }
+
+            .hero__actions {
+                flex-direction: row;
+                max-width: 100%;
+            }
+
+            .btn {
+                width: auto;
+                padding: 14px 32px;
+            }
+
+            .btn-lg {
+                padding: 16px 40px;
+            }
+
+            .f-dates-block {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .f-day .dnum {
+                font-size: 44px;
+            }
+
+            .hero__copa-social {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
-        .hero__stats--copa > div {
-            flex: 1;
-            padding: 16px 18px;
-            border-right: 1px solid rgba(255,255,255,0.08);
+
+        /* Desktop */
+        @media (min-width: 992px) {
+            .hero--copa {
+                min-height: 70vh;
+            }
+
+            .hero--copa .hero__content {
+                padding: 120px 0 100px;
+            }
+
+            .hero__logo {
+                max-width: 500px;
+            }
+
+            .hero--copa .hero__subtitle {
+                font-size: 1.1rem;
+                max-width: 560px;
+            }
+
+            .f-day .dnum {
+                font-size: 48px;
+            }
+
+            .hero__copa-social p {
+                font-size: 13px;
+            }
         }
-        .hero__stats--copa > div:last-child { border-right: none; }
-        .hero__stats--copa .hero__stat-value {
-            color: #FFDD00;
-            font-size: 1.4rem;
-            font-weight: 800;
-            line-height: 1;
-            margin-bottom: 4px;
+
+        /* Telas muito grandes */
+        @media (min-width: 1400px) {
+            .container {
+                padding: 0 40px;
+            }
         }
-        .hero__stats--copa .hero__stat-label {
-            color: rgba(255,255,255,0.5);
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            line-height: 1.3;
+
+        /* Ajustes para telas muito pequenas */
+        @media (max-width: 380px) {
+            .f-day .dnum {
+                font-size: 30px;
+            }
+
+            .hero__badge--copa {
+                font-size: 9px;
+                padding: 5px 12px;
+            }
+
+            .hero__copa-social p {
+                font-size: 11px;
+            }
         }
     </style>
     <link rel="stylesheet" href="assets/css/components.css">
@@ -249,78 +682,107 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCNC829N"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar__logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="Bragança Veículos">
-                </a>
+        <!-- End Google Tag Manager (noscript) -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Bragança Veículos">
+                    </a>
+                </div>
+                <button class="navbar__toggle" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="navbar__menu">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                <a href="catalogo.html" class="btn btn-primary btn-sm">Ver Catálogo</a>
             </div>
-            <button class="navbar__toggle" aria-label="Abrir menu">
-                <span></span><span></span><span></span>
-            </button>
-            <div class="navbar__menu">
-                <a href="index.html" class="active">Home</a>
-                <a href="catalogo.html">Catálogo</a>
-                <a href="contato.html">Contato</a>
-            </div>
-            <a href="catalogo.html" class="btn btn-primary btn-sm">Ver Catálogo</a>
-        </div>
-    </nav>
+        </nav>
 
     <section class="hero hero--copa">
+        <!-- Elementos de fundo -->
         <div class="hero__field-grid"></div>
         <div class="hero__field-circle"></div>
         <div class="hero__flag-strip"></div>
+
+        <!-- Conteúdo principal -->
         <div class="container hero__content">
+
+            <!-- Badge -->
             <div class="hero__badge hero__badge--copa">
                 <span class="hero__badge-dot"></span>
-                Copa do Mundo 2026 · Vamos ser Hexa!
+                Evento Exclusivo Bragança Veículos
             </div>
-            <h1 class="hero__title hero__title--copa">
-                Seu carro novo
-                <span>nessa Copa! 🏆</span>
-            </h1>
+
+            <!-- Logo -->
+            <img class="hero__logo" src="opengarage/logo-opengarage.png" alt="Open Garage - Bragança Veículos">
+
+            <!-- Subtítulo -->
             <p class="hero__subtitle">
-                Comemore o <strong>Hexa</strong> no carro que você sempre quis.
-                Em Bragança Paulista, a Bragança Veículos tem as melhores
-                condições de Copa para você entrar em campo com tudo.
+                Portões <strong>Abertos</strong> para novos negócios.
             </p>
+
+            <!-- Botões -->
             <div class="hero__actions">
-                <a href="catalogo.html" class="btn btn-copa-green btn-lg">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                    Ver condições de Copa
-                </a>
                 <a href="https://www.instagram.com/braganca_veiculos" target="_blank" rel="noopener" class="btn btn-copa-yellow btn-lg">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    Eventos de Copa no Insta
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                    Acompanhe as novidades
                 </a>
                 <a href="contato.html" class="btn btn-outline btn-lg">Fale Conosco</a>
             </div>
+
+            <!-- Datas do evento -->
+            <div class="f-dates-block">
+                <div class="f-dates-label">▸ Próxima edição</div>
+                <div class="f-days-row">
+                    <div class="f-day">
+                        <div class="dow">QUI</div>
+                        <div class="dnum">23</div>
+                        <div class="dmon">JUL</div>
+                    </div>
+                    <div class="f-day">
+                        <div class="dow">SEX</div>
+                        <div class="dnum">24</div>
+                        <div class="dmon">JUL</div>
+                    </div>
+                    <div class="f-day">
+                        <div class="dow">SÁB</div>
+                        <div class="dnum">25</div>
+                        <div class="dmon">JUL</div>
+                    </div>
+                    <div class="f-day">
+                        <div class="dow">DOM</div>
+                        <div class="dnum">26</div>
+                        <div class="dmon">JUL</div>
+                    </div>
+                </div>
+                <div class="f-hours">Qui · Sex · Sáb &nbsp;9h às 18h &nbsp;|&nbsp; Dom &nbsp;9h às 12h</div>
+            </div>
+
+            <!-- Chamada social -->
             <div class="hero__copa-social">
                 <div class="hero__copa-social-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDD00" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDD00" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
                 </div>
                 <p>
-                    <strong>Acompanhe @braganca_veiculos</strong> durante a Copa!
-                    Eventos exclusivos, sorteios e condições especiais de financiamento só para quem nos segue. Não fique de fora!
+                    <strong>Acompanhe @braganca_veiculos</strong> para o evento Open Garage!
+                    Evento exclusivo e condições especiais de financiamento. Não fique de fora!
                 </p>
             </div>
-            <div class="hero__stats hero__stats--copa">
-                <div>
-                    <div class="hero__stat-value">50+</div>
-                    <div class="hero__stat-label">Veículos em estoque</div>
-                </div>
-                <div>
-                    <div class="hero__stat-value">100%</div>
-                    <div class="hero__stat-label">Procedência verificada</div>
-                </div>
-                <div>
-                    <div class="hero__stat-value">★ 5.0</div>
-                    <div class="hero__stat-label">Atendimento de excelência</div>
-                </div>
-            </div>
+
         </div>
     </section>
 
@@ -430,6 +892,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="/obrigado.html?origem=home" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
+
+    // ── JavaScript para controle do menu mobile ──
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.querySelector('.navbar__toggle');
+    const menu = document.querySelector('.navbar__menu');
+    const overlay = document.createElement('div');
+    overlay.className = 'navbar__overlay';
+    document.body.appendChild(overlay);
+
+    function toggleMenu() {
+        toggle.classList.toggle('active');
+        menu.classList.toggle('open');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    }
+
+    function closeMenu() {
+        toggle.classList.remove('active');
+        menu.classList.remove('open');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Abrir/fechar ao clicar no botão
+    toggle.addEventListener('click', toggleMenu);
+
+    // Fechar ao clicar no overlay
+    overlay.addEventListener('click', closeMenu);
+
+    // Fechar ao clicar em um link do menu
+    menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Fechar ao pressionar ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && menu.classList.contains('open')) {
+            closeMenu();
+        }
+    });
+});
+</script>
 
 <script src="assets/js/utils.js"></script>
 <script src="assets/js/config.js"></script>

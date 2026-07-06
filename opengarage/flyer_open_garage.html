@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flyer Open Garage — Bragança Veículos</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+/* ── Reset & base ─────────────────────────────────────── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --preto:    #0D0D0D;
+  --carvao:   #161616;
+  --grafite:  #242424;
+  --grafite2: #303030;
+  --amarelo:  #F5C200;
+  --amarelo2: #FFD93D;
+  --vermelho: #C81E1E;
+  --verm2:    #E63946;
+  --branco:   #F5F5F5;
+  --cinza:    #7A7A7A;
+  --cinza2:   #B0B0B0;
+}
+
+body {
+  background: #111;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 32px 16px 48px;
+  gap: 28px;
+}
+
+/* ── Controles ────────────────────────────────────────── */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.ctrl-btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: all .18s ease;
+}
+.ctrl-btn.active,
+.ctrl-btn:hover { background: var(--amarelo); color: var(--preto); }
+.ctrl-btn:not(.active) { background: var(--grafite); color: var(--cinza2); }
+.ctrl-print {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid var(--grafite2);
+  background: transparent;
+  color: var(--cinza2);
+  transition: all .18s;
+}
+.ctrl-print:hover { border-color: var(--amarelo); color: var(--amarelo); }
+
+/* ── Wrapper de ambas as faces ───────────────────────── */
+.faces-wrap {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.face-label {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--cinza);
+  margin-bottom: 10px;
+}
+
+/* ── Flyer A5: 148×210mm → 500×709px @ 85.9dpi ──────── */
+.flyer {
+  width: 500px;
+  height: 709px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 24px 80px rgba(0,0,0,.7);
+}
+
+/* ════════════════════════════════════════════════════════
+   FRENTE
+════════════════════════════════════════════════════════ */
+.frente {
+  width: 100%; height: 100%;
+  background: var(--preto);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Grade de fundo */
+.frente::before {
+  content:'';
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(245,194,0,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,194,0,.04) 1px, transparent 1px);
+  background-size: 34px 34px;
+  pointer-events:none;
+}
+
+/* Glow decorativo */
+.f-glow-a {
+  position:absolute; top:-60px; left:-60px;
+  width:280px;height:280px;border-radius:50%;
+  background: radial-gradient(circle, rgba(245,194,0,.13) 0%, transparent 70%);
+  pointer-events:none;
+}
+.f-glow-b {
+  position:absolute; bottom:-60px; right:-60px;
+  width:240px;height:240px;border-radius:50%;
+  background: radial-gradient(circle, rgba(200,30,30,.14) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* Topo: faixa evento */
+.f-topbar {
+  background: var(--amarelo);
+  padding: 7px 0;
+  text-align: center;
+  font-size: 8.5px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  color: var(--preto);
+  text-transform: uppercase;
+  position: relative; z-index:2;
+  flex-shrink:0;
+}
+
+/* Logo block */
+.f-logo-block {
+  position: relative; z-index:2;
+  display:flex; flex-direction:column;
+  align-items:center;
+  padding: 26px 0 0;
+  flex-shrink:0;
+}
+.f-logo-open {
+  font-family: 'Anton', sans-serif;
+  font-size: 74px;
+  line-height: 1;
+  color: var(--cinza2);
+  letter-spacing: 3px;
+}
+.f-logo-garage {
+  font-family: 'Anton', sans-serif;
+  font-size: 86px;
+  line-height: .88;
+  color: var(--amarelo);
+  letter-spacing: 2px;
+  position: relative;
+}
+.f-logo-garage::after {
+  content:'';
+  position:absolute;
+  bottom: -10px; left: -20px; right: -20px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--verm2) 20%, var(--verm2) 80%, transparent);
+}
+.f-tagline {
+  margin-top: 20px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--cinza);
+  text-transform: uppercase;
+}
+
+/* Datas */
+.f-dates-block {
+  position: relative; z-index:2;
+  margin: 22px 20px 0;
+  background: var(--carvao);
+  border: 1px solid var(--grafite2);
+  border-radius: 10px;
+  padding: 14px 12px 10px;
+  flex-shrink:0;
+}
+.f-dates-label {
+  text-align:center;
+  font-size: 8px;
+  font-weight:800;
+  letter-spacing: 2px;
+  color: var(--amarelo);
+  text-transform:uppercase;
+  margin-bottom: 10px;
+}
+.f-days-row {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 6px;
+}
+.f-day {
+  background: var(--grafite);
+  border-radius: 7px;
+  padding: 9px 4px 7px;
+  text-align:center;
+  border-top: 2px solid var(--amarelo);
+  position:relative;
+}
+.f-day.dom { border-top-color: var(--verm2); }
+.f-day .dow  { font-size:8px; font-weight:800; letter-spacing:1px; color:var(--cinza); text-transform:uppercase; }
+.f-day .dnum { font-family:'Anton',sans-serif; font-size:32px; color:var(--branco); line-height:1; margin:2px 0; }
+.f-day.dom .dnum { color: var(--amarelo); }
+.f-day .dmon { font-size:7.5px; color:var(--cinza); }
+.f-hours {
+  text-align:center;
+  margin-top:8px;
+  font-size: 7.5px;
+  color: var(--cinza);
+  font-weight:500;
+}
+
+/* Tags */
+.f-tags {
+  position:relative;z-index:2;
+  display:flex;gap:7px;justify-content:center;flex-wrap:wrap;
+  margin: 14px 20px 0;
+  flex-shrink:0;
+}
+.f-tag {
+  font-size: 8px; font-weight:800; letter-spacing:1px; text-transform:uppercase;
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid rgba(245,194,0,.4);
+  background: rgba(245,194,0,.07);
+  color: var(--amarelo);
+}
+
+/* Tapete vermelho decorativo */
+.f-carpet {
+  position:relative;z-index:2;
+  display:flex;justify-content:center;
+  margin: 14px 0 0;
+  flex-shrink:0;
+}
+.f-carpet-inner {
+  width: 48px;
+  height: 10px;
+  background: linear-gradient(180deg, var(--verm2), var(--vermelho));
+  border-radius: 2px;
+  box-shadow: 0 0 18px rgba(230,57,70,.5);
+}
+
+/* CTA */
+.f-cta {
+  position:relative;z-index:2;
+  margin: 14px 20px 0;
+  background: linear-gradient(135deg, var(--amarelo), var(--amarelo2));
+  border-radius: 9px;
+  padding: 15px 12px 12px;
+  text-align:center;
+  flex-shrink:0;
+}
+.f-cta-main {
+  font-size: 13px; font-weight:900;
+  letter-spacing:.3px;
+  color: var(--preto);
+  text-transform:uppercase;
+}
+.f-cta-url {
+  font-size: 9px; color: rgba(0,0,0,.55); margin-top:4px;
+  font-weight:600;
+}
+
+/* Rodapé frente */
+.f-footer {
+  position:relative;z-index:2;
+  margin-top: auto;
+  background: var(--carvao);
+  border-top: 1px solid rgba(245,194,0,.2);
+  display:flex;justify-content:space-between;align-items:center;
+  padding: 10px 20px;
+  flex-shrink:0;
+}
+.f-footer-left .name  { font-size:10px; font-weight:800; color:var(--branco); }
+.f-footer-left .city  { font-size:7.5px; color:var(--cinza); margin-top:2px; }
+.f-footer-right { text-align:right; }
+.f-footer-right .tel  { font-size:9px; font-weight:800; color:var(--amarelo); }
+.f-footer-right .social { font-size:7.5px; color:var(--cinza); margin-top:2px; }
+
+/* ════════════════════════════════════════════════════════
+   VERSO
+════════════════════════════════════════════════════════ */
+.verso {
+  width:100%; height:100%;
+  background: var(--preto);
+  display:flex;flex-direction:column;
+  position:relative;
+}
+.verso::before {
+  content:'';
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(245,194,0,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,194,0,.035) 1px, transparent 1px);
+  background-size: 34px 34px;
+  pointer-events:none;
+}
+.v-glow-a {
+  position:absolute;top:-40px;right:-40px;
+  width:220px;height:220px;border-radius:50%;
+  background: radial-gradient(circle, rgba(245,194,0,.1) 0%, transparent 70%);
+  pointer-events:none;
+}
+.v-glow-b {
+  position:absolute;bottom:-40px;left:-40px;
+  width:180px;height:180px;border-radius:50%;
+  background: radial-gradient(circle, rgba(200,30,30,.1) 0%, transparent 70%);
+  pointer-events:none;
+}
+
+/* Header verso */
+.v-header {
+  position:relative;z-index:2;
+  background: var(--carvao);
+  padding: 18px 20px 14px;
+  flex-shrink:0;
+  overflow:hidden;
+}
+.v-header-bg {
+  position:absolute;inset:0;
+  font-family:'Anton',sans-serif;
+  font-size:60px;
+  color: var(--grafite2);
+  display:flex;align-items:center;justify-content:center;
+  letter-spacing:4px;
+  pointer-events:none;
+  opacity:.35;
+}
+.v-header-eyebrow {
+  position:relative;z-index:2;
+  font-size:8px;font-weight:800;letter-spacing:2px;
+  text-transform:uppercase;color:var(--cinza);
+  text-align:center;margin-bottom:4px;
+}
+.v-header-title {
+  position:relative;z-index:2;
+  font-family:'Anton',sans-serif;
+  font-size:28px;color:var(--amarelo);
+  text-align:center;text-transform:uppercase;
+  line-height:1;
+}
+.v-header-line {
+  width:100%;height:2px;
+  background:linear-gradient(90deg,transparent,var(--verm2) 20%,var(--verm2) 80%,transparent);
+  margin-top:12px;
+}
+
+/* Benefícios */
+.v-beneficios {
+  position:relative;z-index:2;
+  display:flex;flex-direction:column;gap:6px;
+  padding: 12px 20px 0;
+  flex-shrink:0;
+}
+.v-card {
+  background: var(--carvao);
+  border: 1px solid var(--grafite2);
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  display:flex;align-items:center;gap:12px;
+  padding: 9px 14px 9px 16px;
+  position:relative;overflow:hidden;
+}
+.v-card::before {
+  content:'';
+  position:absolute;left:0;top:0;bottom:0;
+  width:4px;
+  border-radius:4px 0 0 4px;
+}
+.v-card.y::before { background: var(--amarelo); }
+.v-card.r::before { background: var(--verm2); }
+.v-card-icon { font-size:18px; flex-shrink:0; }
+.v-card-body { flex:1; min-width:0; }
+.v-card-title {
+  font-size:9.5px;font-weight:800;
+  color:var(--branco);letter-spacing:.3px;
+  text-transform:uppercase;
+  margin-bottom:2px;
+}
+.v-card-desc { font-size:8px;color:var(--cinza);line-height:1.45; }
+
+/* Política */
+.v-credito {
+  position:relative;z-index:2;
+  margin: 10px 20px 0;
+  background: var(--carvao);
+  border:1px solid var(--grafite2);
+  border-radius:9px;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.v-credito-head {
+  background: var(--grafite);
+  padding: 7px 14px;
+  font-size:8.5px;font-weight:800;
+  letter-spacing:1.5px;text-transform:uppercase;
+  color:var(--amarelo);
+  text-align:center;
+}
+.v-credito-rows { padding:4px 0; }
+.v-credito-row {
+  display:flex;justify-content:space-between;align-items:center;
+  padding: 7px 16px;
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.v-credito-row:last-child { border-bottom:none; }
+.v-credito-row .ano { font-size:9px;color:var(--cinza2); }
+.v-credito-row .pct {
+  font-size:9px;font-weight:800;color:var(--amarelo);
+  background:rgba(245,194,0,.1);
+  padding:3px 10px;border-radius:100px;
+}
+
+/* CTA + QR */
+.v-cta-block {
+  position:relative;z-index:2;
+  margin: 10px 20px 0;
+  background:linear-gradient(135deg,var(--amarelo),var(--amarelo2));
+  border-radius:10px;
+  padding: 14px 16px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  flex-shrink:0;
+}
+.v-cta-text .cta-main {
+  font-size:12px;font-weight:900;
+  color:var(--preto);text-transform:uppercase;
+  line-height:1.2;margin-bottom:4px;
+}
+.v-cta-text .cta-sub { font-size:7.5px;color:rgba(0,0,0,.55);font-weight:600; }
+.v-cta-text .cta-url { font-size:8px;font-weight:800;color:var(--preto);margin-top:3px; }
+
+/* QR code CSS */
+.v-qr {
+  width:62px;height:62px;
+  background:#fff;
+  border-radius:5px;
+  padding:5px;
+  flex-shrink:0;
+  position:relative;
+}
+.qr-grid {
+  width:100%;height:100%;
+  display:grid;
+  grid-template-columns:repeat(7,1fr);
+  grid-template-rows:repeat(7,1fr);
+  gap:1px;
+}
+.qr-cell { border-radius:1px; }
+.qr-cell.b { background:var(--preto); }
+.qr-cell.w { background:white; }
+
+/* Stats band */
+.v-stats {
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1px;
+  margin: 10px 20px 0;
+  background: var(--grafite);
+  border-radius:9px;
+  overflow:hidden;
+  border:1px solid var(--grafite);
+  flex-shrink:0;
+}
+.v-stat {
+  background: var(--carvao);
+  padding:9px 8px;
+  text-align:center;
+}
+.v-stat .snum {
+  font-family:'Anton',sans-serif;
+  font-size:20px;color:var(--amarelo);
+  line-height:1;
+}
+.v-stat .slabel {
+  font-size:7px;color:var(--cinza);
+  text-transform:uppercase;letter-spacing:1px;
+  margin-top:3px;
+}
+
+/* Rodapé verso */
+.v-footer {
+  position:relative;z-index:2;
+  margin-top:auto;
+  background: var(--carvao);
+  border-top:1px solid rgba(245,194,0,.15);
+  padding: 9px 20px;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-shrink:0;
+}
+.v-footer-brand {
+  font-family:'Anton',sans-serif;
+  font-size:14px;color:var(--branco);
+  letter-spacing:1px;
+}
+.v-footer-brand span { color:var(--amarelo); }
+.v-footer-note { font-size:7px;color:var(--cinza);text-align:right;line-height:1.5; }
+
+/* ── Print ──────────────────────────────────────────── */
+@media print {
+  body { background:white; padding:0; gap:0; }
+  .controls { display:none; }
+  .faces-wrap { flex-direction:column; gap:0; }
+  .face-label { display:none; }
+  .flyer { box-shadow:none; page-break-after:always; }
+}
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <button class="ctrl-btn active" onclick="showBoth(this)">Ver os dois lados</button>
+  <button class="ctrl-btn" onclick="showOne('frente-wrap', this)">Só frente</button>
+  <button class="ctrl-btn" onclick="showOne('verso-wrap', this)">Só verso</button>
+  <button class="ctrl-print" onclick="window.print()">Imprimir / Exportar PDF</button>
+</div>
+
+<div class="faces-wrap" id="faces-wrap">
+
+  <!-- ════ FRENTE ════ -->
+  <div id="frente-wrap">
+    <div class="face-label">FRENTE</div>
+    <div class="flyer">
+      <div class="frente">
+        <div class="f-glow-a"></div>
+        <div class="f-glow-b"></div>
+
+        <!-- Topo -->
+        <div class="f-topbar">BRAGANÇA VEÍCULOS · EVENTO EXCLUSIVO · TODA EDIÇÃO É ÚNICA</div>
+
+        <!-- Logo -->
+        <div class="f-logo-block">
+          <div class="f-logo-open">OPEN</div>
+          <div class="f-logo-garage">GARAGE</div>
+          <div class="f-tagline">Portões abertos para grandes negócios</div>
+        </div>
+
+        <!-- Datas -->
+        <div class="f-dates-block">
+          <div class="f-dates-label">▸ Próxima edição</div>
+          <div class="f-days-row">
+            <div class="f-day">
+              <div class="dow">QUI</div>
+              <div class="dnum">02</div>
+              <div class="dmon">JUL</div>
+            </div>
+            <div class="f-day">
+              <div class="dow">SEX</div>
+              <div class="dnum">03</div>
+              <div class="dmon">JUL</div>
+            </div>
+            <div class="f-day">
+              <div class="dow">SÁB</div>
+              <div class="dnum">04</div>
+              <div class="dmon">JUL</div>
+            </div>
+            <div class="f-day dom">
+              <div class="dow">DOM</div>
+              <div class="dnum">05</div>
+              <div class="dmon">JUL</div>
+            </div>
+          </div>
+          <div class="f-hours">Qui · Sex · Sáb &nbsp;9h às 18h &nbsp;|&nbsp; Dom &nbsp;9h às 12h</div>
+        </div>
+
+        <!-- Tags -->
+        <div class="f-tags">
+          <span class="f-tag">Super Avaliação</span>
+          <span class="f-tag">Financiamento 60x</span>
+          <span class="f-tag">16+ Bancos</span>
+          <span class="f-tag">+200 Veículos</span>
+        </div>
+
+        <!-- Tapete -->
+        <div class="f-carpet"><div class="f-carpet-inner"></div></div>
+
+        <!-- CTA -->
+        <div class="f-cta">
+          <div class="f-cta-main">Agende sua visita — vagas limitadas</div>
+          <div class="f-cta-url">bragancaveiculos.com.br/opengarage</div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="f-footer">
+          <div class="f-footer-left">
+            <div class="name">BRAGANÇA VEÍCULOS</div>
+            <div class="city">Bragança Paulista — SP</div>
+          </div>
+          <div class="f-footer-right">
+            <div class="tel">(11) XXXX-XXXX</div>
+            <div class="social">@bragancaveiculos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════ VERSO ════ -->
+  <div id="verso-wrap">
+    <div class="face-label">VERSO</div>
+    <div class="flyer">
+      <div class="verso">
+        <div class="v-glow-a"></div>
+        <div class="v-glow-b"></div>
+
+        <!-- Header -->
+        <div class="v-header">
+          <div class="v-header-bg">OPEN GARAGE</div>
+          <div class="v-header-eyebrow">Por que vir ao evento?</div>
+          <div class="v-header-title">Open Garage</div>
+          <div class="v-header-line"></div>
+        </div>
+
+        <!-- Benefícios -->
+        <div class="v-beneficios">
+          <div class="v-card y">
+            <div class="v-card-icon">🏷️</div>
+            <div class="v-card-body">
+              <div class="v-card-title">Bônus na avaliação do seu usado</div>
+              <div class="v-card-desc">Condição especial exclusiva para quem agenda visita no Open Garage.</div>
+            </div>
+          </div>
+          <div class="v-card r">
+            <div class="v-card-icon">🏦</div>
+            <div class="v-card-body">
+              <div class="v-card-title">16+ bancos parceiros</div>
+              <div class="v-card-desc">Pente-fino nas melhores instituições para garantir sua menor parcela.</div>
+            </div>
+          </div>
+          <div class="v-card y">
+            <div class="v-card-icon">📋</div>
+            <div class="v-card-body">
+              <div class="v-card-title">Entrada facilitada — base tabela Fipe</div>
+              <div class="v-card-desc">Regras claras, sem letras miúdas. Você sabe exatamente o que vai pagar.</div>
+            </div>
+          </div>
+          <div class="v-card r">
+            <div class="v-card-icon">🎟️</div>
+            <div class="v-card-body">
+              <div class="v-card-title">Hora marcada, zero espera</div>
+              <div class="v-card-desc">Agende e chegue sendo esperado — atendimento VIP do início ao fim.</div>
+            </div>
+          </div>
+          <div class="v-card y">
+            <div class="v-card-icon">🚗</div>
+            <div class="v-card-body">
+              <div class="v-card-title">+200 seminovos em estoque</div>
+              <div class="v-card-desc">Populares, médios e SUVs — carros, motos, caminhões e ônibus.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Política de crédito -->
+        <div class="v-credito">
+          <div class="v-credito-head">Política de Entrada — Tabela Fipe</div>
+          <div class="v-credito-rows">
+            <div class="v-credito-row">
+              <span class="ano">2014 e 2015</span>
+              <span class="pct">40% de entrada</span>
+            </div>
+            <div class="v-credito-row">
+              <span class="ano">2016 e 2017</span>
+              <span class="pct">30% de entrada</span>
+            </div>
+            <div class="v-credito-row">
+              <span class="ano">2018 em diante</span>
+              <span class="pct">20% de entrada</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="v-stats">
+          <div class="v-stat">
+            <div class="snum">4.000+</div>
+            <div class="slabel">Carros vendidos</div>
+          </div>
+          <div class="v-stat">
+            <div class="snum">200+</div>
+            <div class="slabel">Em estoque</div>
+          </div>
+          <div class="v-stat">
+            <div class="snum">16+</div>
+            <div class="slabel">Bancos parceiros</div>
+          </div>
+        </div>
+
+        <!-- CTA + QR -->
+        <div class="v-cta-block">
+          <div class="v-cta-text">
+            <div class="cta-main">Agende agora<br>Vagas limitadas</div>
+            <div class="cta-sub">Acesse ou aponte a câmera:</div>
+            <div class="cta-url">bragancaveiculos.com.br/opengarage</div>
+          </div>
+          <!-- QR Code CSS simulado -->
+          <div class="v-qr">
+            <div class="qr-grid" id="qr-grid"></div>
+          </div>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="v-footer">
+          <div class="v-footer-brand">OPEN<span>GARAGE</span></div>
+          <div class="v-footer-note">Um evento Bragança Veículos<br>Toda edição é única · Bragança Paulista — SP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /faces-wrap -->
+
+<script>
+/* ── QR Code CSS decorativo ──────────────────────────── */
+(function(){
+  const grid = document.getElementById('qr-grid');
+  // Padrão de QR simplificado 7x7 (decorativo, não funcional)
+  const pattern = [
+    [1,1,1,1,1,1,1],
+    [1,0,0,0,0,0,1],
+    [1,0,1,0,1,0,1],
+    [1,0,0,0,0,0,1],
+    [1,0,1,0,1,0,1],
+    [1,0,0,0,0,0,1],
+    [1,1,1,1,1,1,1],
+  ];
+  // Módulos centrais aleatórios (seed fixo)
+  const rng = (s) => { let x=s; return ()=>{ x=Math.sin(x)*10000; return x-Math.floor(x); }; };
+  const rand = rng(42);
+  const full = pattern.map((row,r)=>row.map((cell,c)=>{
+    if(r<7&&c<7) return cell;
+    return rand()>0.45?1:0;
+  }));
+  full.forEach(row=>{
+    row.forEach(cell=>{
+      const d=document.createElement('div');
+      d.className='qr-cell '+(cell?'b':'w');
+      grid.appendChild(d);
+    });
+  });
+})();
+
+/* ── Controles de exibição ───────────────────────────── */
+function showBoth(btn){
+  document.querySelectorAll('.ctrl-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('frente-wrap').style.display='block';
+  document.getElementById('verso-wrap').style.display='block';
+  document.getElementById('faces-wrap').style.flexDirection='row';
+}
+
+function showOne(id, btn){
+  document.querySelectorAll('.ctrl-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  const ids = ['frente-wrap','verso-wrap'];
+  ids.forEach(i=>{
+    document.getElementById(i).style.display = (i===id)?'block':'none';
+  });
+  document.getElementById('faces-wrap').style.flexDirection='row';
+}
+</script>
+
+</body>
+</html>
