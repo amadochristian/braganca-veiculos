@@ -37,7 +37,7 @@ const CONFIG = {
 
   // TODO: substitua pela URL do seu Google Apps Script Web App
   // (veja o arquivo GOOGLE_SHEETS_SETUP.md para o passo a passo).
-  SHEETS_WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbyYIwjAvAgjapsP-4hERfieUS0lV7Pbs6EQrDkXIngTptP5zq5zy_mRZiYog8RLGS9tEQ/exec',
+  SHEETS_WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbwzMRKOvQL9-BgoWM_b5ar8M2K5ce8bwHAE2uYr1v2ZVigjnmup3dJDPoSlbayyu_j96A/exec',
 
   // Para onde o usuário vai depois de agendar com sucesso.
   THANK_YOU_URL: 'obrigado.html',
@@ -272,6 +272,20 @@ function wireForm() {
 }
 
 /* ==========================================================================
+   Galeria — mostrar mais fotos
+   ========================================================================== */
+function wireGallery() {
+  const btn = document.getElementById('gallery-show-more');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-item.gallery-hidden').forEach((item) => {
+      item.classList.remove('gallery-hidden');
+    });
+    btn.remove();
+  });
+}
+
+/* ==========================================================================
    FAQ accordion
    ========================================================================== */
 function wireFAQ() {
@@ -304,4 +318,5 @@ document.addEventListener('DOMContentLoaded', () => {
   startCountdown();
   wireForm();
   wireFAQ();
+  wireGallery();
 });

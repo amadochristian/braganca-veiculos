@@ -38,6 +38,25 @@ function doPost(e) {
     .createTextOutput(JSON.stringify({ status: 'ok' }))
     .setMimeType(ContentService.MimeType.JSON);
 }
+
+// Use esta função para testar pelo editor (botão "Executar"), nunca a doPost
+// diretamente: rodar doPost sem uma requisição real deixa "e" undefined e
+// quebra em "Cannot read properties of undefined (reading 'postData')".
+function testDoPost() {
+  const fakeEvent = {
+    postData: {
+      contents: JSON.stringify({
+        nome: 'Teste',
+        whatsapp: '(11) 99999-9999',
+        dia: 'Quinta-feira, 23/07',
+        horario: '10h',
+        data_cadastro: new Date().toISOString(),
+        pagina: 'teste-manual',
+      }),
+    },
+  };
+  doPost(fakeEvent);
+}
 ```
 
 3. Salve o projeto (ex: nome "Open Garage - Recebimento").

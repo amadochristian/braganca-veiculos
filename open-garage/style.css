@@ -275,6 +275,46 @@ h1, h2, h3 {
   margin: 0 auto 18px;
 }
 
+.hero-car {
+  position: relative;
+  max-width: 620px;
+  margin: 4px auto 8px;
+}
+
+.hero-car::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translate(-50%, -50%);
+  width: 115%;
+  height: 80%;
+  background: radial-gradient(ellipse at center, rgba(27, 76, 224, 0.5), rgba(27, 76, 224, 0) 70%);
+  filter: blur(6px);
+  z-index: 0;
+}
+
+.hero-car::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 14%;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.55), transparent 75%);
+  z-index: 0;
+}
+
+.hero-car img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 20px 24px rgba(0, 0, 0, 0.45));
+}
+
 .hero-kicker {
   font-family: var(--font-data);
   font-size: 0.8rem;
@@ -438,7 +478,7 @@ h1, h2, h3 {
 .benefit-card p { color: var(--gray); font-size: 0.9rem; }
 
 /* ==========================================================================
-   Galeria (placeholders)
+   Galeria
    ========================================================================== */
 .gallery-grid {
   display: grid;
@@ -449,35 +489,23 @@ h1, h2, h3 {
 .gallery-item {
   aspect-ratio: 4 / 3;
   border-radius: var(--radius-sm);
-  border: 1px dashed var(--line);
-  background: repeating-linear-gradient(
-    135deg,
-    var(--bg-alt),
-    var(--bg-alt) 10px,
-    var(--bg-alt-2) 10px,
-    var(--bg-alt-2) 20px
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  color: var(--gray-dim);
-  font-size: 0.75rem;
-  line-height: 1.4;
+  border: 1px solid var(--line);
+  overflow: hidden;
 }
 
-.gallery-item span {
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  font-family: var(--font-data);
-  color: var(--gray);
-  font-weight: 600;
-  font-size: 0.7rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  transition: transform 0.3s ease;
 }
+
+.gallery-item:hover img { transform: scale(1.05); }
 
 .gallery-item.tall { aspect-ratio: 3 / 4; }
+
+.gallery-item.gallery-hidden { display: none; }
 
 /* ==========================================================================
    Selos de confiança
@@ -728,5 +756,5 @@ h1, h2, h3 {
 
 @media (min-width: 1080px) {
   .benefits-grid { grid-template-columns: repeat(4, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
 }
