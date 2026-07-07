@@ -37,7 +37,7 @@ const CONFIG = {
 
   // TODO: substitua pela URL do seu Google Apps Script Web App
   // (veja o arquivo GOOGLE_SHEETS_SETUP.md para o passo a passo).
-  SHEETS_WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbwzMRKOvQL9-BgoWM_b5ar8M2K5ce8bwHAE2uYr1v2ZVigjnmup3dJDPoSlbayyu_j96A/exec',
+  SHEETS_WEBAPP_URL: 'https://script.google.com/macros/s/AKfycbynQUmXLvMpAa4AIrKT_yQrHS9maZ0p00Ijb8ZCkX33ERxwLpVnFZT34kaxjIGDMQ4w6Q/exec',
 
   // Para onde o usuário vai depois de agendar com sucesso.
   THANK_YOU_URL: 'obrigado.html',
