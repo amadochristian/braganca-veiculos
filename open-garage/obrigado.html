@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Visita agendada! | Open Garage Bragança Veículos</title>
+<meta name="description" content="Sua visita ao Open Garage Bragança Veículos foi agendada. Falta pouco para você conhecer seu próximo carro." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" href="assets/logo-opengarage.png" />
+<link rel="stylesheet" href="style.css" />
+
+<!-- ===================== Google tag (GA4) ===================== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D580S0LSG0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-D580S0LSG0');
+</script>
+
+<!-- ===================== Meta Pixel ===================== -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1621301465624826');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1621301465624826&ev=PageView&noscript=1" /></noscript>
+
+<style>
+  .ty-wrap {
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    background:
+      radial-gradient(ellipse 900px 500px at 50% -10%, rgba(27, 76, 224, 0.35), transparent 60%),
+      linear-gradient(180deg, #0b0d12 0%, #0b0d12 70%, #0e1119 100%);
+  }
+  .ty-card { max-width: 480px; margin: 0 auto; }
+  .ty-check {
+    width: 74px; height: 74px; border-radius: 50%;
+    background: var(--yellow); color: #16130a;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 22px;
+  }
+  .ty-logo { max-width: 220px; margin: 0 auto 28px; }
+  .ty-detail {
+    margin: 22px 0 30px; padding: 16px 18px;
+    background: var(--bg-alt); border: 1px solid var(--line);
+    border-radius: var(--radius-sm); text-align: left; font-size: 0.92rem; color: var(--gray);
+  }
+  .ty-detail strong { color: var(--white); }
+  .ty-actions { display: grid; gap: 12px; }
+</style>
+</head>
+<body>
+  <div class="ty-wrap">
+    <div class="ty-card">
+      <img src="assets/logo-opengarage.png" alt="Open Garage" class="ty-logo" width="220" />
+      <div class="ty-check" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg>
+      </div>
+      <h1 style="font-size:1.6rem;">Visita agendada!</h1>
+      <p class="section-sub" style="margin:12px auto 0;">Recebemos seus dados. Falta pouco para você conhecer seu próximo carro no Open Garage Bragança Veículos.</p>
+
+      <div class="ty-detail" id="ty-detail">
+        <div><strong>Dia:</strong> <span id="ty-dia">a confirmar</span></div>
+        <div><strong>Horário:</strong> <span id="ty-horario">a confirmar</span></div>
+      </div>
+
+      <div class="ty-actions">
+        <a href="#" data-wa="default" class="btn btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a href="#" data-wa="team" class="btn btn-outline">Falar com a equipe</a>
+      </div>
+    </div>
+  </div>
+
+<script>
+  // Preenche os detalhes salvos no momento do agendamento (mesma sessão do navegador).
+  document.addEventListener('DOMContentLoaded', () => {
+    const dia = sessionStorage.getItem('og_lead_dia');
+    const horario = sessionStorage.getItem('og_lead_horario');
+    if (dia) document.getElementById('ty-dia').textContent = dia;
+    if (horario) document.getElementById('ty-horario').textContent = horario;
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>
