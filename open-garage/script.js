@@ -236,14 +236,25 @@ function wireForm() {
     };
 
     try {
-      // Apps Script Web Apps não retornam CORS legível em modo padrão,
-      // por isso usamos no-cors: o envio ocorre, mas não lemos a resposta.
-      await fetch(CONFIG.SHEETS_WEBAPP_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
+      // sendBeacon envia em segundo plano e não bloqueia o redirecionamento
+      // esperando o Apps Script processar (que pode levar vários segundos).
+      const sent = navigator.sendBeacon
+        ? navigator.sendBeacon(
+            CONFIG.SHEETS_WEBAPP_URL,
+            new Blob([JSON.stringify(payload)], { type: 'text/plain;charset=UTF-8' })
+          )
+        : false;
+
+      if (!sent) {
+        // Fallback para navegadores sem sendBeacon: dispara e não espera.
+        fetch(CONFIG.SHEETS_WEBAPP_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          keepalive: true,
+          headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
+          body: JSON.stringify(payload),
+        }).catch(() => {});
+      }
 
       // Meta Pixel — evento de conversão principal
       if (typeof fbq === 'function') {
