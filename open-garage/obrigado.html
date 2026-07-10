@@ -62,13 +62,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin: 0 auto 22px;
   }
   .ty-logo { max-width: 220px; margin: 0 auto 28px; }
-  .ty-detail {
-    margin: 22px 0 30px; padding: 16px 18px;
-    background: var(--bg-alt); border: 1px solid var(--line);
-    border-radius: var(--radius-sm); text-align: left; font-size: 0.92rem; color: var(--gray);
-  }
-  .ty-detail strong { color: var(--white); }
-  .ty-actions { display: grid; gap: 12px; }
+  .ty-actions { display: grid; gap: 12px; margin-top: 28px; }
 </style>
 <!-- Google tag (gtag.js) event -->
 <script>
@@ -89,30 +83,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="ty-check" aria-hidden="true">
         <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m5 12 5 5L20 7"/></svg>
       </div>
-      <h1 style="font-size:1.6rem;">Visita agendada!</h1>
-      <p class="section-sub" style="margin:12px auto 0;">Recebemos seus dados. Falta pouco para você conhecer seu próximo carro no Open Garage Bragança Veículos.</p>
-
-      <div class="ty-detail" id="ty-detail">
-        <div><strong>Dia:</strong> <span id="ty-dia">a confirmar</span></div>
-        <div><strong>Horário:</strong> <span id="ty-horario">a confirmar</span></div>
-      </div>
+      <h1 style="font-size:1.6rem;">Recebemos seu pedido!</h1>
+      <p class="section-sub" style="margin:12px auto 0;">
+        Você será direcionado para o WhatsApp em <strong id="ty-countdown">3</strong> segundo(s) para confirmar o dia e horário da sua visita.
+      </p>
 
       <div class="ty-actions">
-        <a href="#" data-wa="default" class="btn btn-whatsapp" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a href="#" data-wa="agendar" class="btn btn-whatsapp" target="_blank" rel="noopener">Ir para o WhatsApp agora</a>
         <a href="#" data-wa="team" class="btn btn-outline">Falar com a equipe</a>
       </div>
     </div>
   </div>
 
-<script>
-  // Preenche os detalhes salvos no momento do agendamento (mesma sessão do navegador).
-  document.addEventListener('DOMContentLoaded', () => {
-    const dia = sessionStorage.getItem('og_lead_dia');
-    const horario = sessionStorage.getItem('og_lead_horario');
-    if (dia) document.getElementById('ty-dia').textContent = dia;
-    if (horario) document.getElementById('ty-horario').textContent = horario;
-  });
-</script>
 <script src="script.js"></script>
 </body>
 </html>

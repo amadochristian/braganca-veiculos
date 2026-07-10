@@ -265,42 +265,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="section-head center">
         <span class="eyebrow">Agende sua visita</span>
         <h2 class="section-title">Garanta seu horário no Open Garage</h2>
-        <p class="section-sub" style="margin:0 auto;">Preencha os dados abaixo, escolha o dia e o horário. Simples assim.</p>
+        <p class="section-sub" style="margin:0 auto;">Clique no botão abaixo e fale com a gente no WhatsApp para escolher o dia e o horário.</p>
       </div>
 
-      <form class="form-section" id="booking-form" novalidate>
+      <div class="form-section" style="text-align:center;">
         <div class="form-grid">
-          <div class="field">
-            <label for="name">Nome completo</label>
-            <input type="text" id="name" name="name" placeholder="Seu nome" autocomplete="name" data-error-msg="Digite seu nome completo." required />
-            <span class="field-error"></span>
-          </div>
-          <div class="field">
-            <label for="phone">WhatsApp</label>
-            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" inputmode="tel" autocomplete="tel" data-error-msg="Digite um número de WhatsApp válido." required />
-            <span class="field-error"></span>
-          </div>
-          <div class="two-col">
-            <div class="field">
-              <label for="day">Dia da visita</label>
-              <select id="day" name="day" data-error-msg="Escolha um dia." required>
-                <option value="" disabled selected>Selecione o dia</option>
-              </select>
-              <span class="field-error"></span>
-            </div>
-            <div class="field">
-              <label for="hour">Horário</label>
-              <select id="hour" name="hour" data-error-msg="Escolha um horário." required disabled>
-                <option value="" disabled selected>Selecione o dia primeiro</option>
-              </select>
-              <span class="field-error"></span>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary form-submit" id="form-submit">Agendar Visita</button>
-          <p class="form-status" id="form-status" role="status"></p>
-          <p class="form-privacy">Seus dados são usados apenas para confirmar sua visita ao Open Garage.</p>
+          <a href="obrigado.html" id="agendar-cta" class="btn btn-primary form-submit">Quero agendar minha visita</a>
+          <p class="form-privacy">Você será direcionado para confirmar sua visita pelo WhatsApp.</p>
         </div>
-      </form>
+      </div>
     </div>
   </section>
 
