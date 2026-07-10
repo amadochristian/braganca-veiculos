@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         // Configurar galeria após renderizar
         setupGallery();
-        initRevealSticker();
         
         // Renderizar veículos similares
         if (similaresGrid && vehicles.length > 0) {
@@ -120,94 +119,6 @@ function setupGallery() {
                 // Swipe esquerda -> próxima imagem
                 todasMiniaturas[indexAtual + 1].click();
             }
-        }
-    });
-}
-
-function initRevealSticker() {
-    const sticker = document.querySelector('.js-pull-sticker');
-    if (!sticker) {
-        return;
-    }
-
-    const whatsappUrl = sticker.dataset.whatsappUrl;
-    const label = sticker.querySelector('.pull-sticker__label');
-    const hint = sticker.querySelector('.pull-sticker__hint');
-    const fold = sticker.querySelector('.pull-sticker__fold');
-
-    let isDragging = false;
-    let startX = 0;
-    let moved = false;
-    let revealed = false;
-
-    const openWhatsApp = () => {
-        if (!whatsappUrl) return;
-        window.open(whatsappUrl, '_blank');
-    };
-
-    const revealSticker = () => {
-        if (revealed) return;
-        revealed = true;
-        sticker.classList.add('revealed');
-        sticker.classList.remove('revealing');
-        label.textContent = 'Condição exclusiva no WhatsApp';
-        hint.textContent = 'Aguarde. Estamos abrindo o WhatsApp.';
-        fold.style.transform = 'perspective(400px) rotateY(-45deg) translateX(-12px)';
-        setTimeout(openWhatsApp, 450);
-    };
-
-    const resetSticker = () => {
-        if (revealed) return;
-        sticker.classList.remove('revealing');
-        fold.style.transform = 'perspective(400px) rotateY(0deg)';
-        moved = false;
-    };
-
-    const onPointerDown = (event) => {
-        if (revealed) return;
-        startX = event.clientX;
-        isDragging = true;
-        sticker.classList.add('revealing');
-    };
-
-    const onPointerMove = (event) => {
-        if (!isDragging || revealed) return;
-        const diff = event.clientX - startX;
-        const clamped = Math.min(Math.max(diff, -48), 0);
-        const angle = (clamped / -48) * 40;
-        fold.style.transform = `perspective(400px) rotateY(${angle}deg) translateX(${clamped / 2}px)`;
-        if (Math.abs(diff) > 18) {
-            moved = true;
-        }
-    };
-
-    const onPointerEnd = () => {
-        if (!isDragging || revealed) {
-            isDragging = false;
-            return;
-        }
-
-        isDragging = false;
-        if (moved) {
-            revealSticker();
-        } else {
-            resetSticker();
-        }
-    };
-
-    sticker.addEventListener('pointerdown', onPointerDown);
-    sticker.addEventListener('pointermove', onPointerMove);
-    sticker.addEventListener('pointerup', onPointerEnd);
-    sticker.addEventListener('pointercancel', onPointerEnd);
-    sticker.addEventListener('pointerleave', onPointerEnd);
-
-    sticker.addEventListener('click', (event) => {
-        if (revealed) {
-            return;
-        }
-        if (!moved) {
-            event.preventDefault();
-            revealSticker();
         }
     });
 }

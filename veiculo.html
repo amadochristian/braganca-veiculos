@@ -130,159 +130,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="assets/js/veiculo-detalhes.js"></script>
 
     <!-- ═══════════════════════════════════════════════════
-         BRAGANÇA VEÍCULOS — WhatsApp rastreado + mensagem
-         estruturada para página de veículo individual
+         BRAGANÇA VEÍCULOS — botão flutuante de WhatsApp
+         reaproveita o link já montado pelo vehicle-renderer.js
+         (mesma URL do botão "Tenho interesse")
     ═══════════════════════════════════════════════════ -->
     <script>
     (function () {
-      var PHONE = '5511932069533';
-      var BASE_WA = '/obrigado.html?origem=veiculos' + PHONE;
-
-      /* ── Lê os dados do veículo do DOM ───────────────── */
-      function getDadosVeiculo() {
-        var content = document.getElementById('veiculo-content');
-        if (!content) return null;
-
-        // Título / modelo (tenta vários seletores comuns)
-        var titulo =
-          (content.querySelector('h1')               || {}).innerText ||
-          (content.querySelector('.veiculo-titulo')   || {}).innerText ||
-          (content.querySelector('.vehicle-title')    || {}).innerText ||
-          document.title.replace(' - Bragança Veículos', '') ||
-          'Veículo';
-
-        // Preço
-        var preco =
-          (content.querySelector('.veiculo-preco')    || {}).innerText ||
-          (content.querySelector('.vehicle-price')    || {}).innerText ||
-          (content.querySelector('[class*="preco"]')  || {}).innerText ||
-          (content.querySelector('[class*="price"]')  || {}).innerText ||
-          'Consulte';
-
-        // Ano
-        var ano =
-          (content.querySelector('[class*="ano"]')    || {}).innerText ||
-          (content.querySelector('[data-ano]')        || { dataset:{} }).dataset.ano ||
-          '';
-
-        // Cor
-        var cor =
-          (content.querySelector('[class*="cor"]')    || {}).innerText ||
-          (content.querySelector('[data-cor]')        || { dataset:{} }).dataset.cor ||
-          '';
-
-        // Câmbio
-        var cambio =
-          (content.querySelector('[class*="cambio"]') || {}).innerText ||
-          (content.querySelector('[class*="transmis"]')|| {}).innerText ||
-          '';
-
-        // Quilometragem
-        var km =
-          (content.querySelector('[class*="km"]')     || {}).innerText ||
-          (content.querySelector('[class*="quilom"]') || {}).innerText ||
-          '';
-
-        return { titulo: titulo.trim(), preco: preco.trim(), ano: ano.trim(),
-                 cor: cor.trim(), cambio: cambio.trim(), km: km.trim() };
+      function sincronizarBotaoFlutuante() {
+        var ctaPrincipal = document.querySelector('.btn-whatsapp-detalhes');
+        var floatBtn = document.getElementById('wa-float');
+        if (!ctaPrincipal || !floatBtn) return;
+        floatBtn.href = ctaPrincipal.href;
       }
 
-      /* ── Monta a mensagem estruturada ────────────────── */
-      function montarMensagem(dados) {
-        var url = window.location.href;
-        var linhas = [
-          'Olá! Vi esse veículo no site e tenho interesse:',
-          '',
-          '🚗 *' + dados.titulo + '*'
-        ];
-        if (dados.ano)    linhas.push('📅 Ano: '    + dados.ano);
-        if (dados.cor)    linhas.push('🎨 Cor: '    + dados.cor);
-        if (dados.cambio) linhas.push('⚙️ Câmbio: ' + dados.cambio);
-        if (dados.km)     linhas.push('🛣️ KM: '     + dados.km);
-        if (dados.preco && dados.preco !== 'Consulte')
-                          linhas.push('💰 Preço: '  + dados.preco);
-        linhas.push('🔗 ' + url);
-        linhas.push('');
-        linhas.push('Ainda está disponível?');
-        return linhas.join('\n');
-      }
-
-      /* ── Dispara os pixels de conversão ─────────────── */
-      function dispararPixels(label) {
-        try { fbq('track', 'Contact'); } catch(e) {}
-        try {
-          gtag('event', 'generate_lead', {
-            event_category: 'whatsapp_veiculo',
-            event_label: label || document.title
-          });
-        } catch(e) {}
-      }
-
-      /* ── Constrói URL do WA com mensagem ─────────────── */
-      function buildWaUrl(dados) {
-        var msg = montarMensagem(dados || { titulo: 'Veículo', preco: '' });
-        return BASE_WA + '?text=' + encodeURIComponent(msg);
-      }
-
-      /* ── Intercepta cliques em qualquer botão de WA ──── */
-      function interceptarCliques() {
-        document.addEventListener('click', function (e) {
-          var el = e.target.closest('a[href*="/obrigado.html?origem=veiculos"], a[href*="whatsapp"], .btn-whatsapp');
-          if (!el) return;
-
-          var dados = getDadosVeiculo();
-          if (!dados) return; // fora do contexto de veículo, não interfere
-
-          e.preventDefault();
-
-          dispararPixels(dados.titulo);
-
-          var waUrl = buildWaUrl(dados);
-          window.open(waUrl, '_blank', 'noopener');
-        }, true);
-      }
-
-      /* ── Atualiza o botão flutuante ao carregar o veículo */
-      function atualizarBotaoFlutuante(dados) {
-        var btn = document.getElementById('wa-float');
-        if (!btn || !dados) return;
-        btn.href = buildWaUrl(dados);
-        btn.addEventListener('click', function () {
-          dispararPixels(dados.titulo);
-        });
-      }
-
-      /* ── Observa quando o JS interno termina de renderizar */
       function aguardarConteudo() {
         var content = document.getElementById('veiculo-content');
         if (!content) return;
 
         var observer = new MutationObserver(function (mutations, obs) {
-          // Considera carregado quando o display muda para visível
           if (content.style.display !== 'none' && content.innerHTML.trim() !== '') {
             obs.disconnect();
-            var dados = getDadosVeiculo();
-            atualizarBotaoFlutuante(dados);
+            sincronizarBotaoFlutuante();
           }
         });
 
         observer.observe(content, { attributes: true, childList: true, subtree: true });
 
         // Fallback: tenta após 2s caso o observer não capture
-        setTimeout(function () {
-          var dados = getDadosVeiculo();
-          if (dados) atualizarBotaoFlutuante(dados);
-        }, 2000);
+        setTimeout(sincronizarBotaoFlutuante, 2000);
       }
 
-      /* ── Init ────────────────────────────────────────── */
-      interceptarCliques();
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', aguardarConteudo);
       } else {
         aguardarConteudo();
       }
-
     })();
     </script>
 

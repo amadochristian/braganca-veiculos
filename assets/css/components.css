@@ -304,6 +304,36 @@
     border: 1px solid var(--border);
 }
 
+.veiculo-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    align-self: flex-start;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #0d9155;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    margin-bottom: 14px;
+}
+
+.veiculo-status-badge__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #10b981;
+    animation: veiculoStatusPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes veiculoStatusPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .4; transform: scale(.7); }
+}
+
 .veiculo-nome {
     font-size: 1.625rem;
     font-weight: 800;
@@ -316,105 +346,29 @@
 .veiculo-versao {
     font-size: 14px;
     color: var(--text-muted);
-    margin-bottom: 24px;
-    padding-bottom: 24px;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
     border-bottom: 1px solid var(--border);
 }
 
-.pull-sticker-wrap {
-    margin-bottom: 28px;
+.veiculo-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
 }
 
-.pull-sticker {
-    position: relative;
+.veiculo-highlights span {
     display: inline-flex;
     align-items: center;
-    width: 100%;
-    max-width: 320px;
-    padding: 0;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    text-align: left;
-}
-
-.pull-sticker:focus-visible {
-    outline: 3px solid rgba(0, 56, 168, 0.3);
-    outline-offset: 4px;
-}
-
-.pull-sticker__inner {
-    position: relative;
-    display: grid;
     gap: 6px;
-    width: 100%;
-    padding: 20px 26px 20px 20px;
-    border-radius: 26px;
-    background: linear-gradient(135deg, #fff8e6 0%, #fff3d9 100%);
-    border: 1px solid rgba(245, 183, 49, 0.35);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
-    overflow: hidden;
-}
-
-.pull-sticker.revealing .pull-sticker__inner {
-    transform: translateX(-2px);
-}
-
-.pull-sticker__label {
-    font-size: 1rem;
-    font-weight: 800;
-    color: var(--secondary);
-    line-height: 1.2;
-}
-
-.pull-sticker__hint {
-    font-size: 0.88rem;
-    color: var(--text-muted);
-}
-
-.pull-sticker__handle {
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent) 0%, #f8d568 100%);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    display: grid;
-    place-items: center;
-    color: var(--secondary);
-    font-size: 1.1rem;
-    border: 1px solid rgba(255, 255, 255, 0.55);
-}
-
-.pull-sticker__fold {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 110px;
-    height: 100%;
-    pointer-events: none;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.35) 100%);
-    box-shadow: inset -2px 0 16px rgba(0, 0, 0, 0.08);
-    transform-origin: right center;
-    transform: perspective(400px) rotateY(0deg);
-    transition: transform 0.25s ease;
-}
-
-.pull-sticker.revealed .pull-sticker__inner {
-    background: linear-gradient(135deg, #effaf1 0%, #f0fdf4 100%);
-    border-color: var(--success);
-}
-
-.pull-sticker.revealed .pull-sticker__label {
-    color: var(--success);
-}
-
-.pull-sticker.revealed .pull-sticker__hint {
-    color: var(--success);
+    background: var(--surface-muted);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 7px 12px;
+    border-radius: var(--radius-full);
 }
 
 .veiculo-preco {
@@ -529,6 +483,13 @@
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
 }
 
+.veiculo-cta-nota {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: -12px 0 20px;
+}
+
 .veiculo-descricao-rapida {
     font-size: 14px;
     color: var(--text-muted);
@@ -588,6 +549,111 @@
     line-height: 1.8;
 }
 
+/* Faixa de confiança */
+.veiculo-trust {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.veiculo-trust-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 22px 18px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    transition: var(--transition);
+}
+
+.veiculo-trust-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.veiculo-trust-item__icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 56, 168, 0.1) 0%, rgba(0, 56, 168, 0.05) 100%);
+    border-radius: var(--radius-md);
+    color: var(--primary);
+}
+
+.veiculo-trust-item h4 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    color: var(--secondary);
+}
+
+.veiculo-trust-item p {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* CTA final */
+.veiculo-cta-banner {
+    margin-top: 32px;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-xl);
+    padding: 56px 32px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary) 0%, #0a1f4d 50%, var(--primary-dark) 100%);
+    box-shadow: var(--shadow-card);
+}
+
+.veiculo-cta-banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.veiculo-cta-banner__content {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.veiculo-cta-banner h2 {
+    color: white;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+    margin-bottom: 10px;
+}
+
+.veiculo-cta-banner p {
+    color: rgba(248, 250, 252, 0.75);
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.veiculo-cta-banner__buttons {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    .veiculo-trust { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+    .veiculo-trust { grid-template-columns: 1fr; gap: 12px; }
+    .veiculo-cta-banner { padding: 40px 24px; }
+    .veiculo-cta-banner__buttons { flex-direction: column; }
+    .veiculo-cta-banner__buttons .btn { width: 100%; }
+}
+
 .veiculo-similares {
     margin-top: 56px;
 }
@@ -641,9 +707,6 @@
     .veiculo-nome { font-size: 1.375rem; }
     .preco-valor { font-size: 1.625rem; }
     .specs-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .pull-sticker-wrap {
-        margin-top: 16px;
-    }
     .btn-whatsapp-detalhes {
         position: fixed;
         bottom: 0;
