@@ -257,389 +257,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 }
         /* ── Hero ── */
-        .hero--copa {
-            background: #071b1f;
+        @media (min-width: 769px) {
+            .hero { padding-top: 128px; }
+        }
+
+        .hero__layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero__visual {
+            display: none;
             position: relative;
+        }
+
+        .hero__image-wrap {
+            position: relative;
+            border-radius: 20px;
             overflow: hidden;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            box-shadow: 0 32px 80px rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
-        /* ── Elementos de Fundo ── */
-        .hero__field-grid {
-            position: absolute;
-            inset: 0;
-            background:
-                repeating-linear-gradient(0deg, transparent, transparent 48px, rgba(255, 255, 255, 0.02) 48px, rgba(255, 255, 255, 0.02) 49px),
-                repeating-linear-gradient(90deg, transparent, transparent 48px, rgba(255, 255, 255, 0.02) 48px, rgba(255, 255, 255, 0.02) 49px);
-            pointer-events: none;
-        }
-
-        .hero__field-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80vw;
-            max-width: 500px;
-            height: 80vw;
-            max-height: 500px;
-            border: 1.5px solid rgba(255, 255, 255, 0.04);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero__field-circle::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 0;
-            right: 0;
-            height: 1.5px;
-            background: rgba(255, 255, 255, 0.03);
-            transform: translateY(-50%);
-        }
-
-        .hero__field-circle::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 15vw;
-            max-width: 90px;
-            height: 15vw;
-            max-height: 90px;
-            border: 1.5px solid rgba(255, 255, 255, 0.04);
-            border-radius: 50%;
-        }
-
-        .hero__flag-strip {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, #009C3B 33.33%, #FFDD00 33.33%, #FFDD00 66.66%, #002776 66.66%);
-            z-index: 0;
-        }
-
-        /* ── Conteúdo ── */
-        .hero--copa .hero__content {
-            position: relative;
-            z-index: 2;
-            padding: 80px 0 60px;
+        .hero__image-wrap img {
             width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            height: 520px;
+            object-fit: cover;
+            display: block;
         }
 
-        /* ── Badge ── */
-        .hero__badge--copa {
-            display: inline-flex;
+        .hero__image-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
             align-items: center;
             gap: 8px;
-            background: rgba(0, 162, 255, 0.08);
-            border: 1px solid rgba(0, 225, 255, 0.25);
+            background: rgba(255, 255, 255, 0.95);
+            color: var(--secondary);
+            font-weight: 700;
+            font-size: 13px;
+            padding: 8px 16px;
             border-radius: 999px;
-            padding: 6px 16px;
-            font-size: 11px;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            margin-bottom: 24px;
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
         }
 
-        .hero__badge-dot {
-            width: 7px;
-            height: 7px;
+        .hero__image-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
             border-radius: 50%;
-            background: #00d9ff;
-            animation: copaPulse 1.6s ease-in-out infinite;
-            flex-shrink: 0;
+            background: #22c55e;
         }
 
-        @keyframes copaPulse {
-            0%,
-            100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.4;
-                transform: scale(0.7);
-            }
-        }
-
-        /* ── Logo ── */
-        .hero__logo {
-            max-width: 320px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 16px;
-        }
-
-        /* ── Subtitle ── */
-        .hero--copa .hero__subtitle {
-            color: rgba(255, 255, 255, 0.7);
-            max-width: 480px;
-            margin: 0 auto 28px;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            text-transform: uppercase;
-            letter-spacing: 0.04em;
-        }
-
-        .hero--copa .hero__subtitle strong {
-            color: #FFDD00;
-            font-weight: 700;
-        }
-
-        /* ── Botões ── */
-        .hero__actions {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            width: 100%;
-            max-width: 400px;
-            margin-bottom: 32px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 14px 28px;
-            font-size: 15px;
-            font-weight: 700;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            border: none;
-            width: 100%;
-        }
-
-        .btn-lg {
-            padding: 16px 32px;
-            font-size: 16px;
-        }
-
-        .btn-copa-yellow {
-            background: #FFDD00;
-            color: #071b1f !important;
-        }
-
-        .btn-copa-yellow:hover {
-            opacity: 0.85;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 221, 0, 0.25);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255, 0.2);
-            color: rgba(255, 255, 255, 0.85) !important;
-        }
-
-        .btn-outline:hover {
-            border-color: rgba(255, 255, 255, 0.5);
-            background: rgba(255, 255, 255, 0.05);
-            transform: translateY(-2px);
-        }
-
-        /* ── Datas ── */
-        .f-dates-block {
-            width: 100%;
-            max-width: 480px;
-            background: rgba(22, 22, 22, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 12px;
-            padding: 18px 16px 14px;
-            margin-bottom: 28px;
-            backdrop-filter: blur(10px);
-        }
-
-        .f-dates-label {
-            text-align: center;
-            font-size: 14px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            color: #F4C608;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-        }
-
-        .f-days-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 6px;
-            margin-bottom: 10px;
-        }
-
-        .f-day {
-            background: rgba(36, 36, 36, 0.8);
-            border-radius: 8px;
-            padding: 10px 4px 8px;
-            text-align: center;
-            border-top: 3px solid #F4C608;
-        }
-
-        .f-day .dow {
-            font-size: 8px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            color: rgba(255, 255, 255, 0.6);
-            text-transform: uppercase;
-        }
-
-        .f-day .dnum {
-            font-family: 'Anton', sans-serif;
-            font-size: 38px;
-            color: #fff;
-            line-height: 1;
-            margin: 2px 0;
-        }
-
-        .f-day .dmon {
-            font-size: 7px;
-            color: rgba(255, 255, 255, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .f-hours {
-            text-align: center;
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.5);
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            padding-top: 6px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* ── Social Box ── */
-        .hero__copa-social {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            background: rgba(0, 183, 255, 0.05);
-            border: 1px solid rgba(255, 221, 0, 0.15);
-            border-radius: 12px;
-            padding: 14px 18px;
-            width: 100%;
-            max-width: 480px;
-            text-align: left;
-        }
-
-        .hero__copa-social-icon {
-            width: 40px;
-            height: 40px;
-            min-width: 40px;
-            background: rgba(255, 221, 0, 0.1);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .hero__copa-social p {
-            font-size: 12px;
-            color: rgba(255, 255, 255, 0.7);
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .hero__copa-social p strong {
-            color: #fff;
-            font-weight: 700;
-        }
-
-        /* ── Responsivo Mobile-First ── */
-
-        /* Tablets e acima */
-        @media (min-width: 600px) {
-            .hero--copa {
-                min-height: 80vh;
-            }
-
-            .hero--copa .hero__content {
-                padding: 100px 0 80px;
-            }
-
-            .hero__logo {
-                max-width: 400px;
-            }
-
-            .btn {
-                width: auto;
-                padding: 14px 32px;
-            }
-
-            .btn-lg {
-                padding: 16px 40px;
-            }
-
-            .f-day .dnum {
-                font-size: 44px;
-            }
-        }
-
-        /* Desktop */
         @media (min-width: 992px) {
-            .hero--copa {
-                min-height: 70vh;
+            .hero__layout {
+                grid-template-columns: 1.05fr 0.95fr;
+                gap: 56px;
             }
 
-            .hero--copa .hero__content {
-                padding: 120px 0 100px;
-            }
-
-            .hero__logo {
-                max-width: 500px;
-            }
-
-            .hero--copa .hero__subtitle {
-                font-size: 1.1rem;
-                max-width: 560px;
-            }
-
-            .f-day .dnum {
-                font-size: 48px;
-            }
-
-            .hero__copa-social p {
-                font-size: 13px;
-            }
-        }
-
-        /* Telas muito grandes */
-        @media (min-width: 1400px) {
-            .container {
-                padding: 0 40px;
-            }
-        }
-
-        /* Ajustes para telas muito pequenas */
-        @media (max-width: 380px) {
-            .f-day .dnum {
-                font-size: 30px;
-            }
-
-            .hero__badge--copa {
-                font-size: 9px;
-                padding: 5px 12px;
-            }
-
-            .hero__copa-social p {
-                font-size: 11px;
+            .hero__visual {
+                display: block;
             }
         }
     </style>
@@ -701,85 +381,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </nav>
 
-    <section class="hero hero--copa">
-        <!-- Elementos de fundo -->
-        <div class="hero__field-grid"></div>
-        <div class="hero__field-circle"></div>
-        <div class="hero__flag-strip"></div>
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__grid"></div>
+        <div class="hero__glow"></div>
 
-        <!-- Conteúdo principal -->
-        <div class="container hero__content">
+        <div class="container hero__layout">
+            <div class="hero__content">
 
-            <!-- Badge -->
-            <div class="hero__badge hero__badge--copa">
-                <span class="hero__badge-dot"></span>
-                Evento Exclusivo Bragança Veículos
-            </div>
-
-            <!-- Logo -->
-            <img class="hero__logo" src="open-garage/logo-opengarage.png" alt="Open Garage - Bragança Veículos">
-
-            <!-- Subtítulo -->
-            <p class="hero__subtitle">
-                Portões <strong>Abertos</strong> para novos negócios.
-            </p>
-
-            <!-- CTA -->
-            <div class="hero__actions">
-                <a href="https://www.bragancaveiculos.com.br/open-garage/index.html#agendar" class="btn btn-copa-yellow btn-lg">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                        <rect x="3" y="4" width="18" height="18" rx="3"/>
-                        <line x1="16" y1="2" x2="16" y2="6"/>
-                        <line x1="8" y1="2" x2="8" y2="6"/>
-                        <line x1="3" y1="10" x2="21" y2="10"/>
-                    </svg>
-                    Agendar minha visita
-                </a>
-            </div>
-
-            <!-- Datas do evento -->
-            <div class="f-dates-block">
-                <div class="f-dates-label">▸ Próxima edição</div>
-                <div class="f-days-row">
-                    <div class="f-day">
-                        <div class="dow">QUI</div>
-                        <div class="dnum">23</div>
-                        <div class="dmon">JUL</div>
-                    </div>
-                    <div class="f-day">
-                        <div class="dow">SEX</div>
-                        <div class="dnum">24</div>
-                        <div class="dmon">JUL</div>
-                    </div>
-                    <div class="f-day">
-                        <div class="dow">SÁB</div>
-                        <div class="dnum">25</div>
-                        <div class="dmon">JUL</div>
-                    </div>
-                    <div class="f-day">
-                        <div class="dow">DOM</div>
-                        <div class="dnum">26</div>
-                        <div class="dmon">JUL</div>
-                    </div>
+                <!-- Badge -->
+                <div class="hero__badge">
+                    <span class="hero__badge-dot"></span>
+                    Multimarcas · Bragança Paulista/SP
                 </div>
-                <div class="f-hours">Qui · Sex · Sáb &nbsp;9h às 18h &nbsp;|&nbsp; Dom &nbsp;9h às 12h</div>
-            </div>
 
-            <!-- Chamada social -->
-            <div class="hero__copa-social">
-                <div class="hero__copa-social-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFDD00" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5"/>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                    </svg>
-                </div>
-                <p>
-                    <strong>Acompanhe @braganca_veiculos</strong> para o evento Open Garage!
-                    Evento exclusivo e condições especiais de financiamento. Não fique de fora!
+                <!-- Título -->
+                <h1 class="hero__title">
+                    Encontre o carro dos seus sonhos
+                    <span>com toda confiança e as melhores condições</span>
+                </h1>
+
+                <!-- Subtítulo -->
+                <p class="hero__subtitle">
+                    Mais de 200 veículos em estoque, procedência garantida e financiamento facilitado com os principais bancos. Conheça agora nosso catálogo completo.
                 </p>
+
+                <!-- CTA -->
+                <div class="hero__actions">
+                    <a href="catalogo.html" class="btn btn-primary btn-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <rect x="3" y="4" width="18" height="18" rx="3"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        Ver Catálogo Completo
+                    </a>
+                    <a href="/obrigado.html?origem=home_hero" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+
+                <!-- Números -->
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <div class="hero__stat-value">+8</div>
+                        <div class="hero__stat-label">Anos de mercado</div>
+                    </div>
+                    <div class="hero__stat">
+                        <div class="hero__stat-value">+200</div>
+                        <div class="hero__stat-label">Veículos em estoque</div>
+                    </div>
+                    <div class="hero__stat">
+                        <div class="hero__stat-value">+3 mil</div>
+                        <div class="hero__stat-label">Veículos vendidos</div>
+                    </div>
+                    <div class="hero__stat">
+                        <div class="hero__stat-value">4.8★</div>
+                        <div class="hero__stat-label">Avaliação dos clientes</div>
+                    </div>
+                </div>
             </div>
 
+            <!-- Visual -->
+            <div class="hero__visual">
+                <div class="hero__image-wrap">
+                    <img src="images/fachada.jpg" alt="Showroom Bragança Veículos" loading="eager">
+                    <div class="hero__image-badge">Estoque disponível</div>
+                </div>
+            </div>
         </div>
     </section>
 
