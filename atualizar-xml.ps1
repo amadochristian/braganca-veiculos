@@ -1,65 +1,96 @@
-# ==============================
-# CONFIGURAÇÕES
-# ==============================
-
 $xmlUrl = "https://sistema.autocerto.com/xml/Anuncios?idcliente=6960&cnpj=09498412000178&chave=aut@cert@"
-$pastaSite = "C:\Users\VENDEDORES\Documents\GitHub\braganca-veiculos"
-$arquivoXml = "C:\Users\VENDEDORES\Documents\GitHub\braganca-veiculos\Anuncios.xml"
 
-# ==============================
-# BAIXAR XML
-# ==============================
+$pastaSite = "C:\Users\VENDEDORES\Documents\GitHub\braganca-veiculos"
+
+$arquivoXml = "$pastaSite\Anuncios.xml"
+
+$arquivoTemp = "$pastaSite\Anuncios_temp.xml"
+
+Write-Host ""
+Write-Host "========================================"
+Write-Host " ATUALIZADOR DE XML - BRAGANCA VEICULOS"
+Write-Host "========================================"
+Write-Host ""
 
 try {
+
     Write-Host "Baixando XML..."
+
+    $headers = @{
+        "User-Agent" = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+        "Accept" = "application/xml,text/xml,application/xhtml+xml,text/html;q=0.9,*/*;q=0.8"
+        "Accept-Language" = "pt-BR,pt;q=0.9"
+    }
 
     Invoke-WebRequest `
         -Uri $xmlUrl `
-        -OutFile "$arquivoXml.tmp" `
-        -UseBasicParsing
+        -Headers $headers `
+        -OutFile $arquivoTemp `
+        -MaximumRedirection 5
 
-    # Verifica se o arquivo realmente é um XML válido
-    [xml]$xmlTeste = Get-Content "$arquivoXml.tmp"
+    Write-Host "Download concluido!"
 
-    # Se chegou aqui, o XML é válido
-    Move-Item "$arquivoXml.tmp" $arquivoXml -Force
-
-    Write-Host "XML atualizado com sucesso."
-}
-catch {
-    Write-Host "ERRO ao atualizar XML:"
-    Write-Host $_
-
-    if (Test-Path "$arquivoXml.tmp") {
-        Remove-Item "$arquivoXml.tmp" -Force
+    # Verifica se o arquivo foi criado
+    if (!(Test-Path $arquivoTemp)) {
+        throw "O arquivo temporario nao foi criado."
     }
 
-    exit 1
+    $tamanho = (Get-Item $arquivoTemp).Length
+
+    Write-Host "Tamanho baixado: $tamanho bytes"
+
+    if ($tamanho -lt 100) {
+        throw "O arquivo baixado parece estar vazio ou invalido."
+    }
+
+    # Testa se é um XML válido
+    Write-Host "Validando XML..."
+
+    [xml]$xmlTeste = Get-Content $arquivoTemp -Raw
+
+    Write-Host "XML valido!"
+
+    # Backup do XML anterior
+    if (Test-Path $arquivoXml) {
+
+        $data = Get-Date -Format "yyyyMMdd-HHmmss"
+
+        Copy-Item `
+            -Path $arquivoXml `
+            -Destination "$pastaSite\backup-Anuncios-$data.xml"
+
+        Write-Host "Backup criado."
+    }
+
+    # Substitui o XML
+    Move-Item `
+        -Path $arquivoTemp `
+        -Destination $arquivoXml `
+        -Force
+
+    Write-Host ""
+    Write-Host "========================================"
+    Write-Host " XML ATUALIZADO COM SUCESSO!"
+    Write-Host "========================================"
+
+}
+catch {
+
+    Write-Host ""
+    Write-Host "========================================"
+    Write-Host " ERRO AO ATUALIZAR"
+    Write-Host "========================================"
+
+    Write-Host ""
+    Write-Host $_.Exception.Message
+    Write-Host ""
+
+    # Remove temporário caso tenha dado erro
+    if (Test-Path $arquivoTemp) {
+        Remove-Item $arquivoTemp -Force
+    }
 }
 
-# ==============================
-# GIT
-# ==============================
-
-Set-Location $pastaSite
-
-git add Anuncios.xml
-
-# Verifica se houve alteração
-$alteracoes = git status --porcelain
-
-if ($alteracoes) {
-
-    $data = Get-Date -Format "yyyy-MM-dd HH:mm"
-
-    git commit -m "Atualização automática do XML - $data"
-
-    git push
-
-    Write-Host "Git atualizado com sucesso."
-
-} else {
-
-    Write-Host "Nenhuma alteração no XML."
-
-}
+Write-Host ""
+Write-Host "Pressione ENTER para fechar..."
+Read-Host
