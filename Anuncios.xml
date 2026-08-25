@@ -4131,7 +4131,7 @@ Valores, condições de pagamento e disponibilidade dos veículos podem ser alte
     <versao><![CDATA[1.4 MPI FURGÃO ENDURANCE 8V FLEX 2P MANUAL]]></versao>
     <anomodelo>2024/2024</anomodelo>
     <cambio>Manual</cambio>
-    <quilometragem>39000</quilometragem>
+    <quilometragem>0</quilometragem>
     <numeroportas>2</numeroportas>
     <cor>Branco</cor>
     <combustivel>Flex</combustivel>
@@ -4153,7 +4153,7 @@ Av. José Gomes da Rocha Leal, 1267 – Centro – Bragança Paulista/SP
 Valores, condições de pagamento e disponibilidade dos veículos podem ser alterados sem aviso prévio. Consulte nossa equipe para mais informações.]]></observacoes>
     <linkAnuncioSite><![CDATA[https://bragancaveiculos.com.br/Veiculo/fiorino-1.4-mpi-furgao-endurance-8v-flex-2p-manual-flex-2024/5356809/detalhes]]></linkAnuncioSite>
     <linkVideo />
-    <DataAtualizacao>2026-08-17 11:40:32</DataAtualizacao>
+    <DataAtualizacao>2026-08-24 09:11:16</DataAtualizacao>
     <opcionais>
       <opcional>Ar condicionado</opcional>
       <opcional>Direção Hidraulica</opcional>
@@ -4205,22 +4205,18 @@ Valores, condições de pagamento e disponibilidade dos veículos podem ser alte
       </foto>
       <foto>
         <ordem>10</ordem>
-        <url>https://www.autocerto.com/fotos/6960/5356809/5_114032.jpg?u=20260817114032</url>
-      </foto>
-      <foto>
-        <ordem>11</ordem>
         <url>https://www.autocerto.com/fotos/6960/5356809/14_114032.jpg?u=20260817114032</url>
       </foto>
       <foto>
-        <ordem>12</ordem>
+        <ordem>11</ordem>
         <url>https://www.autocerto.com/fotos/6960/5356809/12_114032.jpg?u=20260817114032</url>
       </foto>
       <foto>
-        <ordem>13</ordem>
+        <ordem>12</ordem>
         <url>https://www.autocerto.com/fotos/6960/5356809/6_114032.jpg?u=20260817114032</url>
       </foto>
       <foto>
-        <ordem>14</ordem>
+        <ordem>13</ordem>
         <url>https://www.autocerto.com/fotos/6960/5356809/13_114032.jpg?u=20260817114032</url>
       </foto>
     </fotos>
